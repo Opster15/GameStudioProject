@@ -527,8 +527,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: 
-  sourceBankPath: 
+  sourceProjectPath: FMOD Studio/Dustworld.fspro
+  sourceBankPath: FMOD Studio/Build
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -550,7 +550,8 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks: []
+  MasterBanks:
+  - Master
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
@@ -566,17 +567,17 @@ MonoBehaviour:
   HideSetupWizard: 0
   LastEventReferenceScanVersion: 0
   Platforms:
-  - {fileID: -2522562327561922332}
-  - {fileID: -6417835336039363115}
   - {fileID: -7416997090430012974}
-  - {fileID: -4836346475856112482}
-  - {fileID: -2329952157408724189}
-  - {fileID: 1645376305948610971}
-  - {fileID: -1218134227158848603}
-  - {fileID: 6179907631112312005}
   - {fileID: -7173000999540845757}
-  - {fileID: 1336088461012609103}
+  - {fileID: -6417835336039363115}
+  - {fileID: -4836346475856112482}
   - {fileID: -3447676480931642714}
+  - {fileID: -2522562327561922332}
+  - {fileID: -2329952157408724189}
+  - {fileID: -1218134227158848603}
+  - {fileID: 1336088461012609103}
+  - {fileID: 1645376305948610971}
+  - {fileID: 6179907631112312005}
   MigratedPlatforms: 0c000000150000000b0000000a00000009000000120000000800000005000000060000000200000001000000
 --- !u!114 &1336088461012609103
 MonoBehaviour:
@@ -642,15 +643,15 @@ MonoBehaviour:
     HasValue: 0
   displaySortOrder: 0
   childIdentifiers:
-  - 2fea114e74ecf3c4f920e1d5cc1c4c40
-  - 46fbfdf3fc43db0458918377fd40293e
   - 0f8eb3f400726694eb47beb1a9f94ce8
-  - b7716510a1f36934c87976f3a81dbf3d
-  - 52eb9df5db46521439908db3a29a1bbb
-  - e7a046c753c3c3d4aacc91f6597f310d
-  - 2c5177b11d81d824dbb064f9ac8527da
-  - fd7c55dab0fce234b8c25f6ffca523c1
   - c88d16e5272a4e241b0ef0ac2e53b73d
+  - 46fbfdf3fc43db0458918377fd40293e
+  - b7716510a1f36934c87976f3a81dbf3d
+  - 2fea114e74ecf3c4f920e1d5cc1c4c40
+  - 52eb9df5db46521439908db3a29a1bbb
+  - 2c5177b11d81d824dbb064f9ac8527da
+  - e7a046c753c3c3d4aacc91f6597f310d
+  - fd7c55dab0fce234b8c25f6ffca523c1
 --- !u!114 &1645376305948610971
 MonoBehaviour:
   m_ObjectHideFlags: 0
