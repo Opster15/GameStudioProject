@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{60911176-89c0-42e5-a19d-c0a9022b2147}">
+		<property name="name">
+			<value>Clown Boss Section</value>
+		</property>
+		<relationship name="folder">
+			<destination>{9ec65ce0-19bd-41eb-804a-d3004ab848e4}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{e57d62b8-f8d8-481b-9b69-def10e4e37b3}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{e57d62b8-f8d8-481b-9b69-def10e4e37b3}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Loop</value>
+			<value>Ending</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

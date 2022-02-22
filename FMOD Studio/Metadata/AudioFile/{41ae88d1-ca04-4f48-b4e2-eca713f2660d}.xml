@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{41ae88d1-ca04-4f48-b4e2-eca713f2660d}">
+		<property name="assetPath">
+			<value>clown_battle.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>102.05301587301587</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{254f9cbb-ca43-4add-b3ee-9f48e78ab406}</destination>
+		</relationship>
+	</object>
+</objects>

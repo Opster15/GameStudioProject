@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{ad09fade-a063-4e68-9485-1fa3b1cbe655}">
+		<property name="name">
+			<value>Dreamscape State</value>
+		</property>
+		<relationship name="folder">
+			<destination>{9ec65ce0-19bd-41eb-804a-d3004ab848e4}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{512be9ea-6f53-41f5-b143-9745e8df96c4}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{512be9ea-6f53-41f5-b143-9745e8df96c4}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>7</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>o_eerie</value>
+			<value>o_final</value>
+			<value>b_battle</value>
+			<value>b_midboss</value>
+			<value>b_boss</value>
+			<value>b_finalboss</value>
+			<value>b_finalboss2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+		<relationship name="automators">
+			<destination>{8d70213e-8396-4dd3-b068-8d67217cee80}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{8d70213e-8396-4dd3-b068-8d67217cee80}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>cursorPosition</value>
+		</property>
+	</object>
+</objects>
