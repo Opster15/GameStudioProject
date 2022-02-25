@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 845678343}
   - component: {fileID: 845678344}
   m_Layer: 0
-  m_Name: Minigame_Box_Dodge
+  m_Name: Bouncy_Balls
   m_TagString: Boarder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -465,13 +465,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_length: 5
   m_timeOutScore: 0
-  m_timer: 0
-  bullet: {fileID: 3364327095296568145, guid: 87af02134a1e2ad41a4e320367de51ed, type: 3}
+  bullet: {fileID: 3364327095296568145, guid: 511312b44a076c54ba5565f0230c7278, type: 3}
   spawnPoints:
   - {fileID: 1719737871}
   - {fileID: 800918171}
   - {fileID: 1235276610}
   canAttack: 0
+  m_point_gain: -0.1
+  m_starting_point: 1
+  m_attack_speed: 2
 --- !u!1 &1235276609
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,13 +825,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1888247747}
   - component: {fileID: 1888247750}
-  - component: {fileID: 1888247749}
   - component: {fileID: 1888247748}
   - component: {fileID: 1888247751}
   - component: {fileID: 1888247752}
+  - component: {fileID: 1888247749}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -842,8 +844,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888247746}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 0.14, y: 0.26, z: 1}
+  m_LocalPosition: {x: 0, y: -6.15, z: 0}
+  m_LocalScale: {x: 0.56746197, y: 0.0718926, z: 1}
   m_Children: []
   m_Father: {fileID: 845678342}
   m_RootOrder: 0
@@ -863,14 +865,14 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 5
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!70 &1888247749
-CapsuleCollider2D:
+  m_CollisionDetection: 1
+  m_Constraints: 6
+--- !u!61 &1888247749
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -882,9 +884,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0000009536743}
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.8051605, y: 8.53}
+    newSize: {x: 8.8051605, y: 8.53}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
   m_Size: {x: 8.8051605, y: 8.53}
-  m_Direction: 0
+  m_EdgeRadius: 0
 --- !u!212 &1888247750
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -11,9 +11,14 @@ namespace GSP.Minigames
 
         public bool canAttack;
 
+        public float m_point_gain;
+        public float m_starting_point;
+        public float m_attack_speed;
+
         public void Start()
         {
-            Invoke("ResetAttack", 1f);
+            Invoke("ResetAttack", 0.1f);
+            m_timeOutScore = m_starting_point;
         }
 
         protected override void Update()
@@ -35,14 +40,22 @@ namespace GSP.Minigames
 
             GameObject bulletClone = Instantiate(bullet, spawnPoints[y].transform.position, transform.rotation);
 
-            m_timeOutScore += 0.1f;
-
-            Invoke("ResetAttack", 1f);
+            Invoke("ResetAttack", m_attack_speed);
         }
 
         public void ResetAttack()
         {
             canAttack = true;
+        }
+
+        public void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.CompareTag("Bullet"))
+            {
+                m_timeOutScore += m_point_gain;
+                Destroy(collision.gameObject);
+            }
+
         }
     }
 }
