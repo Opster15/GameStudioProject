@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:Assets/Data/LUA/Action.meta
 guid: ebc4b3f3d9b80d94da76174b3b4d3659
+=======
+guid: 16e9bf95fdd9eb0449d04826843d6ccc
+>>>>>>> Stashed changes:Assets/Plugins/Sirenix/Odin Inspector/Config/Resources.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
