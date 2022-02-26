@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-namespace GPS.Battle
+﻿namespace GSP.Battle
 {
     /// <summary>
     /// An active move within the turn order.

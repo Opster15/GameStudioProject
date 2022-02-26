@@ -8,6 +8,9 @@ namespace GSP.Battle
     [Serializable]
     public class GameCharacter
     {
+        /// <summary>
+        /// The character's data.
+        /// </summary>
         private Character m_baseCharacter;
 
         /// <summary>
