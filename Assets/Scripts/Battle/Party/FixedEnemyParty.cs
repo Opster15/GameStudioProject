@@ -14,9 +14,9 @@ namespace GSP.Battle.Party
         /// </summary>
         [SerializeField] private List<Character> m_partyMembers;
         
-        public override Party GetParty()
+        public override GameParty GetParty()
         {
-            return new Party(m_partyMembers);
+            return new GameParty(m_partyMembers);
         }
     }
 }

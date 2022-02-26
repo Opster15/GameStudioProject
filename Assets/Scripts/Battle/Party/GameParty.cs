@@ -7,7 +7,7 @@ namespace GSP.Battle.Party
     /// A party of characters who can enter combat.
     /// </summary>
     [Serializable]
-    public class Party
+    public class GameParty
     {
         /// <summary>
         /// The party's members.
@@ -19,12 +19,12 @@ namespace GSP.Battle.Party
         /// </summary>
         public List<GameCharacter> PartyMembers => m_partyMembers;
 
-        public Party(List<GameCharacter> _partyMembers)
+        public GameParty(List<GameCharacter> _partyMembers)
         {
             m_partyMembers = _partyMembers;
         }
 
-        public Party(List<Character> _partyMembers)
+        public GameParty(List<Character> _partyMembers)
         {
             m_partyMembers = _partyMembers.Select(partyMember => new GameCharacter(partyMember)).ToList();
         }

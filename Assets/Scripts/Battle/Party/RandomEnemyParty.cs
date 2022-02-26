@@ -25,7 +25,7 @@ namespace GSP.Battle.Party
         /// <summary>
         /// Randomly populate the party with an amount of characters, based on their spawn weights.
         /// </summary>
-        public override Party GetParty()
+        public override GameParty GetParty()
         {
             // There is no need to roll a random party size if only one is available.
             var partySize = m_spawnSizes.Count == 1 ? m_spawnSizes[0].Value : WeightedRollInteger.GetRoll(m_spawnSizes, 1);
@@ -39,7 +39,7 @@ namespace GSP.Battle.Party
                 partyMembers.Add(spawn);
             }
 
-            return new Party(partyMembers);
+            return new GameParty(partyMembers);
         }
     }
 }

@@ -4,6 +4,6 @@ namespace GSP.Battle.Party
 {
     public abstract class EnemyPartyObject : ScriptableObject
     {
-        public abstract Party GetParty();
+        public abstract GameParty GetParty();
     }
 }
