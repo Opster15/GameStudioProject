@@ -4,11 +4,12 @@ using GSP.Util;
 using UnityEngine;
 namespace GSP.Battle.Party
 {
+    /// <summary>
+    /// An enemy party populated with random enemies from a list of possible spawns.
+    /// </summary>
     [CreateAssetMenu(fileName = "New Random Enemy Party", menuName = "GSP/Random Enemy Party")]
     public class RandomEnemyParty : EnemyParty
     {
-        
-        
         /// <summary>
         /// Every possible character that can be in the party, along with the weighted chance of picking them.
         /// </summary>
