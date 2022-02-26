@@ -8,6 +8,9 @@ namespace GSP.Battle.Party
     [CreateAssetMenu(fileName = "New Fixed Enemy Party", menuName = "GSP/Fixed Enemy Party")]
     public class FixedEnemyParty : EnemyParty
     {
+        /// <summary>
+        /// The party's members.
+        /// </summary>
         [SerializeField] private List<Character> m_partyMembers;
         
         public override List<Character> GetPartyMembers()

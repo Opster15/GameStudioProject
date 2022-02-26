@@ -21,7 +21,7 @@ namespace GSP.Battle.Party
         [SerializeField] private List<WeightedRollInteger> m_spawnSizes;
         
         /// <summary>
-        /// The final generated party.
+        /// The final generated party's members.
         /// </summary>
         private List<Character> m_partyMembers;
         
