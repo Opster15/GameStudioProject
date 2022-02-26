@@ -119,7 +119,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4664771393828922949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: -4.99, z: 0}
   m_LocalScale: {x: 0.14, y: 0.26, z: 1}
   m_Children: []
   m_Father: {fileID: 4664771394867297921}
@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 4664771394867297920}
   - component: {fileID: 4664771394867297935}
   m_Layer: 0
-  m_Name: MG_Pickup
+  m_Name: MG_Catch
   m_TagString: MG_Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

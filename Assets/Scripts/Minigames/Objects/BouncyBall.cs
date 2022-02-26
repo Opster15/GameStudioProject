@@ -24,7 +24,7 @@ namespace GSP.Minigames
 
             if (collision.gameObject.CompareTag("MG_Border_Kill"))
             {
-                GetComponentInParent<MG_Falling_Stuff>().ChangeScore();
+                GetComponentInParent<MG_Object_Spawner>().ChangeScore();
             }
         }
 

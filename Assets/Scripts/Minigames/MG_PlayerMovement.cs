@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GSP.Minigames
 {
-    public class MG_Player_Character : MonoBehaviour
+    public class MG_PlayerMovement : MonoBehaviour
     {
         InputManager inputManager;
         Rigidbody2D rb;

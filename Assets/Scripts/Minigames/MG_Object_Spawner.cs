@@ -4,8 +4,9 @@ using UnityEngine;
 
 namespace GSP.Minigames
 {
-    public class MG_Falling_Stuff : Minigame
+    public class MG_Object_Spawner : Minigame
     {
+        
         public GameObject m_spawnedObject;
         public GameObject m_player;
         public Transform[] spawnPoints;
@@ -39,6 +40,7 @@ namespace GSP.Minigames
             m_canAttack = false;
             int y = Random.Range(0, spawnPoints.Length);
 
+            //if you want the objects to spawn looking at the player set m_aimedObject true
             if (m_aimedObject)
             {
                 Vector2 lookDir = m_player.transform.position - spawnPoints[y].transform.position;
@@ -54,8 +56,6 @@ namespace GSP.Minigames
                 bulletClone.transform.parent = gameObject.transform;
             }
 
-            
-
             Invoke("ResetAttack", m_attack_speed);
         }
 
@@ -68,6 +68,5 @@ namespace GSP.Minigames
         {
             m_timeOutScore += m_point_gain;
         }
-
     }
 }
