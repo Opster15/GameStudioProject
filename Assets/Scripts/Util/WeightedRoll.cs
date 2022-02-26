@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
-namespace GSP
+namespace GSP.Util
 {
     /// <summary>
     /// A weighted chance to roll a specified value.
