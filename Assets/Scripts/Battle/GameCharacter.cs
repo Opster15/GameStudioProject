@@ -3,7 +3,7 @@ using UnityEngine;
 namespace GSP.Battle
 {
     /// <summary>
-    /// The in-game representation of a character.
+    /// An in-game "live" instance of a character.
     /// </summary>
     [Serializable]
     public class GameCharacter
@@ -31,9 +31,9 @@ namespace GSP.Battle
         public int CurrentHP => m_currentHP;
 
         /// <summary>
-        /// The in-game representation of a character.
+        /// The in-game "live" instance of a character.
         /// </summary>
-        /// <param name="_baseCharacter">The data representation of the character.</param>
+        /// <param name="_baseCharacter">The data for the character.</param>
         public GameCharacter(Character _baseCharacter)
         {
             m_maxHP = _baseCharacter.StatBlock.HP;

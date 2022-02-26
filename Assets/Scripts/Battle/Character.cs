@@ -2,6 +2,9 @@
 using UnityEngine;
 namespace GSP.Battle
 {
+    /// <summary>
+    /// The data for a character, including unchanging values such as stats and usable moves.
+    /// </summary>
     [CreateAssetMenu(fileName = "New Character", menuName = "GSP/Character")]
     public class Character : ScriptableObject
     {

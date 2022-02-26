@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 namespace GSP.Battle
 {
+    /// <summary>
+    /// The data for a move, including unchanging values and LUA script / minigame prefab references.
+    /// </summary>
     [CreateAssetMenu(fileName = "New Move", menuName = "GSP/Move")]
     public class Move : ScriptableObject
     {

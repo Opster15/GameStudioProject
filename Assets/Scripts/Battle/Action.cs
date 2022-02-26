@@ -4,7 +4,7 @@ using UnityEngine;
 namespace GPS.Battle
 {
     /// <summary>
-    /// The representation of a move within the turn order.
+    /// An active move within the turn order.
     /// </summary>
     public class Action
     {
