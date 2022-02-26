@@ -60,12 +60,10 @@ namespace GSP.Minigames
             if (!m_running || m_length < 0.0f) { return; }
         
             m_timer += Time.deltaTime;
-            if (m_timer >= m_length)
-            {
-                Debug.Log("AD");
-                Finish(m_timeOutScore);
-                m_running = false;
-            }
+            if (m_timer < m_length) { return; }
+            
+            Finish(m_timeOutScore);
+            m_running = false;
         }
 
         /// <summary>
