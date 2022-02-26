@@ -24,6 +24,11 @@ namespace GSP.Battle
         private int m_currentHP;
 
         /// <summary>
+        /// The character's data.
+        /// </summary>
+        public Character BaseCharacter => m_baseCharacter;
+
+        /// <summary>
         /// The character's maximum possible health.
         /// </summary>
         public int MaxHP => m_maxHP;
@@ -39,6 +44,8 @@ namespace GSP.Battle
         /// <param name="_baseCharacter">The data for the character.</param>
         public GameCharacter(Character _baseCharacter)
         {
+            m_baseCharacter = _baseCharacter;
+            
             m_maxHP = _baseCharacter.StatBlock.HP;
             m_currentHP = m_maxHP;
         }
