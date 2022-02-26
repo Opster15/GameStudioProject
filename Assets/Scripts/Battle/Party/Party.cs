@@ -1,19 +1,32 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 namespace GSP.Battle.Party
 {
     /// <summary>
-    /// A general party.
+    /// A party of characters who can enter combat.
     /// </summary>
-    public class PlayerParty : IParty
+    [Serializable]
+    public class Party
     {
         /// <summary>
         /// The party's members.
         /// </summary>
         private List<GameCharacter> m_partyMembers;
 
-        public List<GameCharacter> GetPartyMembers()
+        /// <summary>
+        /// The party's members.
+        /// </summary>
+        public List<GameCharacter> PartyMembers => m_partyMembers;
+
+        public Party(List<GameCharacter> _partyMembers)
         {
-            return m_partyMembers;
+            m_partyMembers = _partyMembers;
+        }
+
+        public Party(List<Character> _partyMembers)
+        {
+            m_partyMembers = _partyMembers.Select(partyMember => new GameCharacter(partyMember)).ToList();
         }
     }
 }

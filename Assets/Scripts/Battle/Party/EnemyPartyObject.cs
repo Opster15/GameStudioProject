@@ -2,8 +2,8 @@
 using UnityEngine;
 namespace GSP.Battle.Party
 {
-    public abstract class EnemyParty : ScriptableObject, IParty
+    public abstract class EnemyPartyObject : ScriptableObject
     {
-        public abstract List<GameCharacter> GetPartyMembers();
+        public abstract Party GetParty();
     }
 }
