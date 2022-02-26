@@ -2,16 +2,16 @@
 namespace GSP.Battle.Party
 {
     /// <summary>
-    /// The player's party.
+    /// A general party.
     /// </summary>
     public class PlayerParty : IParty
     {
         /// <summary>
         /// The party's members.
         /// </summary>
-        private List<Character> m_partyMembers;
+        private List<GameCharacter> m_partyMembers;
 
-        public List<Character> GetPartyMembers()
+        public List<GameCharacter> GetPartyMembers()
         {
             return m_partyMembers;
         }
