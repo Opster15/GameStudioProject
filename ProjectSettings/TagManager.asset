@@ -4,8 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Boarder
   - Bullet
+  - Ball
+  - MG_Border_Kill
+  - MG_Border
   layers:
   - Default
   - TransparentFX
@@ -15,7 +17,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - MG_Bullet
   - 
   - 
   - 

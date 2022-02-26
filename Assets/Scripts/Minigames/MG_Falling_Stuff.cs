@@ -6,10 +6,11 @@ namespace GSP.Minigames
 {
     public class MG_Falling_Stuff : Minigame
     {
-        public GameObject bullet;
+        public GameObject m_spawnedObject;
+        public GameObject m_player;
         public Transform[] spawnPoints;
 
-        public bool canAttack;
+        public bool m_canAttack, m_aimedObject;
 
         public float m_point_gain;
         public float m_starting_point;
@@ -27,35 +28,46 @@ namespace GSP.Minigames
 
             if(!Running) { return; }
 
-            if (canAttack)
+            if (m_canAttack)
             {
-                Attack();
+                Spawn();
             }
         }
 
-        public void Attack()
+        public void Spawn()
         {
-            canAttack = false;
+            m_canAttack = false;
             int y = Random.Range(0, spawnPoints.Length);
 
-            GameObject bulletClone = Instantiate(bullet, spawnPoints[y].transform.position, transform.rotation);
+            if (m_aimedObject)
+            {
+                Vector2 lookDir = m_player.transform.position - spawnPoints[y].transform.position;
+                float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
+                spawnPoints[y].rotation = Quaternion.Euler(0, 0, angle);
+
+                GameObject bulletClone = Instantiate(m_spawnedObject, spawnPoints[y].transform.position, spawnPoints[y].transform.rotation);
+                bulletClone.transform.parent = gameObject.transform;
+            }
+            else
+            {
+                GameObject bulletClone = Instantiate(m_spawnedObject, spawnPoints[y].transform.position, transform.rotation);
+                bulletClone.transform.parent = gameObject.transform;
+            }
+
+            
 
             Invoke("ResetAttack", m_attack_speed);
         }
 
         public void ResetAttack()
         {
-            canAttack = true;
+            m_canAttack = true;
         }
 
-        public void OnTriggerEnter2D(Collider2D collision)
+        public void ChangeScore()
         {
-            if (collision.CompareTag("Bullet"))
-            {
-                m_timeOutScore += m_point_gain;
-                Destroy(collision.gameObject);
-            }
-
+            m_timeOutScore += m_point_gain;
         }
+
     }
 }

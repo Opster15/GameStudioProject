@@ -1,84 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8461347440029161455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/Battle/Dreamscape/bgm_dreamscape_finalboss_0
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/Battle/Dreamscape/bgm_dreamscape_finalboss_0
-  Guid:
-    Data1: 1897109300
-    Data2: 1122305271
-    Data3: -2097481041
-    Data4: -594987115
-  Banks:
-  - {fileID: -3111957466407040884}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 144315
---- !u!114 &-8357069604781339650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Dialogue/sfx_dialogue0
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Dialogue/sfx_dialogue0
-  Guid:
-    Data1: -2080250096
-    Data2: 1265817710
-    Data3: 208055685
-    Data4: 1076767096
-  Banks:
-  - {fileID: -3111957466407040884}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-8152584215707293592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm_dreamscape_final_layer/Music Intro State
-  m_EditorClassIdentifier: 
-  Name: Music Intro State
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 2596481909
-    data2: 3760819051
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-6189386531701087706
+--- !u!114 &-8863631171099411592
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,289 +19,16 @@ MonoBehaviour:
     Data3: 1117890701
     Data4: -1416015782
   Banks:
-  - {fileID: -3111957466407040884}
+  - {fileID: -2480174321549355154}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 656165859308717187}
+  - {fileID: 4431439990999834085}
   MinDistance: 0
   MaxDistance: 0
   Length: 131871
---- !u!114 &-4908522565725141466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD Studio/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-<<<<<<< Updated upstream
-  lastModified: 637813803908830601
-=======
-  lastModified: 637813981084391554
->>>>>>> Stashed changes
-  FileSizes:
-  - Name: Desktop
-    Value: 1630
-  Exists: 1
---- !u!114 &-3296908241186865383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/Battle/bgm_lucille_battle
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/Battle/bgm_lucille_battle
-  Guid:
-    Data1: -1789653023
-    Data2: 1085381623
-    Data3: 153687987
-    Data4: 1201045903
-  Banks:
-  - {fileID: -3111957466407040884}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 147336
---- !u!114 &-3111957466407040884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD Studio/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-<<<<<<< Updated upstream
-  lastModified: 637813803908810334
-=======
-  lastModified: 637813981084371600
->>>>>>> Stashed changes
-  FileSizes:
-  - Name: Desktop
-    Value: 19627264
-  Exists: 1
---- !u!114 &-3019893172082970266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/Battle/bgm_default_battle
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/Battle/bgm_default_battle
-  Guid:
-    Data1: -228696512
-    Data2: 1246655316
-    Data3: 1288592060
-    Data4: -540458679
-  Banks:
-  - {fileID: -3111957466407040884}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 139034
---- !u!114 &-2982019073632367797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/Overworld/Dreamscape/bgm_dreamscape_final_layer
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/Overworld/Dreamscape/bgm_dreamscape_final_layer
-  Guid:
-    Data1: -1120075766
-    Data2: 1233369418
-    Data3: 1400479135
-    Data4: 61322513
-  Banks:
-  - {fileID: -3111957466407040884}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -8152584215707293592}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 468000
---- !u!114 &-413866256920903449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/Battle/Dreamscape/bgm_dreamscape_boss
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/Battle/Dreamscape/bgm_dreamscape_boss
-  Guid:
-    Data1: 898232581
-    Data2: 1124846809
-    Data3: -1255927647
-    Data4: -1040931970
-  Banks:
-  - {fileID: -3111957466407040884}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 104666
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -4908522565725141466}
-  - {fileID: -3111957466407040884}
-  EditorEvents:
-  - {fileID: 6667125706964175457}
-  - {fileID: -413866256920903449}
-  - {fileID: -2982019073632367797}
-  - {fileID: -8357069604781339650}
-  - {fileID: 6034114447994966733}
-  - {fileID: 5117501526622693130}
-  - {fileID: -8461347440029161455}
-  - {fileID: -3019893172082970266}
-  - {fileID: 4079575941491994902}
-  - {fileID: 5500796703584128627}
-  - {fileID: 459148549712157960}
-  - {fileID: -6189386531701087706}
-  - {fileID: 4955220926646719534}
-  - {fileID: -3296908241186865383}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -3111957466407040884}
-  StringsBanks:
-  - {fileID: -4908522565725141466}
-<<<<<<< Updated upstream
-  cacheTime: 637813803908830601
-=======
-  cacheTime: 637813981084391554
->>>>>>> Stashed changes
-  cacheVersion: 10
---- !u!114 &459148549712157960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/Battle/Dreamscape/bgm_dreamscape_finalboss_1
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/Battle/Dreamscape/bgm_dreamscape_finalboss_1
-  Guid:
-    Data1: 904469836
-    Data2: 1313803619
-    Data3: -1410494068
-    Data4: -2075968299
-  Banks:
-  - {fileID: -3111957466407040884}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 165278
---- !u!114 &656165859308717187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm_clown_boss/Clown Boss Section
-  m_EditorClassIdentifier: 
-  Name: Clown Boss Section
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2203472194
-    data2: 1928630819
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &1424272516552119219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm_dreamscape/Music Intro State
-  m_EditorClassIdentifier: 
-  Name: Music Intro State
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 2596481909
-    data2: 3760819051
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &4079575941491994902
+--- !u!114 &-7300958990746264941
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -398,7 +47,7 @@ MonoBehaviour:
     Data3: -2092046151
     Data4: 341019400
   Banks:
-  - {fileID: -3111957466407040884}
+  - {fileID: -2480174321549355154}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -406,31 +55,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 95579
---- !u!114 &4909484496372885943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm_dreamscape_eerie/Music Intro State
-  m_EditorClassIdentifier: 
-  Name: Music Intro State
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 2596481909
-    data2: 3760819051
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &4955220926646719534
+--- !u!114 &-6438376633578807870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -440,106 +65,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Dialogue/sfx_wow
+  m_Name: event:/BGM/Battle/Dreamscape/bgm_dreamscape_boss
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Dialogue/sfx_wow
+  Path: event:/BGM/Battle/Dreamscape/bgm_dreamscape_boss
   Guid:
-    Data1: 871071841
-    Data2: 1316485574
-    Data3: -1207109746
-    Data4: -516677234
+    Data1: 898232581
+    Data2: 1124846809
+    Data3: -1255927647
+    Data4: -1040931970
   Banks:
-  - {fileID: -3111957466407040884}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &5117501526622693130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/Battle/bgm_clown_battle
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/Battle/bgm_clown_battle
-  Guid:
-    Data1: -790226646
-    Data2: 1237802913
-    Data3: -901749084
-    Data4: 520542162
-  Banks:
-  - {fileID: -3111957466407040884}
+  - {fileID: -2480174321549355154}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 95696
---- !u!114 &5500796703584128627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/Battle/bgm_inceraph_battle
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/Battle/bgm_inceraph_battle
-  Guid:
-    Data1: 2003682889
-    Data2: 1234213349
-    Data3: 957013911
-    Data4: -2011020617
-  Banks:
-  - {fileID: -3111957466407040884}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 145454
---- !u!114 &6034114447994966733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/Overworld/Dreamscape/bgm_dreamscape_eerie
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/Overworld/Dreamscape/bgm_dreamscape_eerie
-  Guid:
-    Data1: -171482090
-    Data2: 1191085711
-    Data3: -1699879269
-    Data4: 1737766986
-  Banks:
-  - {fileID: -3111957466407040884}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 4909484496372885943}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 193340
---- !u!114 &6444194856350302124
+  Length: 104666
+--- !u!114 &-6046495602772337057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -563,7 +106,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &6667125706964175457
+--- !u!114 &-5391479112578541244
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -582,13 +125,458 @@ MonoBehaviour:
     Data3: 280636327
     Data4: 1067094976
   Banks:
-  - {fileID: -3111957466407040884}
+  - {fileID: -2480174321549355154}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 1424272516552119219}
-  - {fileID: 6444194856350302124}
+  - {fileID: -2923324189285034219}
+  - {fileID: -6046495602772337057}
   MinDistance: 0
   MaxDistance: 0
   Length: 56000
+--- !u!114 &-4386577801687542857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/Battle/Dreamscape/bgm_dreamscape_finalboss_1
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/Battle/Dreamscape/bgm_dreamscape_finalboss_1
+  Guid:
+    Data1: 904469836
+    Data2: 1313803619
+    Data3: -1410494068
+    Data4: -2075968299
+  Banks:
+  - {fileID: -2480174321549355154}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 165278
+--- !u!114 &-4191161180975108757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/Battle/bgm_default_battle
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/Battle/bgm_default_battle
+  Guid:
+    Data1: -228696512
+    Data2: 1246655316
+    Data3: 1288592060
+    Data4: -540458679
+  Banks:
+  - {fileID: -2480174321549355154}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 139034
+--- !u!114 &-4093768351469089610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Dialogue/sfx_dialogue0
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Dialogue/sfx_dialogue0
+  Guid:
+    Data1: -2080250096
+    Data2: 1265817710
+    Data3: 208055685
+    Data4: 1076767096
+  Banks:
+  - {fileID: -2480174321549355154}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-2923324189285034219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bgm_dreamscape/Music Intro State
+  m_EditorClassIdentifier: 
+  Name: Music Intro State
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 2596481909
+    data2: 3760819051
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-2480174321549355154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD Studio/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637811618678383176
+  FileSizes:
+  - Name: Desktop
+    Value: 19627264
+  Exists: 1
+--- !u!114 &-2002194370877455889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/Overworld/Dreamscape/bgm_dreamscape_eerie
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/Overworld/Dreamscape/bgm_dreamscape_eerie
+  Guid:
+    Data1: -171482090
+    Data2: 1191085711
+    Data3: -1699879269
+    Data4: 1737766986
+  Banks:
+  - {fileID: -2480174321549355154}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1607674759162107867}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 193340
+--- !u!114 &-1607674759162107867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bgm_dreamscape_eerie/Music Intro State
+  m_EditorClassIdentifier: 
+  Name: Music Intro State
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 2596481909
+    data2: 3760819051
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-1140375349739391349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/Battle/bgm_inceraph_battle
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/Battle/bgm_inceraph_battle
+  Guid:
+    Data1: 2003682889
+    Data2: 1234213349
+    Data3: 957013911
+    Data4: -2011020617
+  Banks:
+  - {fileID: -2480174321549355154}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 145454
+--- !u!114 &-752506787501877496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bgm_dreamscape_final_layer/Music Intro State
+  m_EditorClassIdentifier: 
+  Name: Music Intro State
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 2596481909
+    data2: 3760819051
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 1220919277234559579}
+  - {fileID: -2480174321549355154}
+  EditorEvents:
+  - {fileID: -5391479112578541244}
+  - {fileID: -6438376633578807870}
+  - {fileID: 3773111449615490563}
+  - {fileID: -4093768351469089610}
+  - {fileID: -2002194370877455889}
+  - {fileID: 3570443823188479252}
+  - {fileID: 4668479545082230943}
+  - {fileID: -4191161180975108757}
+  - {fileID: -7300958990746264941}
+  - {fileID: -1140375349739391349}
+  - {fileID: -4386577801687542857}
+  - {fileID: -8863631171099411592}
+  - {fileID: 8702477132854603515}
+  - {fileID: 1522128583022456109}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -2480174321549355154}
+  StringsBanks:
+  - {fileID: 1220919277234559579}
+  cacheTime: 637811618678403177
+  cacheVersion: 10
+--- !u!114 &1220919277234559579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD Studio/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637811618678403177
+  FileSizes:
+  - Name: Desktop
+    Value: 1630
+  Exists: 1
+--- !u!114 &1522128583022456109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/Battle/bgm_lucille_battle
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/Battle/bgm_lucille_battle
+  Guid:
+    Data1: -1789653023
+    Data2: 1085381623
+    Data3: 153687987
+    Data4: 1201045903
+  Banks:
+  - {fileID: -2480174321549355154}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 147336
+--- !u!114 &3570443823188479252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/Battle/bgm_clown_battle
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/Battle/bgm_clown_battle
+  Guid:
+    Data1: -790226646
+    Data2: 1237802913
+    Data3: -901749084
+    Data4: 520542162
+  Banks:
+  - {fileID: -2480174321549355154}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 95696
+--- !u!114 &3773111449615490563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/Overworld/Dreamscape/bgm_dreamscape_final_layer
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/Overworld/Dreamscape/bgm_dreamscape_final_layer
+  Guid:
+    Data1: -1120075766
+    Data2: 1233369418
+    Data3: 1400479135
+    Data4: 61322513
+  Banks:
+  - {fileID: -2480174321549355154}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -752506787501877496}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 468000
+--- !u!114 &4431439990999834085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bgm_clown_boss/Clown Boss Section
+  m_EditorClassIdentifier: 
+  Name: Clown Boss Section
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2203472194
+    data2: 1928630819
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &4668479545082230943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/Battle/Dreamscape/bgm_dreamscape_finalboss_0
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/Battle/Dreamscape/bgm_dreamscape_finalboss_0
+  Guid:
+    Data1: 1897109300
+    Data2: 1122305271
+    Data3: -2097481041
+    Data4: -594987115
+  Banks:
+  - {fileID: -2480174321549355154}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 144315
+--- !u!114 &8702477132854603515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Dialogue/sfx_wow
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Dialogue/sfx_wow
+  Guid:
+    Data1: 871071841
+    Data2: 1316485574
+    Data3: -1207109746
+    Data4: -516677234
+  Banks:
+  - {fileID: -2480174321549355154}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
