@@ -19,7 +19,6 @@ namespace GSP.Minigames
         public void Start()
         {
             Invoke("ResetAttack", 0.1f);
-            m_timeOutScore = m_starting_point;
         }
 
         protected override void Update()
