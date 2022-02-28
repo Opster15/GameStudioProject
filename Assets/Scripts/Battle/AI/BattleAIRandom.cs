@@ -13,7 +13,7 @@ namespace GSP.Battle.AI
             var move = character.Moveset[Random.Range(0, character.Moveset.Count)];
             var target = _opposingParty.PartyMembers[Random.Range(0, _opposingParty.PartyMembers.Count)];
 
-            return new Action(move, target);
+            return new Action(move, _party.PartyMembers[_characterID], target);
         }
     }
 }

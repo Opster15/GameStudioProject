@@ -54,7 +54,7 @@ namespace GSP.Battle.Controller
         {
             if(m_selectedPartyMember < 0 || m_selectedMove < 0) { return; }
 
-            m_selectedAction = new Action(m_party.PartyMembers[m_selectedPartyMember].Moveset[m_selectedMove], m_opposingParty.PartyMembers[_targetID]);
+            m_selectedAction = new Action(m_party.PartyMembers[m_selectedPartyMember].Moveset[m_selectedMove], m_party.PartyMembers[m_selectedPartyMember], m_opposingParty.PartyMembers[_targetID]);
 
             m_selectedPartyMember = -1;
             m_selectedMove = -1;
