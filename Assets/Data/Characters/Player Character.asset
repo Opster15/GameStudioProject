@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Player Character
   m_EditorClassIdentifier: 
   m_name: Player Character
+  m_statBlock:
+    m_HP: 50
+    m_speed: 5
   m_moveset:
   - {fileID: 11400000, guid: c29cdcfb1a97f424c9142f012a3dc8e7, type: 2}
   - {fileID: 11400000, guid: 84912d045a64c134fb37cbc5fa34a475, type: 2}

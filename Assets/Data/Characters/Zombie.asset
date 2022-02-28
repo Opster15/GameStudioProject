@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Zombie
   m_EditorClassIdentifier: 
   m_name: Zombie
+  m_statBlock:
+    m_HP: 20
+    m_speed: 5
   m_moveset:
   - {fileID: 11400000, guid: 84912d045a64c134fb37cbc5fa34a475, type: 2}
   m_AI: {fileID: 11400000, guid: 0a3abbff9dee01543b009c3a54d8dcb5, type: 2}

@@ -17,7 +17,7 @@ namespace GSP.Battle
         /// <summary>
         /// The character's stat values.
         /// </summary>
-        private StatBlock m_statBlock;
+        [SerializeField] private StatBlock m_statBlock;
 
         /// <summary>
         /// All moves the character can select in the menu.
