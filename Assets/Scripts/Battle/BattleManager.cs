@@ -6,14 +6,16 @@ public class BattleManager : MonoBehaviour
 {
     private GameParty[] m_parties;
 
+    //TODO: Create battle
+    [SerializeField] private PartyObject m_A;
+    [SerializeField] private PartyObject m_B;
+
     private void Awake()
     {
         m_parties = new GameParty[2];
     }
 
-    [SerializeField] private EnemyPartyObject m_A;
-    [SerializeField] private EnemyPartyObject m_B;
-
+    //TODO: Create battle
     private void Start()
     {
         StartBattle(m_A.GetParty(), m_B.GetParty());
@@ -46,7 +48,6 @@ public class BattleManager : MonoBehaviour
         {
             _party.BattleController.SelectPartyMember(i);
             yield return new WaitUntil(() => _party.BattleController.GetChosenAction() != null);
-            Debug.Log(_party.BattleController.GetChosenAction().Move.Name);
         }
     }
 }

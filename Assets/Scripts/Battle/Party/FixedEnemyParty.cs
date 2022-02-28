@@ -7,7 +7,7 @@ namespace GSP.Battle.Party
     /// A pre-set enemy party.
     /// </summary>
     [CreateAssetMenu(fileName = "New Fixed Enemy Party", menuName = "GSP/Fixed Enemy Party")]
-    public class FixedEnemyParty : EnemyPartyObject
+    public class FixedEnemyParty : PartyObject
     {
         /// <summary>
         /// The party's members.

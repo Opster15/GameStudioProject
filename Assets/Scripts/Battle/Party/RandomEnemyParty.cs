@@ -9,7 +9,7 @@ namespace GSP.Battle.Party
     /// An enemy party populated with random enemies from a list of possible spawns.
     /// </summary>
     [CreateAssetMenu(fileName = "New Random Enemy Party", menuName = "GSP/Random Enemy Party")]
-    public class RandomEnemyParty : EnemyPartyObject
+    public class RandomEnemyParty : PartyObject
     {
         /// <summary>
         /// Every possible character that can be in the party, along with the weighted chance of picking them.
