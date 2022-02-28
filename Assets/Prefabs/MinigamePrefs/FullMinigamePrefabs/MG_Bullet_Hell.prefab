@@ -322,6 +322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_length: 5
   m_timeOutScore: 0
+  m_pointGain: 0
   m_spawnedObject: {fileID: 3998164130285785523, guid: 23d48404ab3561046ba7ce5238e05f0f,
     type: 3}
   m_player: {fileID: 3237020173492321746}
@@ -332,7 +333,6 @@ MonoBehaviour:
   - {fileID: 8193641594583264929}
   m_canAttack: 0
   m_aimedObject: 1
-  m_point_gain: -0.1
   m_starting_point: 1
   m_attack_speed: 0.3
 --- !u!1001 &1385923200813347089
@@ -401,6 +401,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Top_Down_Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139879876625741641, guid: e626abfc272504245a0eddeffa5c05e9,
+        type: 3}
+      propertyPath: m_moveSpeedY
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e626abfc272504245a0eddeffa5c05e9, type: 3}

@@ -7,7 +7,7 @@ namespace GSP.Minigames
     public class MG_Pickup_Object : MonoBehaviour
     {
         
-        public bool scoreOnPlayerHit,scoreOnBorderHit;
+        public bool scoreOnPlayerHit,scoreOnBorderHit,scoreOnBulletHit;
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
@@ -23,6 +23,14 @@ namespace GSP.Minigames
             if (collision.CompareTag("Player"))
             {
                 if (scoreOnPlayerHit)
+                {
+                    GetComponentInParent<Minigame>().ChangeScore();
+                }
+                Destroy(gameObject);
+            }
+            if (collision.CompareTag("Bullet"))
+            {
+                if (scoreOnBulletHit)
                 {
                     GetComponentInParent<Minigame>().ChangeScore();
                 }
