@@ -255,7 +255,11 @@ MonoBehaviour:
   Path: FMOD Studio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< HEAD
   lastModified: 637816577417117411
+=======
+  lastModified: 637816595639305858
+>>>>>>> f30753b304a672b2fd786a7878f88de6213a5961
   FileSizes:
   - Name: Desktop
     Value: 19627264
@@ -398,7 +402,11 @@ MonoBehaviour:
   - {fileID: -2480174321549355154}
   StringsBanks:
   - {fileID: 1220919277234559579}
+<<<<<<< HEAD
   cacheTime: 637816577417127403
+=======
+  cacheTime: 637816595639305858
+>>>>>>> f30753b304a672b2fd786a7878f88de6213a5961
   cacheVersion: 10
 --- !u!114 &1220919277234559579
 MonoBehaviour:
@@ -415,7 +423,11 @@ MonoBehaviour:
   Path: FMOD Studio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< HEAD
   lastModified: 637816577417127403
+=======
+  lastModified: 637816595639305858
+>>>>>>> f30753b304a672b2fd786a7878f88de6213a5961
   FileSizes:
   - Name: Desktop
     Value: 1630
