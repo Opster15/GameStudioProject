@@ -23,7 +23,7 @@ MonoBehaviour:
     m_weight: 1
   m_spawnSizes:
   - m_value: 1
-    m_weight: 50
+    m_weight: 20
   - m_value: 2
     m_weight: 70
   - m_value: 3

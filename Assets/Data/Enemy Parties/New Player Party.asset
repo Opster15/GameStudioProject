@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e68c9bdbdff45779c820a22871d461a, type: 3}
-  m_Name: Rock Golem
+  m_Script: {fileID: 11500000, guid: 999687300b64a6e44bd46714f9f2bcff, type: 3}
+  m_Name: New Player Party
   m_EditorClassIdentifier: 
-  m_name: Rock Golem
-  m_moveset:
-  - {fileID: 11400000, guid: 84912d045a64c134fb37cbc5fa34a475, type: 2}
-  m_AI: {fileID: 11400000, guid: 0a3abbff9dee01543b009c3a54d8dcb5, type: 2}
+  m_partyMembers:
+  - {fileID: 11400000, guid: ef5f64dd729fabb4e8618e6ef2939580, type: 2}
+  - {fileID: 11400000, guid: ef5f64dd729fabb4e8618e6ef2939580, type: 2}
