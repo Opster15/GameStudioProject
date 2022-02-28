@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
+using GSP.Battle.Controller;
 using GSP.Util;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -39,7 +38,7 @@ namespace GSP.Battle.Party
                 partyMembers.Add(spawn);
             }
 
-            return new GameParty(partyMembers);
+            return new GameParty(partyMembers, new EnemyBattleController());
         }
     }
 }

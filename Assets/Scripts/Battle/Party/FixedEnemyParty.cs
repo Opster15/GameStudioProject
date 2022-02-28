@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
+using GSP.Battle.Controller;
 using UnityEngine;
 namespace GSP.Battle.Party
 {
@@ -16,7 +16,7 @@ namespace GSP.Battle.Party
         
         public override GameParty GetParty()
         {
-            return new GameParty(m_partyMembers);
+            return new GameParty(m_partyMembers, new EnemyBattleController());
         }
     }
 }
