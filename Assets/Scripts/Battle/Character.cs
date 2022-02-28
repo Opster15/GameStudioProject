@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using GSP.Battle.AI;
 using UnityEngine;
 namespace GSP.Battle
 {
@@ -24,6 +25,11 @@ namespace GSP.Battle
         [SerializeField] private List<Move> m_moveset;
 
         /// <summary>
+        /// The character's AI, for selecting moves in battle.
+        /// </summary>
+        [SerializeField] private BattleAIBase m_AI;
+
+        /// <summary>
         /// The character's name.
         /// </summary>
         public string Name => m_name;
@@ -37,5 +43,10 @@ namespace GSP.Battle
         /// All moves the character can select in the menu.
         /// </summary>
         public List<Move> Moveset => m_moveset;
+
+        /// <summary>
+        /// The character's AI, for selecting moves in battle.
+        /// </summary>
+        public BattleAIBase AI => m_AI;
     }
 }

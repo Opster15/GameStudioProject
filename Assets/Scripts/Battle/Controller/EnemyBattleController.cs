@@ -3,24 +3,35 @@ namespace GSP.Battle.Controller
 {
     public class EnemyBattleController : IBattleController
     {
+        /// <summary>
+        /// The party to control.
+        /// </summary>
         private GameParty m_party;
 
-        private Move m_selectedMove;
+        /// <summary>
+        /// The opponent's party.
+        /// </summary>
+        private GameParty m_opposingParty;
+
+        /// <summary>
+        /// The currently selected move, as an action.
+        /// </summary>
+        private Action m_selectedAction;
 
         public void SetParty(GameParty _party)
         {
             m_party = _party;
         }
 
-        public void SelectPartyMember(int _partyMember)
+        public void SetOpposingParty(GameParty _opposingParty)
         {
-            m_selectedMove = m_party.PartyMembers[_partyMember].BaseCharacter.Moveset[0];
+            m_opposingParty = _opposingParty;
         }
 
-        public bool IsMoveChosen()
-            => m_selectedMove != null;
+        public void SelectPartyMember(int _partyMember)
+            => m_selectedAction = m_party.PartyMembers[_partyMember].AI.SelectAction(_partyMember, m_party, m_opposingParty);
 
-        public Move GetChosenMove()
-            => m_selectedMove;
+        public Action GetChosenAction()
+            => m_selectedAction;
     }
 }

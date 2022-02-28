@@ -11,23 +11,23 @@ namespace GSP.Battle.Controller
         /// </summary>
         /// <param name="_party">The party to control the actions of.</param>
         void SetParty(GameParty _party);
+
+        /// <summary>
+        /// Set the opponent's party.
+        /// </summary>
+        /// <param name="_opposingParty"></param>
+        void SetOpposingParty(GameParty _opposingParty);
         
         /// <summary>
         /// Choose a party member to select the actions for.
         /// </summary>
         /// <param name="_partyMember">The index of the party member.</param>
         void SelectPartyMember(int _partyMember);
-        
-        /// <summary>
-        /// Returns whether a move has been selected for the current party member.
-        /// </summary>
-        /// <returns>Whether a move has been selected.</returns>
-        bool IsMoveChosen();
 
         /// <summary>
         /// Return the selected move.
         /// </summary>
-        /// <returns>The selected move.</returns>
-        Move GetChosenMove();
+        /// <returns>The selected move, as an action.</returns>
+        Action GetChosenAction();
     }
 }

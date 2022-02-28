@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using GSP.Battle.AI;
 using UnityEngine;
 namespace GSP.Battle
 {
@@ -24,9 +26,9 @@ namespace GSP.Battle
         private int m_currentHP;
 
         /// <summary>
-        /// The character's data.
+        /// The character's name.
         /// </summary>
-        public Character BaseCharacter => m_baseCharacter;
+        public string Name => m_baseCharacter.Name;
 
         /// <summary>
         /// The character's maximum possible health.
@@ -37,6 +39,21 @@ namespace GSP.Battle
         /// The character's current health.
         /// </summary>
         public int CurrentHP => m_currentHP;
+
+        /// <summary>
+        /// The character's stat values.
+        /// </summary>
+        public StatBlock StatBlock => m_baseCharacter.StatBlock;
+
+        /// <summary>
+        /// All moves the character can select in the menu.
+        /// </summary>
+        public List<Move> Moveset => m_baseCharacter.Moveset;
+
+        /// <summary>
+        /// The character's AI, for selecting moves in battle.
+        /// </summary>
+        public BattleAIBase AI => m_baseCharacter.AI;
 
         /// <summary>
         /// The in-game "live" instance of a character.
