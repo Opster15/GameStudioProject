@@ -9,6 +9,10 @@ namespace GSP.Battle
         private Move m_move;
 
         private List<GameCharacter> m_targets;
+
+        public Move Move => m_move;
+
+        public List<GameCharacter> Targets => m_targets;
         
         public Action(Move _move, List<GameCharacter> _targets)
         {

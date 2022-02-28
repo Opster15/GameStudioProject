@@ -30,7 +30,7 @@ public class BattleManager : MonoBehaviour
     private IEnumerator Turn()
     {
         StartTurn();
-        for (var i = 0; i < m_parties.Length; i++) { yield return ChooseMoves(m_parties[m_parties.Length - i - 1], m_parties[m_parties.Length]); }
+        for (var i = 0; i < m_parties.Length; i++) { yield return ChooseMoves(m_parties[m_parties.Length - i - 1], m_parties[i]); }
     }
 
     private void StartTurn()
@@ -40,10 +40,13 @@ public class BattleManager : MonoBehaviour
 
     private IEnumerator ChooseMoves(GameParty _party, GameParty _opposingParty)
     {
+        Debug.Log("Party Moves Start");
+        _party.BattleController.SetOpposingParty(_opposingParty);
         for (var i = 0; i < _party.PartyMembers.Count; i++)
         {
             _party.BattleController.SelectPartyMember(i);
             yield return new WaitUntil(() => _party.BattleController.GetChosenAction() != null);
+            Debug.Log(_party.BattleController.GetChosenAction().Move.Name);
         }
     }
 }

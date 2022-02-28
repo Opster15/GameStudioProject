@@ -25,7 +25,7 @@ MonoBehaviour:
   - m_value: 1
     m_weight: 50
   - m_value: 2
-    m_weight: 60
+    m_weight: 70
   - m_value: 3
     m_weight: 30
   - m_value: 4
