@@ -13,7 +13,6 @@ namespace GSP.Minigames
 
         public bool m_canAttack, m_aimedObject;
 
-        public float m_starting_point;
         public float m_attack_speed;
 
         public void Start()

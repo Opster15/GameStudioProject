@@ -86,6 +86,7 @@ namespace GSP.Minigames
                 Debug.Log(m_timeOutScore);
                 Finish(m_timeOutScore);
                 m_running = false;
+                Destroy(gameObject);
             }
         }
 
