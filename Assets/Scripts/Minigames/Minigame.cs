@@ -24,6 +24,11 @@ namespace GSP.Minigames
         [SerializeField] protected float m_timeOutScore = 0.0f;
 
         /// <summary>
+        /// Value added to the TimeOutScore
+        /// </summary>
+        [SerializeField] protected float m_pointGain;
+
+        /// <summary>
         /// The current time spent in the minigame.
         /// </summary>
         private float m_timer;
@@ -47,6 +52,11 @@ namespace GSP.Minigames
         /// <summary>
         /// The current time spent in the minigame, from 0.0 to 1.0.
         /// </summary>
+        public float PointGain => m_pointGain;
+
+        /// <summary>
+        /// Value added to the TimeOutScore
+        /// </summary>
         public float TimeTaken => Mathf.Clamp(m_timer / m_length, 0.0f, 1.0f);
 
         protected virtual void Awake()
@@ -66,6 +76,11 @@ namespace GSP.Minigames
                 Finish(m_timeOutScore);
                 m_running = false;
             }
+        }
+
+        public virtual void ChangeScore()
+        {
+            m_timeOutScore += m_pointGain;
         }
 
         /// <summary>

@@ -15,7 +15,7 @@ namespace GSP.Minigames
             {
                 if (scoreOnBorderHit)
                 {
-                    GetComponentInParent<MG_Object_Spawner>().ChangeScore();
+                    GetComponentInParent<Minigame>().ChangeScore();
                 }
                 Destroy(gameObject);
             }
@@ -24,7 +24,7 @@ namespace GSP.Minigames
             {
                 if (scoreOnPlayerHit)
                 {
-                    GetComponentInParent<MG_Object_Spawner>().ChangeScore();
+                    GetComponentInParent<Minigame>().ChangeScore();
                 }
                 Destroy(gameObject);
             }

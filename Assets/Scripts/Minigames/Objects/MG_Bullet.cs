@@ -17,7 +17,7 @@ namespace GSP.Minigames
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                GetComponentInParent<MG_Object_Spawner>().ChangeScore();
+                GetComponentInParent<Minigame>().ChangeScore();
                 Destroy(gameObject);
             }
 

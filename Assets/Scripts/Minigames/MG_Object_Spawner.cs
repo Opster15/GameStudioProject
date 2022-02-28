@@ -13,7 +13,6 @@ namespace GSP.Minigames
 
         public bool m_canAttack, m_aimedObject;
 
-        public float m_point_gain;
         public float m_starting_point;
         public float m_attack_speed;
 
@@ -62,11 +61,6 @@ namespace GSP.Minigames
         public void ResetAttack()
         {
             m_canAttack = true;
-        }
-
-        public void ChangeScore()
-        {
-            m_timeOutScore += m_point_gain;
         }
     }
 }

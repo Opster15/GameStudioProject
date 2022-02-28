@@ -121,7 +121,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3789740291013626266}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 3789740292110684509}
@@ -220,6 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_length: 5
   m_timeOutScore: 0
+  m_pointGain: -0.1
   m_spawnedObject: {fileID: 3364327095296568145, guid: 511312b44a076c54ba5565f0230c7278,
     type: 3}
   m_player: {fileID: 0}
@@ -241,9 +242,9 @@ GameObject:
   - component: {fileID: 3789740292110684509}
   - component: {fileID: 3789740292110684504}
   - component: {fileID: 3789740292110684506}
-  - component: {fileID: 3789740292110684505}
   - component: {fileID: 3789740292110684502}
   - component: {fileID: 3789740292110684507}
+  - component: {fileID: 7763301793988343784}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -336,20 +337,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 6
---- !u!114 &3789740292110684505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3789740292110684508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6a03ca26f3cd3e4d9c87034c2dcf9d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_XmoveSpeed: 5
-  m_YmoveSpeed: 0
 --- !u!114 &3789740292110684502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,3 +380,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.8051605, y: 8.53}
   m_EdgeRadius: 0
+--- !u!114 &7763301793988343784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3789740292110684508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6a03ca26f3cd3e4d9c87034c2dcf9d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_moveSpeedX: 4
+  m_moveSpeedY: 0
