@@ -4,8 +4,17 @@ using GSP.LUA;
 using UnityEngine;
 namespace GSP.Battle
 {
+    private ScriptManager m_scriptManager;
+    
+    private GameParty[] m_parties;
+
+    private void Awake()
     public class BattleManager : MonoBehaviour
     {
+        m_scriptManager = FindObjectOfType<ScriptManager>();
+        
+        m_parties = new GameParty[2];
+    }
         private ActionManager m_actionManager;
 
         private GameParty[] m_parties;
@@ -18,9 +27,42 @@ namespace GSP.Battle
         {
             m_actionManager = FindObjectOfType<ActionManager>();
 
+        foreach(var party in m_parties)
+        {
+            foreach (var character in party.PartyMembers)
+            {
+                Debug.Log(character.Moveset[0].Script);
+                character.EnableScripts(m_scriptManager);
+                Debug.Log(character.Moveset[0].Script);
+            }
+        }
+
+        StartCoroutine(Turn());
+    }
             m_parties = new GameParty[2];
         }
 
+    private void EndBattle()
+    {
+        foreach(var party in m_parties)
+        {
+            foreach (var character in party.PartyMembers)
+            {
+                Debug.Log(character.Moveset[0].Script);
+                character.DisableScripts(m_scriptManager);
+                Debug.Log(character.Moveset[0].Script);
+            }
+        }
+    }
+
+    private IEnumerator Turn()
+    {
+        StartTurn();
+        for (var i = 0; i < m_parties.Length; i++)
+        {
+            yield return ChooseMoves(m_parties[m_parties.Length - i - 1], m_parties[i]);
+        }
+    }
         //TODO: Create battle
         private void Start()
         {
