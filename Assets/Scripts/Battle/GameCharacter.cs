@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using GSP.Battle.AI;
+using GSP.LUA;
 using UnityEngine;
 namespace GSP.Battle
 {
@@ -91,5 +92,29 @@ namespace GSP.Battle
         /// </summary>
         /// <param name="_amount"></param>
         public void Heal(int _amount) => SetHealth(m_currentHP + _amount);
+
+        /// <summary>
+        /// Arm the character's move's scripts for use during battle.
+        /// </summary>
+        /// <param name="_scriptManager">The active script manager.</param>
+        public void EnableScripts(ScriptManager _scriptManager)
+        {
+            foreach (var move in Moveset)
+            {
+                move.EnableScript(_scriptManager);
+            }
+        }
+
+        /// <summary>
+        /// Disarm the character's move's scripts from use during battle.
+        /// </summary>
+        /// <param name="_scriptManager">The active script manager.</param>
+        public void DisableScripts(ScriptManager _scriptManager)
+        {
+            foreach (var move in Moveset)
+            {
+                move.DisableScript(_scriptManager);
+            }
+        }
     }
 }

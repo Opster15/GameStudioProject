@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using GSP.Battle.Party;
+using GSP.LUA;
 using UnityEngine;
 namespace GSP.Battle
 {
