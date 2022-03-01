@@ -23,7 +23,7 @@ namespace GSP.Battle
 
             foreach(var action in m_actions)
             {
-                Debug.Log("Action " + action.Move.Name + " Speed: " + action.Speed);
+                action.Execute();
             }
             m_actions.Clear();
         }

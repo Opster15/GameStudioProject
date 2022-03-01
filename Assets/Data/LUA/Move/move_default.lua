@@ -1,4 +1,3 @@
 function execute()
-{
-	return 0
-}
+	Debug("Hi")
+end

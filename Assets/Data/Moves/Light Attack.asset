@@ -16,3 +16,5 @@ MonoBehaviour:
   m_power: 80
   m_speed: 5
   m_minigamePrefab: {fileID: 0}
+  m_scriptFile: {fileID: 2213920135882650261, guid: a1febff93eedb794ea63fbe6c4583f54,
+    type: 3}

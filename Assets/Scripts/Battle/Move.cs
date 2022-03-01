@@ -40,6 +40,11 @@ namespace GSP.Battle
         /// </summary>
         private GameScript m_script;
 
+        /// <summary>
+        /// Internally track how many times the move's script is needed.
+        /// </summary>
+        private int m_scriptReferences;
+
         //TODO: Implement priority system
         //TODO: Implement move targeting style
         
@@ -74,6 +79,7 @@ namespace GSP.Battle
         /// <param name="_scriptManager">The active script manager.</param>
         public void EnableScript(ScriptManager _scriptManager)
         {
+            m_scriptReferences++;
             m_script = _scriptManager.GetScript(m_scriptFile);
         }
 
@@ -83,8 +89,9 @@ namespace GSP.Battle
         /// <param name="_scriptManager">The active script manager.</param>
         public void DisableScript(ScriptManager _scriptManager)
         {
+            m_scriptReferences--;
             _scriptManager.ReturnScript(m_script);
-            m_script = null;
+            if (m_scriptReferences < 1) { m_script = null; }
         }
     }
 }

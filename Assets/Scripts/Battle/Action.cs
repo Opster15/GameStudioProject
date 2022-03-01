@@ -1,4 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using GSP.LUA.Wrappers;
+using MoonSharp.Interpreter;
 using UnityEngine;
 namespace GSP.Battle
 {
@@ -42,6 +45,20 @@ namespace GSP.Battle
             m_targets = new List<GameCharacter> { _target };
 
             CalculateStats();
+        }
+
+        /// <summary>
+        /// Execute the action's script, based on all determined variables.
+        /// </summary>
+        public void Execute()
+        {
+            var script = m_move.Script;
+            
+            script.SetGlobal("power", m_power);
+            script.SetGlobal("user", new GameCharacterWrapper(m_user));
+            script.SetGlobal("targets", m_targets.Select(chara => new GameCharacterWrapper(chara)).ToList());
+            
+            script.CallFunction("execute");
         }
 
         private void CalculateStats()

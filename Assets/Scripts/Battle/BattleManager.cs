@@ -23,7 +23,6 @@ namespace GSP.Battle
         [SerializeField] private PartyObject m_A;
         [SerializeField] private PartyObject m_B;
         
-        //TODO: Create battle
         private void Start()
         {
             StartBattle(m_A.GetParty(), m_B.GetParty());
@@ -38,9 +37,7 @@ namespace GSP.Battle
             {
                 foreach (var character in party.PartyMembers)
                 {
-                    Debug.Log(character.Moveset[0].Script);
                     character.EnableScripts(m_scriptManager);
-                    Debug.Log(character.Moveset[0].Script);
                 }
             }
 
@@ -53,9 +50,7 @@ namespace GSP.Battle
             {
                 foreach (var character in party.PartyMembers)
                 {
-                    Debug.Log(character.Moveset[0].Script);
                     character.DisableScripts(m_scriptManager);
-                    Debug.Log(character.Moveset[0].Script);
                 }
             }
         }
@@ -78,7 +73,7 @@ namespace GSP.Battle
 
         private void EndTurn()
         {
-            StartCoroutine(Turn());
+            EndBattle();
         }
 
         private IEnumerator ChooseMoves(GameParty _party, GameParty _opposingParty)

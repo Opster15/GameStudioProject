@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MoonSharp.Interpreter;
@@ -56,10 +57,19 @@ namespace GSP.LUA
             m_scripts = new Dictionary<string, ScriptReference>();
         }
 
+        /// <summary>
+        /// Get a live version of a script and increment its reference counter.
+        /// </summary>
+        /// <param name="_scriptFile">The script file to use.</param>
+        /// <returns>The live script.</returns>
         public GameScript GetScript(TextAsset _scriptFile)
         {
             var scriptExists = m_scripts.TryGetValue(_scriptFile.name, out var script);
-            if (!scriptExists)
+            if (scriptExists)
+            {
+                script.IncrementCount();
+            }
+            else
             {
                 script = new ScriptReference(this, _scriptFile);
                 m_scripts.Add(_scriptFile.name, script);
@@ -68,6 +78,10 @@ namespace GSP.LUA
             return script.Script;
         }
 
+        /// <summary>
+        /// State that whatever is currently using the script no longer needs it, decrementing its reference counter.
+        /// </summary>
+        /// <param name="_script">The live script to return.</param>
         public void ReturnScript(GameScript _script)
         {
             var scriptExists = m_scripts.TryGetValue(_script.ScriptName, out var script);
@@ -84,7 +98,7 @@ namespace GSP.LUA
 
         public void AssignScriptGlobals(Script _script)
         {
-            // do things lol :-)
+            _script.Globals["Debug"] = (Action<string>) Debug.Log;
         }
 
         private void RegisterTypes()

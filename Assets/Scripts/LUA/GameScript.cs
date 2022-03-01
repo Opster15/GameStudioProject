@@ -18,12 +18,15 @@ namespace GSP.LUA
             m_scriptName = _scriptFile.name;
             
             m_script = new Script(CoreModules.Preset_SoftSandbox);
-            m_script.DoString(_scriptFile.text);
-
             m_scriptManager.AssignScriptGlobals(m_script);
+            
+            m_script.DoString(_scriptFile.text);
         }
 
-        public void CallFunction(string _func, params DynValue[] _objects)
-            => m_script.Call(_func, _objects);
+        public void SetGlobal(string _name, object _value)
+            => m_script.Globals[_name] = _value;
+        
+        public void CallFunction(string _func, params object[] _objects)
+            => m_script.Call(m_script.Globals[_func], _objects);
     }
 }
