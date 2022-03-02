@@ -96,11 +96,18 @@ namespace GSP.LUA
             }
         }
 
+        /// <summary>
+        /// Assign generic script globals to the script.
+        /// </summary>
+        /// <param name="_script">The script.</param>
         public void AssignScriptGlobals(Script _script)
         {
             _script.Globals["Debug"] = (Action<string>) Debug.Log;
         }
 
+        /// <summary>
+        /// Register all custom types.
+        /// </summary>
         private void RegisterTypes()
         {
             UserData.RegisterAssembly();

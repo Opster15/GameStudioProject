@@ -2,6 +2,9 @@
 using UnityEngine;
 namespace GSP.Battle.AI
 {
+    /// <summary>
+    /// An AI which chooses a random move and selects a random target(s).
+    /// </summary>
     [CreateAssetMenu(fileName = "Random", menuName = "GSP/AI/Battle AI Random")]
     public class BattleAIRandom : BattleAIBase
     {

@@ -10,21 +10,49 @@ namespace GSP.Battle
     /// </summary>
     public class Action
     {
+        /// <summary>
+        /// The move to execute.
+        /// </summary>
         private Move m_move;
 
+        /// <summary>
+        /// The move's user.
+        /// </summary>
         private GameCharacter m_user;
 
+        /// <summary>
+        /// All targets chosen by the move.
+        /// </summary>
         private List<GameCharacter> m_targets;
 
+        /// <summary>
+        /// The total power of the action, determining how strong its effect is.
+        /// </summary>
         private int m_power;
+        
+        /// <summary>
+        /// The total speed of the action, determining its place in the turn order.
+        /// </summary>
         private int m_speed;
 
+        /// <summary>
+        /// The move to execute.
+        /// </summary>
         public Move Move => m_move;
-
+        
+        /// <summary>
+        /// All targets chosen by the move.
+        /// </summary>
         public List<GameCharacter> Targets => m_targets;
 
+        /// <summary>
+        /// The total power of the action, determining how strong its effect is.
+        /// </summary>
         public int Power => m_power;
 
+        /// <summary>
+        /// The total speed of the action, determining its place in the turn order.
+        /// </summary>
         public int Speed => m_speed;
         
         public Action(Move _move, GameCharacter _user, List<GameCharacter> _targets)

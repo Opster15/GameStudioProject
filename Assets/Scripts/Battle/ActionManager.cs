@@ -14,9 +14,16 @@ namespace GSP.Battle
             m_actions = new List<Action>();
         }
 
+        /// <summary>
+        /// Queue an action for execution in the turn order.
+        /// </summary>
+        /// <param name="_action"></param>
         public void QueueAction(Action _action)
             => m_actions.Add(_action);
 
+        /// <summary>
+        /// Execute all actions within the turn order.
+        /// </summary>
         public void ExecuteActions()
         {
             SortQueue();
@@ -27,7 +34,11 @@ namespace GSP.Battle
             }
             m_actions.Clear();
         }
+        //TODO: Make ExecuteActions a coroutine to allow for delay during execution for minigames & animations
 
+        /// <summary>
+        /// Sort the actions in the queue from lowest to highest speed.
+        /// </summary>
         private void SortQueue()
             => m_actions = m_actions.OrderBy(p => p.Speed).ToList();
     }

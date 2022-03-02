@@ -1,3 +1,3 @@
 function execute()
-	Debug("Hi")
+	Debug(power)
 end
