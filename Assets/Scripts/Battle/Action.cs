@@ -78,7 +78,7 @@ namespace GSP.Battle
         /// <summary>
         /// Execute the action's script, based on all determined variables.
         /// </summary>
-        public void Execute()
+        public void Execute(float _score)
         {
             var script = m_move.Script;
             
@@ -86,7 +86,7 @@ namespace GSP.Battle
             script.SetGlobal("user", new GameCharacterWrapper(m_user));
             script.SetGlobal("targets", m_targets.Select(chara => new GameCharacterWrapper(chara)).ToList());
             
-            script.CallFunction("execute");
+            script.CallFunction("execute", _score);
         }
 
         private void CalculateStats()

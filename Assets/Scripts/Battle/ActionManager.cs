@@ -30,7 +30,7 @@ namespace GSP.Battle
 
             foreach(var action in m_actions)
             {
-                action.Execute();
+                action.Execute(1);
             }
             m_actions.Clear();
         }
