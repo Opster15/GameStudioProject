@@ -1,5 +1,6 @@
 ﻿using GSP.Battle.Party;
 using UnityEngine;
+using System.Collections.Generic;
 namespace GSP.Battle.AI
 {
     /// <summary>
@@ -8,15 +9,15 @@ namespace GSP.Battle.AI
     [CreateAssetMenu(fileName = "Random", menuName = "GSP/AI/Battle AI Random")]
     public class BattleAIRandom : BattleAIBase
     {
-        public override Action SelectAction(int _characterID, GameParty _party, GameParty _opposingParty)
+        public override Move SelectMove(int _characterID, GameParty _party, GameParty _opposingParty)
         {
             var character = _party.PartyMembers[_characterID];
-            
-            // Choose a random move and a random enemy to target.
-            var move = character.Moveset[Random.Range(0, character.Moveset.Count)];
-            var target = _opposingParty.PartyMembers[Random.Range(0, _opposingParty.PartyMembers.Count)];
+            return character.Moveset[Random.Range(0, character.Moveset.Count)];
+        }
 
-            return new Action(move, _party.PartyMembers[_characterID], target);
+        public override GameCharacter SelectTarget(Move _move, List<GameCharacter> _targets)
+        {
+            return _targets[Random.Range(0, _targets.Count)];
         }
     }
 }

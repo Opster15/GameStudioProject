@@ -15,6 +15,10 @@ MonoBehaviour:
   m_name: Test Special Move
   m_power: 120
   m_speed: 8
+  m_targetingMethod:
+    m_target: 2
+    m_selectAll: 1
+    m_excludeSelf: 0
   m_minigamePrefab: {fileID: 0}
   m_scriptFile: {fileID: 2213920135882650261, guid: a1febff93eedb794ea63fbe6c4583f54,
     type: 3}

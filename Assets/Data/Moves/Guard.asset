@@ -15,6 +15,10 @@ MonoBehaviour:
   m_name: Guard
   m_power: 0
   m_speed: 1
+  m_targetingMethod:
+    m_target: 0
+    m_selectAll: 0
+    m_excludeSelf: 0
   m_minigamePrefab: {fileID: 0}
   m_scriptFile: {fileID: 2213920135882650261, guid: aa842022f07f090448038cd9ce5c3e54,
     type: 3}

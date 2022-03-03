@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using GSP.Battle.Party;
 using GSP.LUA;
 using UnityEngine;
@@ -41,7 +42,7 @@ namespace GSP.Battle
                 }
             }
 
-            StartCoroutine(Turn());
+            StartTurn();
         }
 
         private void EndBattle()
@@ -57,34 +58,46 @@ namespace GSP.Battle
 
         private IEnumerator Turn()
         {
-            StartTurn();
             for (var i = 0; i < m_parties.Length; i++)
             {
                 yield return ChooseMoves(m_parties[m_parties.Length - i - 1], m_parties[i]);
             }
             m_actionManager.ExecuteActions();
+
             EndTurn();
         }
 
         private void StartTurn()
         {
-
+            StartCoroutine(Turn());
         }
 
         private void EndTurn()
         {
-            EndBattle();
+            StartTurn();
         }
 
         private IEnumerator ChooseMoves(GameParty _party, GameParty _opposingParty)
         {
-            Debug.Log("Party Moves Start");
             _party.BattleController.SetOpposingParty(_opposingParty);
             for (var i = 0; i < _party.PartyMembers.Count; i++)
             {
-                _party.BattleController.SelectPartyMember(i);
-                yield return new WaitUntil(() => _party.BattleController.GetChosenAction() != null);
-                m_actionManager.QueueAction(_party.BattleController.GetChosenAction());
+                // Tell the battle controller which party member is active.
+                _party.BattleController.SetPartyMember(i);
+
+                // Select the move to use, based on the current battle state.
+                yield return new WaitUntil(() => _party.BattleController.GetSelectedMove() != null);
+                var move = _party.BattleController.GetSelectedMove();
+
+                // If the move is manually targeted, select the target. Otherwise, use all valid targets.
+                var targets = move.TargetingMethod.GetValidTargets(i, _party, _opposingParty);
+                if(move.TargetingMethod.IsTargetingManual())
+                {
+                    yield return new WaitUntil(() => _party.BattleController.GetSelectedTarget() != null);
+                    targets = new List<GameCharacter> { _party.BattleController.GetSelectedTarget() };
+                }
+
+                m_actionManager.QueueAction(new Action(move, _party.PartyMembers[i], targets));
             }
         }
     }
