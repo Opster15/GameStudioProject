@@ -1,3 +1,5 @@
 function execute(score)
-	Debug(power)
+	for i, v in ipairs(targets) do
+		Debug(user.Name .. " targets " .. v.Name)
+	end
 end
