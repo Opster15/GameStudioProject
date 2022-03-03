@@ -36,7 +36,7 @@ namespace GSP.Minigames
         /// <summary>
         /// The current time spent in the minigame.
         /// </summary>
-        private float m_timer;
+        public float m_timer;
 
         /// <summary>
         /// Whether the minigame is still running.

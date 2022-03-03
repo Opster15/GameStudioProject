@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7977664556413366622}
   - component: {fileID: 7977664556413366623}
   - component: {fileID: 7977664556413366621}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: MazeWall
-  m_TagString: Bullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,9 +119,9 @@ GameObject:
   - component: {fileID: 8953524674830617746}
   - component: {fileID: 8953524674830617748}
   - component: {fileID: 8953524674830617749}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: MazeWall (4)
-  m_TagString: Bullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,9 +227,9 @@ GameObject:
   - component: {fileID: 8953524675063292704}
   - component: {fileID: 8953524675063292706}
   - component: {fileID: 8953524675063292707}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: MazeWall (8)
-  m_TagString: Bullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -335,9 +335,9 @@ GameObject:
   - component: {fileID: 8953524675134074090}
   - component: {fileID: 8953524675134074092}
   - component: {fileID: 8953524675134074093}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: MazeWall (5)
-  m_TagString: Bullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -443,9 +443,9 @@ GameObject:
   - component: {fileID: 8953524675459183549}
   - component: {fileID: 8953524675459183551}
   - component: {fileID: 8953524675459183548}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: MazeWall (9)
-  m_TagString: Bullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -551,9 +551,9 @@ GameObject:
   - component: {fileID: 8953524675482595697}
   - component: {fileID: 8953524675482595699}
   - component: {fileID: 8953524675482595696}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: MazeWall (11)
-  m_TagString: Bullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -659,9 +659,9 @@ GameObject:
   - component: {fileID: 8953524675774365573}
   - component: {fileID: 8953524675774365575}
   - component: {fileID: 8953524675774365572}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: MazeWall (10)
-  m_TagString: Bullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -767,9 +767,9 @@ GameObject:
   - component: {fileID: 8953524675786030082}
   - component: {fileID: 8953524675786030084}
   - component: {fileID: 8953524675786030085}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: MazeWall (2)
-  m_TagString: Bullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -875,9 +875,9 @@ GameObject:
   - component: {fileID: 8953524676416729480}
   - component: {fileID: 8953524676416729482}
   - component: {fileID: 8953524676416729483}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: MazeWall (7)
-  m_TagString: Bullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -983,9 +983,9 @@ GameObject:
   - component: {fileID: 8953524676668861258}
   - component: {fileID: 8953524676668861260}
   - component: {fileID: 8953524676668861261}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: MazeWall (3)
-  m_TagString: Bullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1091,9 +1091,9 @@ GameObject:
   - component: {fileID: 8953524676776214132}
   - component: {fileID: 8953524676776214134}
   - component: {fileID: 8953524676776214135}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: MazeWall (1)
-  m_TagString: Bullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

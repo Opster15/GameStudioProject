@@ -4,12 +4,13 @@ using UnityEngine;
 
 namespace GSP.Minigames
 {
-
     public class MG_BouncyBall : MonoBehaviour
     {
         public bool scoreOnPlayerHit, scoreOnBorderHit;
 
         Rigidbody2D rb;
+
+        public float m_bounceRange;
 
         float m_bounce;
 
@@ -20,7 +21,7 @@ namespace GSP.Minigames
 
         void OnCollisionEnter2D(Collision2D collision)
         {
-            m_bounce = Random.Range(-3.0f, 3.0f);
+            m_bounce = Random.Range(-m_bounceRange, m_bounceRange);
             rb.velocity = new Vector2(m_bounce, rb.velocity.y);
             if (scoreOnBorderHit)
             {

@@ -135,3 +135,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreOnPlayerHit: 0
   scoreOnBorderHit: 1
+  m_bounceRange: 7
+  m_bounce: 0

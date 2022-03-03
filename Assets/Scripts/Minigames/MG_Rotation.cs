@@ -18,6 +18,7 @@ namespace GSP.Minigames
         void Start()
         {
             inputManager = GetComponent<InputManager>();
+            //selects random object from array to spawn
             int y = Random.Range(0, m_objects.Length);
             m_spawnedObject = m_objects[y];
             GameObject ObjectClone = Instantiate(m_spawnedObject, m_objectHolder.transform);
@@ -36,6 +37,7 @@ namespace GSP.Minigames
 
         public void Input()
         {
+            //rotates spawned object from x input
             m_objectHolder.transform.Rotate(0, 0, m_rotationSpeed * -x);
         }
 

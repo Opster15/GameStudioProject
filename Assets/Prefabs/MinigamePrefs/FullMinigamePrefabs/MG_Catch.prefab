@@ -365,7 +365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4664771394867297923}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.25, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 4664771393828922948}
@@ -476,6 +476,7 @@ MonoBehaviour:
   m_length: 5
   m_timeOutScore: 0
   m_pointGain: -0.1
+  m_starting_points: 1
   m_spawnedObject: {fileID: 3364327095296568145, guid: 87af02134a1e2ad41a4e320367de51ed,
     type: 3}
   m_player: {fileID: 0}
@@ -485,7 +486,5 @@ MonoBehaviour:
   - {fileID: 4664771393949215429}
   - {fileID: 1573518284170781918}
   - {fileID: 1545052734543249187}
-  m_canAttack: 0
   m_aimedObject: 0
-  m_starting_point: 1
-  m_attack_speed: 0.8
+  m_attack_speed: 0.6

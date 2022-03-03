@@ -257,9 +257,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 462b66f502d523d47b5554e102d4c35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreOnPlayerHit: 0
-  scoreOnBorderHit: 0
-  scoreOnBulletHit: 1
+  m_scoreOnPlayerHit: 0
+  m_scoreOnBorderHit: 0
+  m_scoreOnBulletHit: 0
+  m_gameEndPickup: 0
 --- !u!1 &575229465552990138
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,9 +549,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 462b66f502d523d47b5554e102d4c35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreOnPlayerHit: 0
-  scoreOnBorderHit: 0
-  scoreOnBulletHit: 1
+  m_scoreOnPlayerHit: 0
+  m_scoreOnBorderHit: 0
+  m_scoreOnBulletHit: 0
+  m_gameEndPickup: 0
 --- !u!1 &575229466721465324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,9 +1011,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 462b66f502d523d47b5554e102d4c35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreOnPlayerHit: 0
-  scoreOnBorderHit: 0
-  scoreOnBulletHit: 1
+  m_scoreOnPlayerHit: 0
+  m_scoreOnBorderHit: 0
+  m_scoreOnBulletHit: 1
+  m_gameEndPickup: 0
 --- !u!1 &8968737558663867563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,3 +1190,4 @@ MonoBehaviour:
   m_timeOutScore: 0
   m_pointGain: 0.3
   m_starting_points: 0
+  m_timer: 0
