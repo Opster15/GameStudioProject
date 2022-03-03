@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: ff319268c1088564da37ccc0cc793414
+<<<<<<< Updated upstream:Assets/Scenes/CameraTestScene.unity.meta
+guid: 63223cf6ea06b774fa3857688d245d9a
+=======
+guid: 156dd2da7db6ef140992ee3904ddfb3e
+>>>>>>> Stashed changes:Assets/Scenes/BlockoutLevel.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
