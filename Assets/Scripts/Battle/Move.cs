@@ -24,6 +24,11 @@ namespace GSP.Battle
         [SerializeField] private int m_speed;
 
         /// <summary>
+        /// The move's targeting options.
+        /// </summary>
+        [SerializeField] private TargetingOptions m_targetingMethod;
+
+        /// <summary>
         /// The minigame for the player to play when this move is triggered.
         /// Leave as null for no minigame.
         /// </summary>
@@ -62,6 +67,11 @@ namespace GSP.Battle
         /// The base speed of the move.
         /// </summary>
         public int Speed => m_speed;
+
+        /// <summary>
+        /// The move's targeting options.
+        /// </summary>
+        public TargetingOptions TargetingMethod => m_targetingMethod;
 
         /// <summary>
         /// The LUA script file to execute when the move is used.

@@ -2,6 +2,9 @@
 using UnityEngine;
 namespace GSP.Battle
 {
+    /// <summary>
+    /// A character's base stats.
+    /// </summary>
     [Serializable]
     public struct StatBlock
     {
