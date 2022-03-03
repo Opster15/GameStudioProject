@@ -120,22 +120,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/BGM/Battle/Dreamscape/bgm_dreamscape_finalboss_0
   m_EditorClassIdentifier: 
-  Path: event:/BGM/Battle/Dreamscape/bgm_dreamscape_finalboss_0
-  Guid:
-    Data1: 1897109300
-    Data2: 1122305271
-    Data3: -2097481041
-    Data4: -594987115
-  Banks:
-  - {fileID: 8337753031237035126}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 144315
---- !u!114 &-2208399743874989423
+  Path: FMOD Studio/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637813199800141804
+  FileSizes:
+  - Name: Desktop
+    Value: 1630
+  Exists: 1
+--- !u!114 &-3296908241186865383
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,17 +167,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/bgm_dreamscape/Music Intro State
   m_EditorClassIdentifier: 
-  Name: Music Intro State
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 2596481909
-    data2: 3760819051
-  Type: 1
-  IsGlobal: 0
-  Labels: []
+  Path: FMOD Studio/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637813199814152859
+  FileSizes:
+  - Name: Desktop
+    Value: 19627264
   Exists: 1
 --- !u!114 &-514721886447519398
 MonoBehaviour:
@@ -298,8 +287,8 @@ MonoBehaviour:
   MasterBanks:
   - {fileID: 8337753031237035126}
   StringsBanks:
-  - {fileID: 4613595041798944296}
-  cacheTime: 637819224087812432
+  - {fileID: -4908522565725141466}
+  cacheTime: 637813199814152859
   cacheVersion: 10
 --- !u!114 &318203603925218808
 MonoBehaviour:
