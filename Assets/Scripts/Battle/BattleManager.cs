@@ -91,6 +91,7 @@ namespace GSP.Battle
 
                 // If the move is manually targeted, select the target. Otherwise, use all valid targets.
                 var targets = move.TargetingMethod.GetValidTargets(i, _party, _opposingParty);
+                _party.BattleController.SetTargets(targets);
                 if(move.TargetingMethod.IsTargetingManual())
                 {
                     yield return new WaitUntil(() => _party.BattleController.GetSelectedTarget() != null);

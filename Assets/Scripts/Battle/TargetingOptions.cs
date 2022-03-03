@@ -49,7 +49,7 @@ namespace GSP.Battle
         public bool ExcludeSelf => m_excludeSelf;
 
         public bool IsTargetingManual()
-            => m_target != TargetChoice.Self && m_selectAll;
+            => m_target != TargetChoice.Self && !m_selectAll;
 
         public List<GameCharacter> GetValidTargets(int _characterID, GameParty _party, GameParty _opposingParty)
         {
