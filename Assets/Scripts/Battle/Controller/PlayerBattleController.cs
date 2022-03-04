@@ -66,11 +66,6 @@ namespace GSP.Battle.Controller
         {
             if(m_targets == null || m_selectedPartyMember < 0 || m_selectedMove == null) { return; }
             m_selectedTarget = m_targets[_targetID];
-
-            m_targets = null;
-            m_selectedPartyMember = -1;
-            m_selectedMove = null;
-            m_selectedTarget = null;
         }
 
         //TODO: Fix move not properly selecting target.
