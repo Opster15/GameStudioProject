@@ -277,7 +277,7 @@ MonoBehaviour:
   - {fileID: 4608708596326486314}
   - {fileID: 5296900887544813936}
   m_aimedObject: 1
-  m_attack_speed: 0.2
+  m_attack_speed: 0.15
 --- !u!1 &4608708596326486315
 GameObject:
   m_ObjectHideFlags: 0

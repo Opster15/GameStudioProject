@@ -83,7 +83,7 @@ namespace GSP.Minigames
             m_timer += Time.deltaTime;
             if (m_timer >= m_length)
             {
-                Debug.Log(m_timeOutScore);
+                Debug.Log(m_timeOutScore.ToString("F2"));
                 Finish(m_timeOutScore);
                 m_running = false;
                 Destroy(gameObject);
@@ -93,6 +93,7 @@ namespace GSP.Minigames
         public virtual void ChangeScore()
         {
             m_timeOutScore += m_pointGain;
+            m_timeOutScore = Mathf.Round(m_timeOutScore * 100f) / 100;
         }
 
         /// <summary>
