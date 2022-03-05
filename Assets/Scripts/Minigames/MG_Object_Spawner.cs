@@ -11,7 +11,9 @@ namespace GSP.Minigames
         public GameObject m_player;
         public Transform[] spawnPoints;
 
-        public bool m_canAttack, m_aimedObject;
+        public bool m_aimedObject;
+
+        bool m_canAttack;
 
         public float m_attack_speed;
 
@@ -37,7 +39,7 @@ namespace GSP.Minigames
             m_canAttack = false;
             int y = Random.Range(0, spawnPoints.Length);
 
-            //if you want the objects to spawn looking at the player set m_aimedObject true
+            //m_aimedObject true sets the spawned objects to spawn rotated towards player
             if (m_aimedObject)
             {
                 Vector2 lookDir = m_player.transform.position - spawnPoints[y].transform.position;

@@ -303,9 +303,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 462b66f502d523d47b5554e102d4c35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreOnPlayerHit: 0
-  scoreOnBorderHit: 0
-  scoreOnBulletHit: 1
+  m_scoreOnPlayerHit: 0
+  m_scoreOnBorderHit: 0
+  m_scoreOnBulletHit: 0
+  m_gameEndPickup: 0
 --- !u!1 &1286548520740120117
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,9 +440,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 462b66f502d523d47b5554e102d4c35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreOnPlayerHit: 0
-  scoreOnBorderHit: 0
-  scoreOnBulletHit: 1
+  m_scoreOnPlayerHit: 0
+  m_scoreOnBorderHit: 0
+  m_scoreOnBulletHit: 0
+  m_gameEndPickup: 0
 --- !u!1 &1286548521891976664
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,9 +577,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 462b66f502d523d47b5554e102d4c35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreOnPlayerHit: 0
-  scoreOnBorderHit: 0
-  scoreOnBulletHit: 1
+  m_scoreOnPlayerHit: 0
+  m_scoreOnBorderHit: 0
+  m_scoreOnBulletHit: 1
+  m_gameEndPickup: 0
 --- !u!1 &2530537851029040179
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,7 +623,7 @@ GameObject:
   - component: {fileID: 6382372154232145152}
   - component: {fileID: 6382372154232145154}
   m_Layer: 0
-  m_Name: MG_Target
+  m_Name: MG_Targets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -711,6 +714,7 @@ MonoBehaviour:
   m_timeOutScore: 0
   m_pointGain: 0.3
   m_starting_points: 0
+  m_timer: 0
 --- !u!1 &6382372155176609414
 GameObject:
   m_ObjectHideFlags: 0

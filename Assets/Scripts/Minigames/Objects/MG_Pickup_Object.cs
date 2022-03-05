@@ -7,13 +7,13 @@ namespace GSP.Minigames
     public class MG_Pickup_Object : MonoBehaviour
     {
         
-        public bool scoreOnPlayerHit,scoreOnBorderHit,scoreOnBulletHit;
+        public bool m_scoreOnPlayerHit,m_scoreOnBorderHit,m_scoreOnBulletHit,m_gameEndPickup;
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.CompareTag("MG_Border"))
             {
-                if (scoreOnBorderHit)
+                if (m_scoreOnBorderHit)
                 {
                     GetComponentInParent<Minigame>().ChangeScore();
                 }
@@ -22,19 +22,26 @@ namespace GSP.Minigames
 
             if (collision.CompareTag("Player"))
             {
-                if (scoreOnPlayerHit)
+                if (m_scoreOnPlayerHit)
                 {
                     GetComponentInParent<Minigame>().ChangeScore();
                 }
                 Destroy(gameObject);
             }
+
             if (collision.CompareTag("Bullet"))
             {
-                if (scoreOnBulletHit)
+                if (m_scoreOnBulletHit)
                 {
                     GetComponentInParent<Minigame>().ChangeScore();
                 }
                 Destroy(gameObject);
+            }
+
+
+            if (m_gameEndPickup)
+            {
+                GetComponentInParent<Minigame>().m_timer = GetComponentInParent<Minigame>().Length;
             }
         }
     }
