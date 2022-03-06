@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using DG.Tweening;
 
 public class TrackSwitch : MonoBehaviour
 {
-    Cinemachine.CinemachineVirtualCamera cam;
+    public GameObject camObj;
+    Cinemachine.CinemachineVirtualCamera cineCam;
 
-    public Transform m_playerFoc, m_enemyFoc,m_allFoc;
+    public Transform[] m_camFocus;
+    public Transform[] m_camPos;
+    //order of array is All,Enemy,Player
 
     public enum FocusState
     {
@@ -21,7 +25,7 @@ public class TrackSwitch : MonoBehaviour
 
     private void Awake()
     {
-        cam = GetComponent<Cinemachine.CinemachineVirtualCamera>();
+        cineCam = GetComponent<Cinemachine.CinemachineVirtualCamera>();
     }
 
 
@@ -30,17 +34,20 @@ public class TrackSwitch : MonoBehaviour
 
         if(state == FocusState.all)
         {
-            cam.m_LookAt = m_allFoc;
+            cineCam.m_LookAt = m_camFocus[0];
+            camObj.transform.DOMove(m_camPos[0].position, 2);
         }
 
         if (state == FocusState.enemy)
         {
-            cam.m_LookAt = m_enemyFoc;
+            cineCam.m_LookAt = m_camFocus[1];
+            camObj.transform.DOMove(m_camPos[1].position, 2);
         }
 
         if (state == FocusState.player)
         {
-            cam.m_LookAt = m_playerFoc;
+            cineCam.m_LookAt = m_camFocus[2];
+            camObj.transform.DOMove(m_camPos[2].position, 2);
         }
 
     }
