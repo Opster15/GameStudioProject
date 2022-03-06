@@ -5,54 +5,39 @@ using Cinemachine;
 
 public class TrackSwitch : MonoBehaviour
 {
-    Cinemachine.CinemachineDollyCart cart;
     Cinemachine.CinemachineVirtualCamera cam;
 
-    public Cinemachine.CinemachineSmoothPath startPath;
-    public Cinemachine.CinemachineSmoothPath[] playerPaths;
-    public Cinemachine.CinemachineSmoothPath[] enemyPaths;
+    public Transform m_playerFoc, m_enemyFoc,m_allFoc;
 
-    public Transform playerFoc, enemyFoc;
+    public enum FocusState
+    {
+        enemy,
+        player,
+        all
+    }
 
-    public bool m_isPlayerFoc;
+    FocusState state = FocusState.all;
 
     private void Awake()
     {
-        cart = GetComponent<Cinemachine.CinemachineDollyCart>();
         cam = GetComponent<Cinemachine.CinemachineVirtualCamera>();
-        Reset();
     }
 
-    private void Reset()
-    {
-        cart.m_Path = startPath;
-
-        ChangeTrack();
-    }
-
-    public void Update()
-    {
-        if (cart.m_Position > 4)
-        {
-            ChangeTrack();
-        }
-    }
 
     public void ChangeTrack()
     {
-        if (m_isPlayerFoc)
+        switch (state)
         {
-            cam.LookAt = playerFoc;
-            var path = playerPaths[Random.Range(0, playerPaths.Length)];
-            cart.m_Path = path;
-            cart.m_Position = 0;
-        }
-        else if (!m_isPlayerFoc)
-        {
-            cam.LookAt = enemyFoc;
-            var path = enemyPaths[Random.Range(0, enemyPaths.Length)];
-            cart.m_Path = path;
-            cart.m_Position = 0;
+            case FocusState.all:
+                return;
+
+            case FocusState.player:
+                cam.LookAt = m_playerFoc;
+                return;
+
+            case FocusState.enemy:
+                cam.LookAt = m_enemyFoc;
+                return;
         }
 
     }

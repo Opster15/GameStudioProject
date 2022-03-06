@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: DefaultWaterFX
   m_EditorClassIdentifier: 
   enableUnderwater: 1
-  underwaterWaterLevel: 0
   underwaterMaxDepth: 20
+  underwaterSurfaceColorBoost: 0
   underwaterShallowFogColor: {r: 0.051397298, g: 0.1981132, b: 0.18204646, a: 0.8235294}
   underwaterDeepFogColor: {r: 0.056870773, g: 0.16981131, b: 0.1429207, a: 1}
   underwaterViewDistance: 50
@@ -68,6 +68,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
   m_Name: Water Post Process Profile
   m_EditorClassIdentifier: 
-  settings:
-  - {fileID: 0}
-  - {fileID: 0}
+  settings: []
