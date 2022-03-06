@@ -34,6 +34,7 @@ namespace GSP.Minigames
         {
             m_canAttack = false;
             GameObject bulletClone = Instantiate(bullet, shootPoint.position, transform.rotation);
+            bulletClone.transform.parent = gameObject.transform;
             Invoke("ResetAttack", m_attackSpeed);
         }
 

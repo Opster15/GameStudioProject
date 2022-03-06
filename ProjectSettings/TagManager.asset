@@ -20,8 +20,8 @@ TagManager:
   - MG_Bullet
   - MG_Platform
   - PP
-  - 
-  - 
+  - MG_Passthrough_Bullet
+  - MG_Border
   - 
   - 
   - 

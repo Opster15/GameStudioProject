@@ -750,7 +750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7d8762f5baad284a89eb328dfd866e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 3998164130285785523, guid: 23d48404ab3561046ba7ce5238e05f0f, type: 3}
+  bullet: {fileID: 3998164130285785523, guid: 03e2de05dfa6b534f9c37d9857f8f150, type: 3}
   shootPoint: {fileID: 575229465764587039}
   m_attackSpeed: 0.7
 --- !u!1 &2965080973268216937

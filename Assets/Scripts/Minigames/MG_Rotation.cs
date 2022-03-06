@@ -4,13 +4,11 @@ using UnityEngine;
 
 namespace GSP.Minigames
 {
-    public class MG_Rotation : Minigame
+    public class MG_Rotation : MonoBehaviour
     {
         InputManager inputManager;
 
         public GameObject m_objectHolder;
-        public GameObject m_spawnedObject;
-        public GameObject[] m_objects;
 
         public float m_rotationSpeed;
 
@@ -18,18 +16,10 @@ namespace GSP.Minigames
         void Start()
         {
             inputManager = GetComponent<InputManager>();
-            //selects random object from array to spawn
-            int y = Random.Range(0, m_objects.Length);
-            m_spawnedObject = m_objects[y];
-            GameObject ObjectClone = Instantiate(m_spawnedObject, m_objectHolder.transform);
         }
 
-        protected override void Update()
+        void Update()
         {
-            base.Update();
-
-            if (!Running) { return; }
-
             Input();
             DirectionInput();
         }
