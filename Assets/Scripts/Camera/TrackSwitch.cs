@@ -16,7 +16,8 @@ public class TrackSwitch : MonoBehaviour
         all
     }
 
-    FocusState state = FocusState.all;
+    public FocusState state = FocusState.all;
+
 
     private void Awake()
     {
@@ -24,20 +25,22 @@ public class TrackSwitch : MonoBehaviour
     }
 
 
-    public void ChangeTrack()
+    public void Update()
     {
-        switch (state)
+
+        if(state == FocusState.all)
         {
-            case FocusState.all:
-                return;
+            cam.m_LookAt = m_allFoc;
+        }
 
-            case FocusState.player:
-                cam.LookAt = m_playerFoc;
-                return;
+        if (state == FocusState.enemy)
+        {
+            cam.m_LookAt = m_enemyFoc;
+        }
 
-            case FocusState.enemy:
-                cam.LookAt = m_enemyFoc;
-                return;
+        if (state == FocusState.player)
+        {
+            cam.m_LookAt = m_playerFoc;
         }
 
     }
