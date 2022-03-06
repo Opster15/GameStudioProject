@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3998164130285785525}
   - component: {fileID: 3998164130285785524}
   - component: {fileID: -2545086724204265827}
-  m_Layer: 8
-  m_Name: Bullet
+  m_Layer: 11
+  m_Name: Bullet_BH
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,6 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69b4702c0a8ac9a40bcaa5dc3792a435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_destoryOnBorderHit: 1
+  m_destoryOnBorderHit: 0
   m_speed: 3
-  m_maxLifetime: 5
+  m_maxLifetime: 2

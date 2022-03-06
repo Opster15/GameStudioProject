@@ -46,8 +46,8 @@ namespace GSP.Minigames
                 float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
                 spawnPoints[y].rotation = Quaternion.Euler(0, 0, angle);
 
-                GameObject bulletClone = Instantiate(m_spawnedObject, spawnPoints[y].transform.position, spawnPoints[y].transform.rotation);
-                bulletClone.transform.parent = gameObject.transform;
+                GameObject objectClone = Instantiate(m_spawnedObject, spawnPoints[y].transform.position, spawnPoints[y].transform.rotation);
+                objectClone.transform.parent = gameObject.transform;
             }
             else
             {
