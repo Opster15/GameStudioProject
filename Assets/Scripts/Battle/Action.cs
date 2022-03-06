@@ -54,6 +54,11 @@ namespace GSP.Battle
         /// The total speed of the action, determining its place in the turn order.
         /// </summary>
         public int Speed => m_speed;
+
+        /// <summary>
+        /// Whether this action should skip the move's minigame.
+        /// </summary>
+        public bool SkipsMinigame => m_user.SkipsMinigames;
         
         public Action(Move _move, GameCharacter _user, List<GameCharacter> _targets)
         {

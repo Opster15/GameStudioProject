@@ -33,7 +33,6 @@ namespace GSP.Battle
         /// Leave as null for no minigame.
         /// </summary>
         [SerializeField] private GameObject m_minigamePrefab;
-        //TODO: Some way to allow minigameless moves to calculate power in varied ways, rather than raw prefabs
 
         /// <summary>
         /// The LUA script file to execute when the move is used.
@@ -49,9 +48,6 @@ namespace GSP.Battle
         /// Internally track how many times the move's script is needed.
         /// </summary>
         private int m_scriptReferences;
-
-        //TODO: Implement priority system
-        //TODO: Implement move targeting style
         
         /// <summary>
         /// The move's name.
@@ -72,6 +68,13 @@ namespace GSP.Battle
         /// The move's targeting options.
         /// </summary>
         public TargetingOptions TargetingMethod => m_targetingMethod;
+
+        /// <summary>
+        /// The minigame for the player to play when this move is triggered.
+        /// Leave as null for no minigame.
+        /// </summary>
+        public GameObject MinigamePrefab => m_minigamePrefab;
+        //TODO: Instantiate relevant minigames once (own class?) as a cache, and enable / disable when needed.
 
         /// <summary>
         /// The LUA script file to execute when the move is used.

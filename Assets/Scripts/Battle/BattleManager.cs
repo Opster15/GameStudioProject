@@ -62,7 +62,7 @@ namespace GSP.Battle
             {
                 yield return ChooseMoves(m_parties[m_parties.Length - i - 1], m_parties[i]);
             }
-            m_actionManager.ExecuteActions();
+            yield return m_actionManager.ExecuteActions();
 
             EndTurn();
         }

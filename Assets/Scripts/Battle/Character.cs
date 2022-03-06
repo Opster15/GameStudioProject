@@ -20,6 +20,11 @@ namespace GSP.Battle
         [SerializeField] private StatBlock m_statBlock;
 
         /// <summary>
+        /// Whether the character skips minigames.
+        /// </summary>
+        [SerializeField] private bool m_skipsMinigames = true;
+
+        /// <summary>
         /// All moves the character can select in the menu.
         /// </summary>
         [SerializeField] private List<Move> m_moveset;
@@ -38,6 +43,11 @@ namespace GSP.Battle
         /// The character's stat values.
         /// </summary>
         public StatBlock StatBlock => m_statBlock;
+
+        /// <summary>
+        /// Whether the character skips minigames.
+        /// </summary>
+        public bool SkipsMinigames => m_skipsMinigames;
 
         /// <summary>
         /// All moves the character can select in the menu.

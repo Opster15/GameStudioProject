@@ -68,8 +68,6 @@ namespace GSP.Battle.Controller
             m_selectedTarget = m_targets[_targetID];
         }
 
-        //TODO: Fix move not properly selecting target.
-
         public Move GetSelectedMove()
             => m_selectedMove;
 

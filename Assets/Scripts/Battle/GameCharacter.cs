@@ -47,6 +47,11 @@ namespace GSP.Battle
         public StatBlock StatBlock => m_baseCharacter.StatBlock;
 
         /// <summary>
+        /// Whether the character skips minigames.
+        /// </summary>
+        public bool SkipsMinigames => m_baseCharacter.SkipsMinigames;
+
+        /// <summary>
         /// All moves the character can select in the menu.
         /// </summary>
         public List<Move> Moveset => m_baseCharacter.Moveset;
