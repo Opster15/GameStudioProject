@@ -24,7 +24,7 @@ namespace GSP.Minigames
 
         private void Update()
         {
-            if (inputManager.spacePressed && m_canAttack)
+            if (inputManager.spacePress && m_canAttack)
             {
                 Shoot();
             }

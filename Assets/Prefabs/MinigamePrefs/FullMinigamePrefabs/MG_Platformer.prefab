@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06fdcf1c0d843894184e1c74b741cd05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_length: 5
+  m_length: 4
   m_timeOutScore: 0
   m_pointGain: 1
   m_starting_points: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_objects:
   - {fileID: 632169333337355532, guid: 0d9b280baf000b04f85a1f66588770b4, type: 3}
   - {fileID: 3381373235730049776, guid: bcee84d518542be47aeb76b5517ddc73, type: 3}
-  - {fileID: 31786318628742765, guid: b45c8eaf4e87c0f4c85a021fc5d18542, type: 3}
+  - {fileID: 4436884785208416622, guid: b45c8eaf4e87c0f4c85a021fc5d18542, type: 3}
 --- !u!1 &7767111122277687222
 GameObject:
   m_ObjectHideFlags: 0
