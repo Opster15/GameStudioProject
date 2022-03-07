@@ -54,24 +54,25 @@ namespace GSP.Battle
         /// <param name="_action">The action to execute.</param>
         private IEnumerator ExecuteAction(Action _action)
         {
+            if (_action.User.IsDead) { yield break; }
             m_currentMinigameScore = 1.0f;
-            
+
             // Only continue if the move user is a player and there's a valid minigame prefab assigned.
             if (!_action.SkipsMinigame && _action.Move.MinigamePrefab)
             {
                 var minigamePrefab = _action.Move.MinigamePrefab;
                 var minigame = Instantiate(minigamePrefab).GetComponent<Minigame>();
-                
+
                 if (minigame)
                 {
                     m_isCurrentMinigameFinished = false;
-                
+
                     minigame.OnFinished += OnMinigameFinished;
                     yield return new WaitUntil(() => m_isCurrentMinigameFinished);
                     minigame.OnFinished -= OnMinigameFinished;
                 }
             }
-            
+
             _action.Execute(m_currentMinigameScore);
         }
 

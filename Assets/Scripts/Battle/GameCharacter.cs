@@ -62,6 +62,11 @@ namespace GSP.Battle
         public BattleAIBase AI => m_baseCharacter.AI;
 
         /// <summary>
+        /// Is the current character dead?
+        /// </summary>
+        public bool IsDead => m_currentHP < 1;
+
+        /// <summary>
         /// The in-game "live" instance of a character.
         /// </summary>
         /// <param name="_baseCharacter">The data for the character.</param>

@@ -36,6 +36,11 @@ namespace GSP.Battle
         private int m_speed;
 
         /// <summary>
+        /// The move's user.
+        /// </summary>
+        public GameCharacter User => m_user;
+
+        /// <summary>
         /// The move to execute.
         /// </summary>
         public Move Move => m_move;
@@ -90,6 +95,7 @@ namespace GSP.Battle
             script.SetGlobal("power", m_power);
             script.SetGlobal("user", new GameCharacterWrapper(m_user));
             script.SetGlobal("targets", m_targets.Select(chara => new GameCharacterWrapper(chara)).ToList());
+            script.SetGlobal("targetcount", m_targets.Count);
             
             script.CallFunction("execute", _score);
         }

@@ -88,6 +88,8 @@ namespace GSP.Battle
             _party.BattleController.SetOpposingParty(_opposingParty);
             for (var i = 0; i < _party.PartyMembers.Count; i++)
             {
+                if (_party.PartyMembers[i].IsDead) { continue; }
+                
                 // Tell the battle controller which party member is active.
                 _party.BattleController.SetPartyMember(i);
 

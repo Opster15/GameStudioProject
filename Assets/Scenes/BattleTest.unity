@@ -846,11 +846,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1862436157
-      Data2: 1195744255
-      Data3: -311348321
-      Data4: -1957897487
-    Path: event:/BGM/Battle/Boss
+      Data1: 849839879
+      Data2: 1118632103
+      Data3: -208350027
+      Data4: 632109050
+    Path: event:/BGM/Battle/Regular Battle
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -1167,7 +1167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_A: {fileID: 11400000, guid: 0150e88b94141df4391f082f5a6a48a5, type: 2}
-  m_B: {fileID: 11400000, guid: 64179ff727873924389f4e7c98a777eb, type: 2}
+  m_B: {fileID: 11400000, guid: 18324d099346a6e4eb795f62b462f760, type: 2}
 --- !u!4 &817765627
 Transform:
   m_ObjectHideFlags: 0
