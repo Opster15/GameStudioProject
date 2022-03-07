@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using GSP.Battle.Party;
 using GSP.LUA;
@@ -11,6 +12,8 @@ namespace GSP.Battle
         private ScriptManager m_scriptManager;
     
         private GameParty[] m_parties;
+
+        public Action<int, GameParty> OnEnableParty;
 
         private void Awake()
         {
@@ -34,8 +37,11 @@ namespace GSP.Battle
             m_parties[0] = _a;
             m_parties[1] = _b;
 
-             foreach(var party in m_parties)
+            for (var i = 0; i < m_parties.Length; i++)
             {
+                var party = m_parties[i];
+                OnEnableParty?.Invoke(i, party);
+                
                 foreach (var character in party.PartyMembers)
                 {
                     character.EnableScripts(m_scriptManager);

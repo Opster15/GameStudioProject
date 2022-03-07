@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Player Character
   m_statBlock:
-    m_HP: 50
+    m_HP: 250
     m_speed: 5
   m_skipsMinigames: 0
   m_moveset:

@@ -11,5 +11,8 @@ namespace GSP.LUA.Wrappers
         public string Name => m_baseObject.Name;
         
         [MoonSharpHidden] public GameCharacterWrapper(GameCharacter _baseObject) : base(_baseObject) { }
+
+        public void Damage(int _amount)
+            => m_baseObject.Damage(_amount);
     }
 }
