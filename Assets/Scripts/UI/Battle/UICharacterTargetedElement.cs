@@ -2,7 +2,7 @@
 using UnityEngine;
 namespace GSP.UI.Battle
 {
-    public class CharacterTargetedUI : MonoBehaviour
+    public class UICharacterTargetedElement : MonoBehaviour
     {
         /// <summary>
         /// The character to represent the health of.

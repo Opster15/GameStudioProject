@@ -64,7 +64,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 8e0fb0e7e66145643ab71514a8b6ed75, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -397,8 +397,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7b100c2ef6226b419074b92705c2642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_slider: {fileID: 7407485183000134032}
-  m_health: 0
 --- !u!1 &7407485183223421279
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,6 +762,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7407485184929058638}
+  - component: {fileID: 1156775042137993807}
   m_Layer: 5
   m_Name: PlayerStats
   m_TagString: Untagged
@@ -792,5 +791,17 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -340, y: -207.5}
-  m_SizeDelta: {x: 256, y: 100}
+  m_SizeDelta: {x: 320, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1156775042137993807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7407485184929058639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40689b64e62440d892763e3f62229a00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
