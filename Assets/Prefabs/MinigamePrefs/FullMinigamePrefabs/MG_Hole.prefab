@@ -308,37 +308,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.4}
   m_EdgeRadius: 0
---- !u!1 &1757539687318719051
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1757539687318719050}
-  m_Layer: 0
-  m_Name: MovingPlats
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1757539687318719050
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757539687318719051}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1757539687805764322}
-  m_Father: {fileID: 2521322389000860919}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1757539687805764323
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,8 +338,8 @@ Transform:
   m_LocalPosition: {x: 0, y: -3.1, z: 0}
   m_LocalScale: {x: 6, y: 2, z: 1}
   m_Children: []
-  m_Father: {fileID: 1757539687318719050}
-  m_RootOrder: 0
+  m_Father: {fileID: 2521322389000860919}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1757539687805764332
 SpriteRenderer:
@@ -463,7 +432,7 @@ MonoBehaviour:
   m_startPos: {fileID: 235902144752206304}
   m_endPos: {fileID: 235902144750096327}
   m_origParent: {fileID: 2521322389000860919}
-  speed: 5
+  speed: 4
 --- !u!1 &2521322389000860917
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,7 +464,7 @@ Transform:
   m_Children:
   - {fileID: 3829694859489208589}
   - {fileID: 2521322389935871861}
-  - {fileID: 1757539687318719050}
+  - {fileID: 1757539687805764322}
   - {fileID: 235902144673036811}
   - {fileID: 235902145985970529}
   - {fileID: 235902143921788725}
@@ -566,7 +535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb5460c9051e15499115fe690b53650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_length: 5
+  m_length: 3
   m_timeOutScore: 0
   m_pointGain: 1
   m_starting_points: 0

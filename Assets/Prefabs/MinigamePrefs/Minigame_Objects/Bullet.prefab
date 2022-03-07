@@ -134,5 +134,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_destoryOnBorderHit: 1
-  m_speed: 3
+  m_speed: 4
   m_maxLifetime: 5

@@ -752,7 +752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 3998164130285785523, guid: 03e2de05dfa6b534f9c37d9857f8f150, type: 3}
   shootPoint: {fileID: 575229465764587039}
-  m_attackSpeed: 0.7
+  m_attackSpeed: 0.3
 --- !u!1 &2965080973268216937
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,7 +1187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb5460c9051e15499115fe690b53650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_length: 5
+  m_length: 4
   m_timeOutScore: 0
   m_pointGain: 0.3
   m_starting_points: 0
