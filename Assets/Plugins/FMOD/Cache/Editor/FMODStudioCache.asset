@@ -68,7 +68,11 @@ MonoBehaviour:
   Path: FMOD Studio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< HEAD
   lastModified: 637822986224715895
+=======
+  lastModified: 637823496654578623
+>>>>>>> 16fdc8f8374d5918e7d43d71b9ffcb8cc56f1040
   FileSizes:
   - Name: Desktop
     Value: 2231200
@@ -85,6 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/BGM/Battle/Boss
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: event:/BGM/Battle/Boss
   Guid:
     Data1: 1862436157
@@ -101,6 +106,23 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 85333
 --- !u!114 &5210210471235598657
+=======
+  EditorBanks:
+  - {fileID: 3003798004182110784}
+  - {fileID: -158038832139329517}
+  EditorEvents:
+  - {fileID: -7382176681654653192}
+  - {fileID: -1892654813398748969}
+  - {fileID: -8408663232080252105}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -158038832139329517}
+  StringsBanks:
+  - {fileID: 3003798004182110784}
+  cacheTime: 637823496654588597
+  cacheVersion: 10
+--- !u!114 &3003798004182110784
+>>>>>>> 16fdc8f8374d5918e7d43d71b9ffcb8cc56f1040
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,7 +137,11 @@ MonoBehaviour:
   Path: FMOD Studio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< HEAD
   lastModified: 637822986224715895
+=======
+  lastModified: 637823496654588597
+>>>>>>> 16fdc8f8374d5918e7d43d71b9ffcb8cc56f1040
   FileSizes:
   - Name: Desktop
     Value: 922
