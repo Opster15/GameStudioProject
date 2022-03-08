@@ -35,19 +35,19 @@ public class TrackSwitch : MonoBehaviour
         if(state == FocusState.all)
         {
             cineCam.m_LookAt = m_camFocus[0];
-            camObj.transform.DOMove(m_camPos[0].position, 2);
+            camObj.transform.DOMove(m_camPos[0].position, 1);
         }
 
         if (state == FocusState.enemy)
         {
             cineCam.m_LookAt = m_camFocus[1];
-            camObj.transform.DOMove(m_camPos[1].position, 2);
+            camObj.transform.DOMove(m_camPos[1].position, 1);
         }
 
         if (state == FocusState.player)
         {
             cineCam.m_LookAt = m_camFocus[2];
-            camObj.transform.DOMove(m_camPos[2].position, 2);
+            camObj.transform.DOMove(m_camPos[2].position, 1);
         }
 
     }
