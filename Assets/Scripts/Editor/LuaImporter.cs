@@ -1,5 +1,5 @@
 ﻿using System.IO;
-using UnityEditor.Experimental.AssetImporters;
+
 using UnityEngine;
 
 namespace GSP.Editor
@@ -7,10 +7,10 @@ namespace GSP.Editor
     /// <summary>
     /// An extremely simple scripted importer to enable the use of .lua files as TextAssets.
     /// </summary>
-    [ScriptedImporter(1, "lua")]
-    public class LuaImporter : ScriptedImporter
+    [UnityEditor.AssetImporters.ScriptedImporter(1, "lua")]
+    public class LuaImporter : UnityEditor.AssetImporters.ScriptedImporter
     {
-        public override void OnImportAsset(AssetImportContext ctx)
+        public override void OnImportAsset(UnityEditor.AssetImporters.AssetImportContext ctx)
         {
             var asset = new TextAsset(File.ReadAllText(ctx.assetPath));
             ctx.AddObjectToAsset("Text", asset);
