@@ -47,8 +47,6 @@ namespace GSP.UI.Battle
         }
 
         private void UpdateText()
-        {
-            m_text.text = String.Format(m_healthText, m_currentHP, m_maxHP);
-        }
+            => m_text.text = string.Format(m_healthText, m_currentHP, m_maxHP);
     }
 }

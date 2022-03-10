@@ -41,16 +41,20 @@ namespace GSP.UI.Battle
             {
                 if (i < moveCount)
                 {
+                    UIMove move;
                     if (i < uiMoveCount)
                     {
                         m_moves[i].gameObject.SetActive(true);
-                        //TODO: Move name and stats displayed
+                        move = m_moves[i];
                     }
                     else
                     {
                         var moveObject = Instantiate(m_movePrefab, m_moveParent);
-                        m_moves.Add(moveObject.GetComponent<UIMove>());
+                        move = moveObject.GetComponent<UIMove>();
+                        m_moves.Add(move);
                     }
+                    
+                    move.SetTarget(_target?.Moveset[i], _target);
                 }
                 else
                 {
@@ -60,7 +64,7 @@ namespace GSP.UI.Battle
 
             var rectSize = m_rectTransform.sizeDelta;
             
-            rectSize.y = m_moveHeight * moveCount + m_paddingHeight * Mathf.Max(moveCount - 1, 1);
+            rectSize.y = m_moveHeight * moveCount + m_paddingHeight * Mathf.Max(moveCount - 1, 1.5f);
 
             m_rectTransform.sizeDelta = rectSize;
             m_containerTransform.sizeDelta = rectSize;

@@ -102,8 +102,8 @@ namespace GSP.Battle
 
         private void CalculateStats()
         {
-            m_power = m_move.Power;
-            m_speed = Mathf.Max(m_move.Speed + m_user.StatBlock.Speed, 1);
+            m_power = m_move.CalculatePower(m_user);
+            m_speed = m_move.CalculateSpeed(m_user);
         }
     }
 }
