@@ -65,6 +65,21 @@ namespace GSP.Battle
         /// Is the current character dead?
         /// </summary>
         public bool IsDead => m_currentHP < 1;
+        
+        /// <summary>
+        /// Called upon the character being selected to choose a move.
+        /// </summary>
+        public Action<bool> OnSelected;
+
+        /// <summary>
+        /// Called upon the character locking in a move to use.
+        /// </summary>
+        public Action<Move> OnMoveChosen;
+
+        /// <summary>
+        /// Called upon the character being called to perform an action.
+        /// </summary>
+        public Action<bool> OnActing;
 
         /// <summary>
         /// The in-game "live" instance of a character.
@@ -102,6 +117,27 @@ namespace GSP.Battle
         /// </summary>
         /// <param name="_amount"></param>
         public void Heal(int _amount) => SetHealth(m_currentHP + _amount);
+
+        /// <summary>
+        /// Select the character.
+        /// </summary>
+        /// <param name="_selected">Whether the character is selected.</param>
+        public void SetSelected(bool _selected)
+            => OnSelected?.Invoke(_selected);
+
+        /// <summary>
+        /// Lock in a move for this character.
+        /// </summary>
+        /// <param name="_move">The chosen move.</param>
+        public void SelectMove(Move _move)
+            => OnMoveChosen?.Invoke(_move);
+
+        /// <summary>
+        /// Call the character up to perform an action.
+        /// </summary>
+        /// <param name="_acting">Whether the character is performing an action.</param>
+        public void SetActing(bool _acting)
+            => OnActing?.Invoke(_acting);
 
         /// <summary>
         /// Arm the character's move's scripts for use during battle.

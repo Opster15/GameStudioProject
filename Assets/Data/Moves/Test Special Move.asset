@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Test Special Move
   m_EditorClassIdentifier: 
   m_name: Test Special Move
-  m_power: 50
+  m_power: 30
   m_speed: 8
   m_targetingMethod:
     m_target: 2

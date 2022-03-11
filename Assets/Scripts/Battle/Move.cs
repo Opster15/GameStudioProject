@@ -106,5 +106,15 @@ namespace GSP.Battle
             _scriptManager.ReturnScript(m_script);
             if (m_scriptReferences < 1) { m_script = null; }
         }
+
+        public int CalculatePower(GameCharacter _character)
+        {
+            return m_power;
+        }
+        
+        public int CalculateSpeed(GameCharacter _character)
+        {
+            return Mathf.Max(_character.StatBlock.Speed + m_speed, 1);
+        }
     }
 }

@@ -92,6 +92,7 @@ namespace GSP.Battle
                 
                 // Tell the battle controller which party member is active.
                 _party.BattleController.SetPartyMember(i);
+                _party.PartyMembers[i].SetSelected(true);
 
                 // Select the move to use, based on the current battle state.
                 yield return new WaitUntil(() => _party.BattleController.GetSelectedMove() != null);
@@ -106,7 +107,9 @@ namespace GSP.Battle
                     targets = new List<GameCharacter> { _party.BattleController.GetSelectedTarget() };
                 }
 
+                _party.PartyMembers[i].SelectMove(move);
                 m_actionManager.QueueAction(new Action(move, _party.PartyMembers[i], targets));
+                _party.PartyMembers[i].SetSelected(false);
             }
         }
     }

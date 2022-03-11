@@ -56,7 +56,10 @@ namespace GSP.Battle
         {
             if (_action.User.IsDead) { yield break; }
             m_currentMinigameScore = 1.0f;
-
+            
+            _action.User.SelectMove(null);
+            _action.User.SetActing(true);
+            
             // Only continue if the move user is a player and there's a valid minigame prefab assigned.
             if (!_action.SkipsMinigame && _action.Move.MinigamePrefab)
             {
@@ -74,6 +77,7 @@ namespace GSP.Battle
             }
 
             _action.Execute(m_currentMinigameScore);
+            _action.User.SetActing(false);
         }
 
         /// <summary>
