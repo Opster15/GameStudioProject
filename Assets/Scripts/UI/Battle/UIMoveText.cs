@@ -8,7 +8,7 @@ namespace GSP.UI.Battle
     public class UIMoveText : UIMoveTargetedElement
     {
         [EnumToggleButtons]
-        public enum Type
+        private enum Type
         {
             Name,
             Power,

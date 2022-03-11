@@ -104,11 +104,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4348e719f23ce78498c6a7f7a2c41280, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_mode: 1
+  m_closedSize: {x: 320, y: 0}
+  m_openSize: {x: 320, y: 264}
+  m_resizeTime: 0.3
   m_movePrefab: {fileID: 2787623897913936429, guid: 7d9bd423fd88f0944b7dd0c0a0392ad3,
     type: 3}
   m_moveParent: {fileID: 3802358705697632950}
   m_moveHeight: 80
   m_paddingHeight: 12
+  m_moveResizeTime: 0.15
 --- !u!1 &6129387312878385735
 GameObject:
   m_ObjectHideFlags: 0

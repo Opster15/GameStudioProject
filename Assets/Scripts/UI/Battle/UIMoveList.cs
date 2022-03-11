@@ -7,11 +7,10 @@ using UnityEngine;
 
 namespace GSP.UI.Battle
 {
-    public class UIMoveList : UICharacterTargetedElement
+    public class UIMoveList : UISelectedCharacterScale
     {
         private List<UIMove> m_moves;
         
-        private RectTransform m_rectTransform;
         private RectTransform m_containerTransform;
 
         [SerializeField] private GameObject m_movePrefab;
@@ -21,11 +20,15 @@ namespace GSP.UI.Battle
         [SerializeField] private int m_moveHeight;
         [SerializeField] private int m_paddingHeight;
 
-        private void Awake()
+        [SerializeField] private float m_moveResizeTime;
+
+        private Vector2 m_rectSize;
+
+        protected override void Awake()
         {
+            base.Awake();
             m_moves = new List<UIMove>();
 
-            m_rectTransform = GetComponent<RectTransform>();
             m_containerTransform = m_rectTransform.GetChild(0).GetComponent<RectTransform>();
         }
 
@@ -62,12 +65,12 @@ namespace GSP.UI.Battle
                 }
             }
 
-            var rectSize = m_rectTransform.sizeDelta;
-            
-            rectSize.y = m_moveHeight * moveCount + m_paddingHeight * Mathf.Max(moveCount - 1, 1.5f);
+            m_rectSize = m_openSize;
+            m_rectSize.y = m_moveHeight * moveCount + m_paddingHeight * Mathf.Max(moveCount - 1, 1.5f);
+            m_openSize = m_rectSize;
+            m_containerTransform.sizeDelta = m_rectSize;
 
-            m_rectTransform.sizeDelta = rectSize;
-            m_containerTransform.sizeDelta = rectSize;
+            m_resizeTime = m_moveResizeTime * moveCount;
         }
     }
 }
