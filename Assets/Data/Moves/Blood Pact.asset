@@ -10,16 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
-  m_Name: Test Special Move
+  m_Name: Blood Pact
   m_EditorClassIdentifier: 
-  m_name: Test Special Move
-  m_power: 30
-  m_speed: 8
+  m_name: Blood Pact
+  m_description: A move that gets more powerful the less health the user and target
+    have remaining. Damages both.
+  m_power: 999
+  m_speed: 15
   m_targetingMethod:
     m_target: 2
-    m_selectAll: 1
+    m_selectAll: 0
     m_excludeSelf: 0
-  m_minigamePrefab: {fileID: 8968737559859580716, guid: c93c216474b60494b825c321f8ff88c1,
+  m_minigamePrefab: {fileID: 8000579240565719698, guid: c8335b8d69e271e40b8df82de52a6390,
     type: 3}
-  m_scriptFile: {fileID: 2213920135882650261, guid: a1febff93eedb794ea63fbe6c4583f54,
+  m_scriptFile: {fileID: 2213920135882650261, guid: 314203fcc6eeaa34cb4d06721cf92875,
     type: 3}

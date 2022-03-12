@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Light Attack
   m_EditorClassIdentifier: 
   m_name: Light Attack
+  m_description: Deals light damage to an enemy.
   m_power: 40
   m_speed: 5
   m_targetingMethod:

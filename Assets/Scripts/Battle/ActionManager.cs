@@ -94,6 +94,14 @@ namespace GSP.Battle
         /// Sort the actions in the queue from lowest to highest speed.
         /// </summary>
         private void SortQueue()
-            => m_actions = m_actions.OrderBy(p => p.Speed).ToList();
+        {
+            // Shuffle the list beforehand, to account for speed ties.
+            for (var i = 0; i < m_actions.Count; i++)
+            {
+                var j = Random.Range(0, m_actions.Count - i);
+                (m_actions[j], m_actions[i]) = (m_actions[i], m_actions[j]);
+            }
+            m_actions = m_actions.OrderBy(p => p.Speed).ToList();
+        }
     }
 }

@@ -8,7 +8,20 @@ namespace GSP.LUA.Wrappers
     [MoonSharpUserData]
     public class GameCharacterWrapper : ScriptWrapper<GameCharacter>
     {
+        /// <summary>
+        /// The character's name.
+        /// </summary>
         public string Name => m_baseObject.Name;
+
+        /// <summary>
+        /// The character's maximum possible health.
+        /// </summary>
+        public int MaxHP => m_baseObject.MaxHP;
+
+        /// <summary>
+        /// The character's current health.
+        /// </summary>
+        public int CurrentHP => m_baseObject.CurrentHP;
         
         [MoonSharpHidden] public GameCharacterWrapper(GameCharacter _baseObject) : base(_baseObject) { }
 

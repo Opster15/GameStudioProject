@@ -14,6 +14,11 @@ namespace GSP.Battle
         [SerializeField] private string m_name;
 
         /// <summary>
+        /// A description of the move's effects.
+        /// </summary>
+        [SerializeField] [TextArea(1, 4)] private string m_description;
+
+        /// <summary>
         /// The base power of the move.
         /// </summary>
         [SerializeField] private int m_power;
@@ -53,6 +58,11 @@ namespace GSP.Battle
         /// The move's name.
         /// </summary>
         public string Name => m_name;
+
+        /// <summary>
+        /// A description of the move's effects.
+        /// </summary>
+        public string Description => m_description;
 
         /// <summary>
         /// The base power of the move.

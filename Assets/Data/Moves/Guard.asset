@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Guard
   m_EditorClassIdentifier: 
   m_name: Guard
+  m_description: Guards from oncoming damage for 1 turn.
   m_power: 0
   m_speed: 1
   m_targetingMethod:
