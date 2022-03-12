@@ -8,7 +8,7 @@ namespace GSP.UI.Battle
     {
         private BattleManager m_battleManager;
         
-        private UIPartyMember[] m_partyMembers;
+        private UICharacter[] m_partyMembers;
         
         [SerializeField] private int m_partyID;
 
@@ -16,7 +16,7 @@ namespace GSP.UI.Battle
         {
             m_battleManager = FindObjectOfType<BattleManager>();
             
-            m_partyMembers = GetComponentsInChildren<UIPartyMember>();
+            m_partyMembers = GetComponentsInChildren<UICharacter>();
         }
 
         private void OnEnable()

@@ -23,7 +23,6 @@ namespace GSP.UI.Battle
 
         private void OnMoveChosen(Move _move)
         {
-            Debug.Log(_move);
             m_move.SetTarget(_move, m_target);
             SetScale(_move != null);
         }

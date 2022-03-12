@@ -11,6 +11,8 @@ namespace GSP.UI.Battle
         
         [SerializeField] protected float m_resizeTime;
         [SerializeField] private float m_resizeDelay;
+
+        private bool m_isOpen;
         
         private Vector2 m_targetSize;
         private Sequence m_resizeSequence;
@@ -22,6 +24,9 @@ namespace GSP.UI.Battle
 
         protected void SetScale(bool _open)
         {
+            if (_open == m_isOpen) { return; }
+            m_isOpen = _open;
+            
             if (m_resizeSequence is { active: true })
             {
                 m_resizeSequence.Kill();

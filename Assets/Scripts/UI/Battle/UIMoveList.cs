@@ -2,13 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using GSP.Battle;
+using GSP.Battle.Controller;
 using GSP.UI.Battle;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GSP.UI.Battle
 {
     public class UIMoveList : UISelectedCharacterScale
     {
+        private PlayerBattleController m_playerBattleController;
+        
         private List<UIMove> m_moves;
         
         private RectTransform m_containerTransform;
@@ -28,6 +32,8 @@ namespace GSP.UI.Battle
         {
             base.Awake();
             m_moves = new List<UIMove>();
+            
+            m_playerBattleController = FindObjectOfType<PlayerBattleController>();
 
             m_containerTransform = m_rectTransform.GetChild(0).GetComponent<RectTransform>();
         }
@@ -57,7 +63,9 @@ namespace GSP.UI.Battle
                         m_moves.Add(move);
                     }
                     
+                    var id = i;
                     move.SetTarget(_target?.Moveset[i], _target);
+                    move.GetComponent<UIButton>().SetClickAction(() => m_playerBattleController.SelectMove(id));
                 }
                 else
                 {

@@ -88,11 +88,12 @@ namespace GSP.Battle
             _party.BattleController.SetOpposingParty(_opposingParty);
             for (var i = 0; i < _party.PartyMembers.Count; i++)
             {
-                if (_party.PartyMembers[i].IsDead) { continue; }
+                var character = _party.PartyMembers[i];
+                if (character.IsDead) { continue; }
                 
                 // Tell the battle controller which party member is active.
                 _party.BattleController.SetPartyMember(i);
-                _party.PartyMembers[i].SetSelected(true);
+                character.SetSelected(true);
 
                 // Select the move to use, based on the current battle state.
                 yield return new WaitUntil(() => _party.BattleController.GetSelectedMove() != null);
@@ -103,13 +104,18 @@ namespace GSP.Battle
                 _party.BattleController.SetTargets(targets);
                 if(move.TargetingMethod.IsTargetingManual())
                 {
+                    character.SetTargeting(targets);
+                    
                     yield return new WaitUntil(() => _party.BattleController.GetSelectedTarget() != null);
                     targets = new List<GameCharacter> { _party.BattleController.GetSelectedTarget() };
+                    
+                    character.SetTargeting(null);
                 }
 
-                _party.PartyMembers[i].SelectMove(move);
+                character.SelectMove(move);
                 m_actionManager.QueueAction(new Action(move, _party.PartyMembers[i], targets));
-                _party.PartyMembers[i].SetSelected(false);
+                
+                character.SetSelected(false);
             }
         }
     }

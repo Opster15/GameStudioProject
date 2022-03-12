@@ -3,7 +3,7 @@ using System.Linq;
 using GSP.Battle;
 namespace GSP.UI.Battle
 {
-    public class UIPartyMember : UICharacterTargetedElement
+    public class UICharacter : UICharacterTargetedElement
     {
         private List<UICharacterTargetedElement> m_targetedElements;
         

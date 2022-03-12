@@ -89,7 +89,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f61fb8e7c1ca81a499b4accec898230a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_mode: 3
   m_closedSize: {x: 0, y: 0}
   m_openSize: {x: 24, y: 16}
   m_resizeTime: 0
+  m_resizeDelay: 0
+  m_mode: 5

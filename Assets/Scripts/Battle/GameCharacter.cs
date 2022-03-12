@@ -70,6 +70,11 @@ namespace GSP.Battle
         /// Called upon the character being selected to choose a move.
         /// </summary>
         public Action<bool> OnSelected;
+        
+        /// <summary>
+        /// Called upon the character being selected to target for a move.
+        /// </summary>
+        public Action<List<GameCharacter>> OnTargeting;
 
         /// <summary>
         /// Called upon the character locking in a move to use.
@@ -97,26 +102,39 @@ namespace GSP.Battle
         /// Change the character's health to a certain amount.
         /// Their health cannot go below 0 and cannot exceed their maximum health.
         /// </summary>
-        /// <param name="_HP"></param>
+        /// <param name="_HP">The value to set the character's health to.</param>
         public void SetHealth(int _HP)
         {
             _HP = Mathf.Clamp(_HP, 0, m_maxHP);
             m_currentHP = _HP;
+
+            if (m_currentHP < 1) { Kill(); }
         }
 
         /// <summary>
         /// Damage the character by a certain amount.
         /// Their health can not go below 0.
         /// </summary>
-        /// <param name="_amount"></param>
-        public void Damage(int _amount) => SetHealth(m_currentHP - _amount);
+        /// <param name="_amount">The damage to deal.</param>
+        public void Damage(int _amount)
+            => SetHealth(m_currentHP - _amount);
 
         /// <summary>
         /// Heal the character by a certain amount.
         /// Their health can not exceed their maximum health.
         /// </summary>
-        /// <param name="_amount"></param>
-        public void Heal(int _amount) => SetHealth(m_currentHP + _amount);
+        /// <param name="_amount">The amount to heal the character.</param>
+        public void Heal(int _amount)
+            => SetHealth(m_currentHP + _amount);
+
+        /// <summary>
+        /// Kill the character.
+        /// </summary>
+        public void Kill()
+        {
+            m_currentHP = 0;
+            SelectMove(null);
+        }
 
         /// <summary>
         /// Select the character.
@@ -124,6 +142,13 @@ namespace GSP.Battle
         /// <param name="_selected">Whether the character is selected.</param>
         public void SetSelected(bool _selected)
             => OnSelected?.Invoke(_selected);
+
+        /// <summary>
+        /// Call the character to target for a move.
+        /// </summary>
+        /// <param name="_targeting">Whether the character is targeting.</param>
+        public void SetTargeting(List<GameCharacter> _targetOptions)
+            => OnTargeting?.Invoke(_targetOptions);
 
         /// <summary>
         /// Lock in a move for this character.

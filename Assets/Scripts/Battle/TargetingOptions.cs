@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using GSP.Battle.Party;
 namespace GSP.Battle
@@ -54,20 +55,21 @@ namespace GSP.Battle
         public List<GameCharacter> GetValidTargets(int _characterID, GameParty _party, GameParty _opposingParty)
         {
             var targets = new List<GameCharacter>();
+            //TODO: More adjustable method of checking things such as if the character is dead (for moves that target corpses)
             switch(m_target)
             {
                 case TargetChoice.Self:
                     targets.Add(_party.PartyMembers[_characterID]);
                     break;
                 case TargetChoice.Friendly:
-                    targets.AddRange(_party.PartyMembers);
+                    targets.AddRange(_party.PartyMembers.Where(c => !c.IsDead));
                     break;
                 case TargetChoice.Enemy:
-                    targets.AddRange(_opposingParty.PartyMembers);
+                    targets.AddRange(_opposingParty.PartyMembers.Where(c => !c.IsDead));
                     break;
                 case TargetChoice.All:
-                    targets.AddRange(_party.PartyMembers);
-                    targets.AddRange(_opposingParty.PartyMembers);
+                    targets.AddRange(_party.PartyMembers.Where(c => !c.IsDead));
+                    targets.AddRange(_opposingParty.PartyMembers.Where(c => !c.IsDead));
                     break;
             }
 

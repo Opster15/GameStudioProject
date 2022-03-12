@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using GSP.Battle;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -10,9 +11,10 @@ namespace GSP.UI.Battle
         [Flags] [EnumToggleButtons]
         private enum Mode
         {
-            None,
-            Selected,
-            Acting
+            None  = 0,
+            Selected = 1,
+            HideOnTargeting = 2,
+            Acting = 4
         }
         
         [SerializeField] private Mode m_mode;
@@ -22,6 +24,7 @@ namespace GSP.UI.Battle
             if (m_target != null)
             {
                 m_target.OnSelected -= OnCharacterSelected;
+                m_target.OnTargeting -= OnCharacterTargeting;
                 m_target.OnActing -= OnCharacterActing;
             }
             
@@ -29,6 +32,7 @@ namespace GSP.UI.Battle
             if (_target == null) { return; }
             
             _target.OnSelected += OnCharacterSelected;
+            m_target.OnTargeting += OnCharacterTargeting;
             _target.OnActing += OnCharacterActing;
         }
 
@@ -36,6 +40,12 @@ namespace GSP.UI.Battle
         {
             if (!m_mode.HasFlag(Mode.Selected)) { return; }
             SetScale(_selected);
+        }
+
+        private void OnCharacterTargeting(List<GameCharacter> _targetOptions)
+        {
+            if (!m_mode.HasFlag(Mode.HideOnTargeting)) { return; }
+            SetScale(false);
         }
 
         private void OnCharacterActing(bool _acting)
