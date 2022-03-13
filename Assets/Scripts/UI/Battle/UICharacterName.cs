@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 namespace GSP.UI.Battle
 {
-    public class UICharacterName : UICharacterTargetedElement
+    public class UICharacterName : CharacterTargetedElement
     {
         private TMP_Text m_text;
 

@@ -1,8 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
-
-namespace GSP
+namespace GSP.UI
 {
     public class UIButton : MonoBehaviour
     {

@@ -2,7 +2,7 @@
 using UnityEngine;
 namespace GSP.UI.Battle
 {
-    public abstract class UICharacterTargetedElement : MonoBehaviour
+    public abstract class CharacterTargetedElement : MonoBehaviour
     {
         /// <summary>
         /// The character to represent.

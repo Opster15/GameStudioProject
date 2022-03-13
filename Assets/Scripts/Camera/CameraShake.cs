@@ -1,39 +1,39 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Cinemachine;
 using UnityEngine;
-using Cinemachine;
-
-public class CameraShake : MonoBehaviour
+namespace GSP.Camera
 {
-    public static CameraShake Instance { get; private set; }
-
-    private CinemachineVirtualCamera cam;
-
-    float shakeTimer;
-    public void Awake()
+    public class CameraShake : MonoBehaviour
     {
-        Instance = this;
-        cam = GetComponent<CinemachineVirtualCamera>();
-    }
+        public static CameraShake Instance { get; private set; }
 
-    public void ShakeCam(float intensity, float time)
-    {
-        CinemachineBasicMultiChannelPerlin perl = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        private CinemachineVirtualCamera cam;
 
-        perl.m_AmplitudeGain = intensity;
-        shakeTimer = time;
-    }
-
-    public void Update()
-    {
-        if (shakeTimer > 0)
+        float shakeTimer;
+        public void Awake()
         {
-            shakeTimer -= Time.deltaTime;
-            if (shakeTimer <= 0f)
-            {
-                CinemachineBasicMultiChannelPerlin perl = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+            Instance = this;
+            cam = GetComponent<CinemachineVirtualCamera>();
+        }
 
-                perl.m_AmplitudeGain = 0f;
+        public void ShakeCam(float intensity, float time)
+        {
+            CinemachineBasicMultiChannelPerlin perl = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+
+            perl.m_AmplitudeGain = intensity;
+            shakeTimer = time;
+        }
+
+        public void Update()
+        {
+            if (shakeTimer > 0)
+            {
+                shakeTimer -= Time.deltaTime;
+                if (shakeTimer <= 0f)
+                {
+                    CinemachineBasicMultiChannelPerlin perl = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+
+                    perl.m_AmplitudeGain = 0f;
+                }
             }
         }
     }

@@ -1,14 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Billboard : MonoBehaviour
+﻿using UnityEngine;
+namespace GSP.UI
 {
-
-    public Transform cam;
-
-    private void LateUpdate()
+    public class Billboard : MonoBehaviour
     {
-        transform.LookAt(transform.position + cam.forward);
+        //TODO: Have it not get fucked up when there are multiple cameras
+        private UnityEngine.Camera m_camera;
+        
+        private void Awake()
+        {
+            m_camera = FindObjectOfType<UnityEngine.Camera>();
+        }
+
+        private void LateUpdate()
+        {
+            transform.LookAt(transform.position + m_camera.transform.forward);
+        }
     }
 }

@@ -9,7 +9,7 @@ namespace GSP.UI.Battle
     {
         private PlayerBattleController m_playerBattleController;
         
-        private List<UICharacter> m_targets;
+        private List<CharacterTarget> m_targets;
         
         private RectTransform m_containerTransform;
 
@@ -27,7 +27,7 @@ namespace GSP.UI.Battle
         protected override void Awake()
         {
             base.Awake();
-            m_targets = new List<UICharacter>();
+            m_targets = new List<CharacterTarget>();
             
             m_playerBattleController = FindObjectOfType<PlayerBattleController>();
 
@@ -50,7 +50,7 @@ namespace GSP.UI.Battle
             var hideObjectSequence = DOTween.Sequence();
             for (var i = 0; i < Mathf.Max(targetCount, uiTargetCount); i++)
             {
-                UICharacter target;
+                CharacterTarget target;
                 if (i < targetCount)
                 {
                     if (i < uiTargetCount)
@@ -61,7 +61,7 @@ namespace GSP.UI.Battle
                     else
                     {
                         var moveObject = Instantiate(m_targetPrefab, m_targetParent);
-                        target = moveObject.GetComponent<UICharacter>();
+                        target = moveObject.GetComponent<CharacterTarget>();
                         m_targets.Add(target);
                     }
                     

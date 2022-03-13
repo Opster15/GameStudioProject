@@ -1,54 +1,62 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Cinemachine;
+﻿using Cinemachine;
 using DG.Tweening;
-
-public class TrackSwitch : MonoBehaviour
+using Sirenix.OdinInspector;
+using UnityEngine;
+namespace GSP.Camera
 {
-    public GameObject camObj;
-    Cinemachine.CinemachineVirtualCamera cineCam;
-
-    public Transform[] m_camFocus;
-    public Transform[] m_camPos;
-    //order of array is All,Enemy,Player
-
-    public enum FocusState
+    public class TrackSwitch : MonoBehaviour
     {
-        enemy,
-        player,
-        all
-    }
+        private CameraFocuses m_focuses;
+    
+        private CinemachineVirtualCamera m_cineCam;
 
-    public FocusState state = FocusState.all;
-
-
-    private void Awake()
-    {
-        cineCam = GetComponent<Cinemachine.CinemachineVirtualCamera>();
-    }
-
-
-    public void Update()
-    {
-
-        if(state == FocusState.all)
+        [EnumToggleButtons]
+        public enum FocusState
         {
-            cineCam.m_LookAt = m_camFocus[0];
-            camObj.transform.DOMove(m_camPos[0].position, 1);
+            All,
+            Enemy,
+            Player
         }
 
-        if (state == FocusState.enemy)
+        /// <summary>
+        /// The current focus state of the camera.
+        /// </summary>
+        [SerializeField] private FocusState m_state = FocusState.All;
+
+        /// <summary>
+        /// The duration it takes for the camera to move between focus state positions.
+        /// </summary>
+        [SerializeField] private float m_moveTime;
+
+        private FocusState m_previousState;
+
+        /// <summary>
+        /// The current focus state of the camera.
+        /// </summary>
+        public FocusState CurrentState
         {
-            cineCam.m_LookAt = m_camFocus[1];
-            camObj.transform.DOMove(m_camPos[1].position, 1);
+            get => m_state;
+            set => m_state = value;
         }
 
-        if (state == FocusState.player)
+        private void Awake()
         {
-            cineCam.m_LookAt = m_camFocus[2];
-            camObj.transform.DOMove(m_camPos[2].position, 1);
+            m_focuses = FindObjectOfType<CameraFocuses>();
+        
+            m_cineCam = GetComponent<CinemachineVirtualCamera>();
+
+            m_previousState = m_state;
         }
 
+        public void Update()
+        {
+            if (m_state == m_previousState) { return; }
+            var targetId = (int) m_state;
+        
+            m_cineCam.m_LookAt = m_focuses.GetFocusPoint(targetId);
+            transform.DOMove(m_focuses.GetCameraPosition(targetId).position, m_moveTime);
+
+            m_previousState = m_state;
+        }
     }
 }

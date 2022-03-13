@@ -2,7 +2,7 @@
 using UnityEngine;
 namespace GSP.UI.Battle
 {
-    public abstract class UIResizingElement : UICharacterTargetedElement
+    public abstract class UIResizingElement : CharacterTargetedElement
     {
         protected RectTransform m_rectTransform;
 

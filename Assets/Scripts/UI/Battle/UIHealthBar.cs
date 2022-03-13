@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 namespace GSP.UI.Battle
 {
-    public class UIHealthBar : UICharacterTargetedElement
+    public class UIHealthBar : CharacterTargetedElement
     {
         private Slider m_slider;
         
