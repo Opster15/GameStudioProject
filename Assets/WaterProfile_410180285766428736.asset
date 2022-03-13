@@ -33,8 +33,8 @@ MonoBehaviour:
   slopeFoamStrength: 0.5
   slopeFoamFlowSpeed: 20
   slopeFoamDistance: 50
-  rippleHeight: 0.1
-  rippleSpeed: 10
+  rippleHeight: 0.3
+  rippleSpeed: 5
   rippleNoiseScale: 1
   enableWave: 0
   waveDirection: 252
@@ -60,4 +60,4 @@ MonoBehaviour:
   causticTexture: {fileID: 2800000, guid: eeacbffe8eb46d343b0d7a9189130772, type: 3}
   causticSize: 10
   causticStrength: 1
-  causticDistortionStrength: 0.1
+  causticDistortionStrength: 1
