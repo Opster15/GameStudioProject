@@ -15,6 +15,8 @@ namespace GSP.Battle
 
         public Action<int, GameParty> OnEnableParty;
 
+        public Action<int, GameParty> OnPartyTurn;
+
         private void Awake()
         {
             m_actionManager = FindObjectOfType<ActionManager>();
@@ -66,8 +68,12 @@ namespace GSP.Battle
         {
             for (var i = 0; i < m_parties.Length; i++)
             {
-                yield return ChooseMoves(m_parties[m_parties.Length - i - 1], m_parties[i]);
+                var partyID = m_parties.Length - i - 1;
+                
+                OnPartyTurn?.Invoke(partyID, m_parties[partyID]);
+                yield return ChooseMoves(m_parties[partyID], m_parties[i]);
             }
+            OnPartyTurn?.Invoke(-1, null);
             yield return m_actionManager.ExecuteActions();
 
             EndTurn();

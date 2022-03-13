@@ -1,11 +1,15 @@
-﻿using Cinemachine;
+﻿using System;
+using Cinemachine;
 using DG.Tweening;
+using GSP.Battle;
+using GSP.Battle.Party;
 using Sirenix.OdinInspector;
 using UnityEngine;
 namespace GSP.Camera
 {
     public class TrackSwitch : MonoBehaviour
     {
+        private BattleManager m_battleManager;
         private CameraFocuses m_focuses;
     
         private CinemachineVirtualCamera m_cineCam;
@@ -41,11 +45,22 @@ namespace GSP.Camera
 
         private void Awake()
         {
+            m_battleManager = FindObjectOfType<BattleManager>();
             m_focuses = FindObjectOfType<CameraFocuses>();
         
             m_cineCam = GetComponent<CinemachineVirtualCamera>();
 
             m_previousState = m_state;
+        }
+
+        private void OnEnable()
+        {
+            m_battleManager.OnPartyTurn += OnPartyTurn;
+        }
+
+        private void OnDisable()
+        {
+            m_battleManager.OnPartyTurn -= OnPartyTurn;
         }
 
         public void Update()
@@ -57,6 +72,13 @@ namespace GSP.Camera
             transform.DOMove(m_focuses.GetCameraPosition(targetId).position, m_moveTime);
 
             m_previousState = m_state;
+        }
+
+        private void OnPartyTurn(int _partyId, GameParty _party)
+        {
+            var focusState = FocusState.All;
+            if (_partyId == 0) { focusState = FocusState.Player; }
+            m_state = focusState;
         }
     }
 }
