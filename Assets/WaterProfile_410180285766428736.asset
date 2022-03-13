@@ -23,7 +23,7 @@ MonoBehaviour:
   maxDepth: 5
   enableFoam: 1
   foamColor: {r: 1, g: 1, b: 1, a: 1}
-  foamDistance: 0.05
+  foamDistance: 0.03
   enableFoamHQ: 0
   foamNoiseScaleHQ: 3
   foamNoiseSpeedHQ: 1
