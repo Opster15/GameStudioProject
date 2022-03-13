@@ -241,6 +241,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HP Slider
       objectReference: {fileID: 0}
+    - target: {fileID: 880026087822531391, guid: 52f0cc034441da14ea51e5c52a558330,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7325919428921268096, guid: 52f0cc034441da14ea51e5c52a558330,
         type: 3}
       propertyPath: m_tickdownSpeed
@@ -248,6 +253,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52f0cc034441da14ea51e5c52a558330, type: 3}
+--- !u!1 &6011363097289032822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 880026086671474117, guid: 52f0cc034441da14ea51e5c52a558330,
+    type: 3}
+  m_PrefabInstance: {fileID: 6871048217739352499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7974068006712142184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6011363097289032822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 150b4aa7d0c65e2429c6a530a19dc4ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_fadeInTime: 0.15
+  m_fadeOutTime: 2
 --- !u!224 &6011363097289033097 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 880026086671473722, guid: 52f0cc034441da14ea51e5c52a558330,
