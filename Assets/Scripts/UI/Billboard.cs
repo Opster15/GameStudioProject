@@ -8,7 +8,7 @@ namespace GSP.UI
         
         private void Awake()
         {
-            m_camera = FindObjectOfType<UnityEngine.Camera>();
+            m_camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<UnityEngine.Camera>();
         }
 
         private void LateUpdate()

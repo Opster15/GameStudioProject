@@ -15,9 +15,13 @@ namespace GSP
         private Graphic[] m_graphics;
 
         [SerializeField] private float m_fadeInTime;
+        
+        [SerializeField] private float m_fadeOutDelay;
         [SerializeField] private float m_fadeOutTime;
 
         private bool m_wasTakingDamage;
+
+        private Sequence m_fadeSequence;
         
         private void Awake()
         {
@@ -37,10 +41,18 @@ namespace GSP
             if (m_healthBar.TakingDamage == m_wasTakingDamage) { return; }
             m_wasTakingDamage = m_healthBar.TakingDamage;
 
+            if (m_fadeSequence is { active: true })
+            {
+                m_fadeSequence.Kill();
+            }
+            
+            m_fadeSequence = DOTween.Sequence();
             foreach (var graphic in m_graphics)
             {
-                graphic.DOFade(m_wasTakingDamage ? 1 : 0, m_wasTakingDamage ? m_fadeInTime : m_fadeOutTime);
+                m_fadeSequence.Insert(0, graphic.DOFade(m_wasTakingDamage ? 1 : 0, m_wasTakingDamage ? m_fadeInTime : m_fadeOutTime));
             }
+            if (!m_wasTakingDamage) { m_fadeSequence.PrependInterval(m_fadeOutDelay); }
+            m_fadeSequence.Play();
         }
     }
 }

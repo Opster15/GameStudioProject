@@ -84,7 +84,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 16
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &2788386895686970296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,7 +272,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_fadeInTime: 0.15
-  m_fadeOutTime: 2
+  m_fadeOutDelay: 1.5
+  m_fadeOutTime: 1.8
 --- !u!224 &6011363097289033097 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 880026086671473722, guid: 52f0cc034441da14ea51e5c52a558330,
