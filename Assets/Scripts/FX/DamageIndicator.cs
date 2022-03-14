@@ -9,8 +9,7 @@ namespace GSP
         [SerializeField] private Color m_healColor;
         [SerializeField] private Color m_damageColor;
 
-        [SerializeField] private float m_minFloatSpeed;
-        [SerializeField] private float m_maxFloatSpeed;
+        [SerializeField] private float m_minFloatSpeed, m_maxFloatSpeed;
         [SerializeField] private float m_lifetime;
 
         private float m_floatSpeed;
@@ -39,8 +38,8 @@ namespace GSP
         public void SetAmount(int _amount)
         {
             var positive = _amount > 0;
-            m_text.text = (positive ? "-" : "+") + Mathf.Abs(_amount);
-            m_text.color = positive ? m_damageColor : m_healColor;
+            m_text.text = (positive ? "+" : "-") + Mathf.Abs(_amount);
+            m_text.color = positive ? m_healColor : m_damageColor;
         }
     }
 }

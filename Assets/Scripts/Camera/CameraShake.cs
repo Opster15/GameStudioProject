@@ -4,35 +4,43 @@ namespace GSP.Camera
 {
     public class CameraShake : MonoBehaviour
     {
-        public static CameraShake Instance { get; private set; }
+        private CinemachineVirtualCamera m_cam;
+        private CinemachineBasicMultiChannelPerlin m_perl;
 
-        private CinemachineVirtualCamera cam;
+        [SerializeField] private float m_maxIntensity;
 
-        float shakeTimer;
+        private float m_amplitude;
+        private float m_shakeDuration;
+
+        private float m_shakeTimer;
+
         public void Awake()
         {
-            Instance = this;
-            cam = GetComponent<CinemachineVirtualCamera>();
+            m_cam = GetComponent<CinemachineVirtualCamera>();
+            m_perl = m_cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
         }
 
-        public void ShakeCam(float intensity, float time)
+        public void ShakeCam(float _intensity, float _time)
         {
-            CinemachineBasicMultiChannelPerlin perl = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+            m_amplitude = Mathf.Min(m_amplitude + _intensity, m_maxIntensity);
+            m_perl.m_AmplitudeGain = m_amplitude;
 
-            perl.m_AmplitudeGain = intensity;
-            shakeTimer = time;
+            if (m_shakeTimer < _time)
+            {
+                m_shakeTimer = _time;
+                m_shakeDuration = _time;
+            }
         }
 
         public void Update()
         {
-            if (shakeTimer > 0)
+            if (m_shakeTimer > 0)
             {
-                shakeTimer -= Time.deltaTime;
-                if (shakeTimer <= 0f)
+                m_shakeTimer -= Time.deltaTime;
+                m_perl.m_AmplitudeGain = Mathf.Lerp(0, m_amplitude, m_shakeTimer / m_shakeDuration);
+                if (m_shakeTimer <= 0f)
                 {
-                    CinemachineBasicMultiChannelPerlin perl = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-
-                    perl.m_AmplitudeGain = 0f;
+                    m_perl.m_AmplitudeGain = 0f;
                 }
             }
         }

@@ -83,7 +83,6 @@ namespace GSP.Minigames
             m_timer += Time.deltaTime;
             if (m_timer >= m_length)
             {
-                Debug.Log(m_timeOutScore.ToString("F2"));
                 Finish(m_timeOutScore);
                 m_running = false;
                 Destroy(gameObject);
