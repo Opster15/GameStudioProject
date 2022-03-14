@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class MG_Moving_Plat : MonoBehaviour
 {
-    public Transform m_startPos, m_endPos,m_origParent;
-    public float speed;
-    Vector3 m_nextPos;
+    public Transform m_startPos, m_endPos, m_origParent, m_startingPos;
+    public float m_speed, m_randomStart;
+    Vector3 m_nextPos, v;
 
     private void Start()
     {
-        transform.position = m_startPos.position;
+        m_nextPos = m_startPos.position;
+
+        v = m_startPos.position - m_endPos.position;
+
+        //m_startingPos = m_startPos + Random.value * v;
+
+        m_speed = Random.Range(1f, 3f);
     }
 
     public void Update()
@@ -24,7 +30,7 @@ public class MG_Moving_Plat : MonoBehaviour
             m_nextPos = m_startPos.position;
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, m_nextPos, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, m_nextPos, m_speed * Time.deltaTime);
     }
 
 

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 456873977687879548}
   - component: {fileID: 7088752032857903534}
   - component: {fileID: 4330528965173720726}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: MazeWall (12)
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: 0.70710677, w: 0.7071068}
   m_LocalPosition: {x: -0.56, y: 0.2, z: 0}
   m_LocalScale: {x: 3, y: 0.2, z: 0.3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7513181524713220375}
   m_RootOrder: 12
@@ -43,10 +44,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -117,7 +120,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7513181524713220375}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: Maze2
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -134,6 +137,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5.2505, y: 5.2505, z: 5.2505}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8871708243162874058}
   - {fileID: 7631832530679648224}
@@ -162,7 +166,7 @@ GameObject:
   - component: {fileID: 7631832529161438711}
   - component: {fileID: 7631832529161438705}
   - component: {fileID: 7631832529161438710}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: MazeWall (7)
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -179,6 +183,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0.70710677, w: -0.7071068}
   m_LocalPosition: {x: -0.32, y: 0.22, z: 0}
   m_LocalScale: {x: 1.5, y: 0.2, z: 0.3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7513181524713220375}
   m_RootOrder: 7
@@ -194,10 +199,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -270,7 +277,7 @@ GameObject:
   - component: {fileID: 7631832529220965881}
   - component: {fileID: 7631832529220965883}
   - component: {fileID: 7631832529220965880}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: MazeWall (8)
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -287,6 +294,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0.0000004768371, w: -1}
   m_LocalPosition: {x: -0.18, y: 0.48, z: 0}
   m_LocalScale: {x: 0.5, y: 0.2, z: 0.3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7513181524713220375}
   m_RootOrder: 8
@@ -302,10 +310,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -378,7 +388,7 @@ GameObject:
   - component: {fileID: 7631832529278128738}
   - component: {fileID: 7631832529278128748}
   - component: {fileID: 7631832529278128749}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: MazeWall (11)
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -395,6 +405,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0.0000004768371, w: -1}
   m_LocalPosition: {x: 0.42, y: 0.16, z: 0}
   m_LocalScale: {x: 0.5, y: 0.2, z: 0.3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7513181524713220375}
   m_RootOrder: 11
@@ -410,10 +421,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -486,7 +499,7 @@ GameObject:
   - component: {fileID: 7631832529404148998}
   - component: {fileID: 7631832529404148992}
   - component: {fileID: 7631832529404148993}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: MazeWall (4)
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -503,6 +516,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0.000000104308114}
   m_LocalPosition: {x: 0.34, y: -0.36, z: 0}
   m_LocalScale: {x: 1.3, y: 0.2, z: 0.3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7513181524713220375}
   m_RootOrder: 4
@@ -518,10 +532,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -594,7 +610,7 @@ GameObject:
   - component: {fileID: 7631832529824468374}
   - component: {fileID: 7631832529824468368}
   - component: {fileID: 7631832529824468369}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: MazeWall (2)
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -611,6 +627,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: 0.70710677, w: 0.7071068}
   m_LocalPosition: {x: -0.56, y: 0.2, z: 0}
   m_LocalScale: {x: 3, y: 0.2, z: 0.3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7513181524713220375}
   m_RootOrder: 2
@@ -626,10 +643,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -702,7 +721,7 @@ GameObject:
   - component: {fileID: 7631832530167547102}
   - component: {fileID: 7631832530167547096}
   - component: {fileID: 7631832530167547097}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: MazeWall (9)
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -719,6 +738,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: 0.7071069, w: -0.7071067}
   m_LocalPosition: {x: 0.12, y: 0.4, z: 0}
   m_LocalScale: {x: 1, y: 0.2, z: 0.3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7513181524713220375}
   m_RootOrder: 9
@@ -734,10 +754,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -810,7 +832,7 @@ GameObject:
   - component: {fileID: 7631832530270102031}
   - component: {fileID: 7631832530270102025}
   - component: {fileID: 7631832530270102030}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: MazeWall (6)
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -827,6 +849,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0.00000044703478, w: -1}
   m_LocalPosition: {x: -0.1, y: 0.16, z: 0}
   m_LocalScale: {x: 1.3, y: 0.2, z: 0.3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7513181524713220375}
   m_RootOrder: 6
@@ -842,10 +865,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -918,7 +943,7 @@ GameObject:
   - component: {fileID: 7631832530679648224}
   - component: {fileID: 7631832530679648226}
   - component: {fileID: 7631832530679648227}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: MazeWall (1)
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -935,6 +960,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: 0.70710677, w: 0.7071068}
   m_LocalPosition: {x: 0.56, y: 0.2, z: 0}
   m_LocalScale: {x: 3, y: 0.2, z: 0.3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7513181524713220375}
   m_RootOrder: 1
@@ -950,10 +976,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1026,7 +1054,7 @@ GameObject:
   - component: {fileID: 7631832530707752010}
   - component: {fileID: 7631832530707752052}
   - component: {fileID: 7631832530707752053}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: MazeWall (10)
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -1043,6 +1071,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0.0000004768371, w: -1}
   m_LocalPosition: {x: 0.26, y: 0.45, z: 0}
   m_LocalScale: {x: 0.5, y: 0.2, z: 0.3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7513181524713220375}
   m_RootOrder: 10
@@ -1058,10 +1087,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1134,7 +1165,7 @@ GameObject:
   - component: {fileID: 7631832530774416094}
   - component: {fileID: 7631832530774416088}
   - component: {fileID: 7631832530774416089}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: MazeWall (3)
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -1151,6 +1182,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0.000000104308114}
   m_LocalPosition: {x: -0.34, y: -0.36, z: 0}
   m_LocalScale: {x: 1.3, y: 0.2, z: 0.3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7513181524713220375}
   m_RootOrder: 3
@@ -1166,10 +1198,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1242,7 +1276,7 @@ GameObject:
   - component: {fileID: 7631832531114638810}
   - component: {fileID: 7631832531114638788}
   - component: {fileID: 7631832531114638789}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: MazeWall (5)
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -1259,6 +1293,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: 0.7071069, w: -0.7071067}
   m_LocalPosition: {x: 0.12, y: -0.14, z: 0}
   m_LocalScale: {x: 1.3, y: 0.2, z: 0.3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7513181524713220375}
   m_RootOrder: 5
@@ -1274,10 +1309,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1350,7 +1387,7 @@ GameObject:
   - component: {fileID: 8871708243162874058}
   - component: {fileID: 8871708243162874059}
   - component: {fileID: 8871708243162874057}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: MazeWall
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -1367,6 +1404,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.76, z: 0}
   m_LocalScale: {x: 3, y: 0.2, z: 0.3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7513181524713220375}
   m_RootOrder: 0
@@ -1382,10 +1420,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
