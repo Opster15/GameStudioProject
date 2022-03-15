@@ -344,7 +344,7 @@ MonoBehaviour:
   - {fileID: 8193641593347017896}
   - {fileID: 8193641594583264929}
   m_aimedObject: 1
-  m_attack_speed: 0.15
+  m_attack_speed: 0.25
 --- !u!1001 &1385923200813347089
 PrefabInstance:
   m_ObjectHideFlags: 0

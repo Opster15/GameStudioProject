@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e68c9bdbdff45779c820a22871d461a, type: 3}
+  m_Name: Mage
+  m_EditorClassIdentifier: 
+  m_name: Player Character
+  m_statBlock:
+    m_HP: 160
+    m_speed: 5
+  m_skipsMinigames: 0
+  m_moveset:
+  - {fileID: 11400000, guid: c29cdcfb1a97f424c9142f012a3dc8e7, type: 2}
+  - {fileID: 11400000, guid: 84912d045a64c134fb37cbc5fa34a475, type: 2}
+  - {fileID: 11400000, guid: de6306c3468f73c4db38de0accb5e2ee, type: 2}
+  - {fileID: 11400000, guid: 76a2171b37b8bf0418ce5c75db3fe9eb, type: 2}
+  m_AI: {fileID: 11400000, guid: 0a3abbff9dee01543b009c3a54d8dcb5, type: 2}

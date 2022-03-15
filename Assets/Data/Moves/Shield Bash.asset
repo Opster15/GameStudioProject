@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
+  m_Name: Shield Bash
+  m_EditorClassIdentifier: 
+  m_name: Sheild Bash
+  m_description: Deals medium damage to an enemy.
+  m_power: 55
+  m_speed: 8
+  m_targetingMethod:
+    m_target: 2
+    m_selectAll: 0
+    m_excludeSelf: 0
+  m_minigamePrefab: {fileID: 3789740291013626266, guid: 437e8122a0641d74ea7dddf4fe9708d3,
+    type: 3}
+  m_scriptFile: {fileID: 2213920135882650261, guid: a1febff93eedb794ea63fbe6c4583f54,
+    type: 3}
