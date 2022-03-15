@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using GSP.Battle.Party;
 using GSP.LUA;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 namespace GSP.Battle
 {
     public class BattleManager : MonoBehaviour
@@ -62,6 +63,8 @@ namespace GSP.Battle
                     character.DisableScripts(m_scriptManager);
                 }
             }
+
+            SceneManager.LoadScene(1);
         }
 
         private IEnumerator Turn()
@@ -86,7 +89,24 @@ namespace GSP.Battle
 
         private void EndTurn()
         {
-            StartTurn();
+            var partyDown = -1;
+            for(var i = 0; i < m_parties.Length; i++)
+            {
+                var allPartyMembersDead = true;
+                foreach(var partyMember in m_parties[i].PartyMembers)
+                {
+                    if(!partyMember.IsDead) { allPartyMembersDead = false; }
+                }
+
+                if(allPartyMembersDead)
+                {
+                    partyDown = i;
+                    break;
+                }
+            }
+
+            if(partyDown < 0) { StartTurn(); }
+            else { EndBattle(); }
         }
 
         private IEnumerator ChooseMoves(GameParty _party, GameParty _opposingParty)

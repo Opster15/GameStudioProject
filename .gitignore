@@ -91,3 +91,4 @@ crashlytics-build.properties
 *.log
 
 Assets/Plugins/FMOD/Cache/
+Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
