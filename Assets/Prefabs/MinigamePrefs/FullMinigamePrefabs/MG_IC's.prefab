@@ -127,7 +127,9 @@ MonoBehaviour:
   m_startPos: {fileID: 1300053325115894081}
   m_endPos: {fileID: 1300053325118007142}
   m_origParent: {fileID: 3724803476779097174}
-  speed: 1
+  m_startingPos: {fileID: 0}
+  m_speed: 0
+  m_randomStart: 0
 --- !u!1 &659963527651713770
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,7 +291,9 @@ MonoBehaviour:
   m_startPos: {fileID: 1300053323961450488}
   m_endPos: {fileID: 1300053325072535777}
   m_origParent: {fileID: 3724803476779097174}
-  speed: 1.2
+  m_startingPos: {fileID: 0}
+  m_speed: 0
+  m_randomStart: 0
 --- !u!1 &1300053323782652928
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,7 +483,9 @@ MonoBehaviour:
   m_startPos: {fileID: 1300053323782652931}
   m_endPos: {fileID: 1300053324550760863}
   m_origParent: {fileID: 3724803476779097174}
-  speed: 2
+  m_startingPos: {fileID: 0}
+  m_speed: 0
+  m_randomStart: 0
 --- !u!1 &1300053324550760860
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,6 +1001,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037585304968510080, guid: 8e81641da5dad714fb2db5143e914a56,
+        type: 3}
+      propertyPath: jumpForce
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4037585304968510080, guid: 8e81641da5dad714fb2db5143e914a56,
         type: 3}

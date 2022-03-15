@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Quick Shank
   m_description: Deals Low damage to an enemy
-  m_power: 20
+  m_power: 25
   m_speed: 1
   m_targetingMethod:
     m_target: 2
