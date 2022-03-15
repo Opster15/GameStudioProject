@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
   m_Name: Shield Bash
   m_EditorClassIdentifier: 
-  m_name: Sheild Bash
+  m_name: Shield Bash
   m_description: Deals medium damage to an enemy.
   m_power: 55
   m_speed: 8
