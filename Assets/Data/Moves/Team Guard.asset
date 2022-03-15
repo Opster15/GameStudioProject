@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
   m_Name: Team Guard
   m_EditorClassIdentifier: 
-  m_name: Guard
+  m_name: Team Guard
   m_description: Guards from oncoming damage for 1 turn.
   m_power: 0
   m_speed: 1
