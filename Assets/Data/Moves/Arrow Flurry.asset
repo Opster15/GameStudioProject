@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
   m_Name: Arrow Flurry
   m_EditorClassIdentifier: 
-  m_name: Arrow Flurry
+  m_name: Arrow Flurry(AOE)
   m_description: Deals light damage to all Enemies
   m_power: 20
   m_speed: 3

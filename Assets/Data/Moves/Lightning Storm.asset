@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
   m_Name: Lightning Storm
   m_EditorClassIdentifier: 
-  m_name: Lightning Storm
+  m_name: Lightning Storm(AOE)
   m_description: Deals light damage to all enemies.
-  m_power: 30
+  m_power: 20
   m_speed: 8
   m_targetingMethod:
     m_target: 2

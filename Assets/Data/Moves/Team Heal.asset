@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Team Heal
   m_description: Heals All team members
-  m_power: -20
+  m_power: -15
   m_speed: 1
   m_targetingMethod:
     m_target: 1

@@ -18,7 +18,7 @@ namespace GSP.Minigames
             inputManager = GetComponent<InputManager>();
         }
 
-        void Update()
+        void FixedUpdate()
         {
             Input();
             DirectionInput();
