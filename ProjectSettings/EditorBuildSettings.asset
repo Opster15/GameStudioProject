@@ -6,9 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/SomeoneDied.unity
+    guid: fc8f198ce488e9343b994c9bdd22b42d
+  - enabled: 1
     path: Assets/Scenes/CameraTestScene.unity
     guid: 63223cf6ea06b774fa3857688d245d9a
   - enabled: 1
-    path: Assets/Scenes/SomeoneDied.unity
-    guid: fc8f198ce488e9343b994c9bdd22b42d
+    path: Assets/Scenes/SewerScene.unity
+    guid: 02d61f7ce19cade4487f1c34f7321dbe
+  - enabled: 1
+    path: Assets/Scenes/MineLevel.unity
+    guid: 4a8fb94fd7898024ab9bb1d729d34525
+  - enabled: 1
+    path: Assets/Scenes/LabBlockout.unity
+    guid: 3fef81e4ab9d97d4d874284c5bf95a6e
+  - enabled: 1
+    path: Assets/Scenes/AlterLevel.unity
+    guid: 3e6a6c5a17556e640bfa38892eb6b170
   m_configObjects: {}

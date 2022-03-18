@@ -156,13 +156,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputManager: {fileID: 7393769991362028438}
-  jumpForce: 10
+  jumpForce: 11
   movementSpeed: 4
   isWalking: 0
   isFalling: 0
   isGrounded: 0
   GCPosition: {fileID: 4956803303530939458}
-  GCRadius: 0.2
+  GCRadius: 0.15
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512

@@ -14,6 +14,7 @@ namespace GSP.Minigames
 
         float m_bounce;
 
+
         void Start()
         {
             rb = GetComponent<Rigidbody2D>();

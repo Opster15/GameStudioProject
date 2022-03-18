@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417463143023804729}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.36, y: -5.41, z: 0}
+  m_LocalPosition: {x: 0, y: -5.41, z: 0}
   m_LocalScale: {x: 0.15, y: 0.15, z: 1.00236}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -686,6 +686,7 @@ GameObject:
   - component: {fileID: 6382372154232145155}
   - component: {fileID: 6382372154232145152}
   - component: {fileID: 6382372154232145154}
+  - component: {fileID: -916253348002813779}
   m_Layer: 13
   m_Name: MG_Targets
   m_TagString: Untagged
@@ -701,7 +702,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6382372154232145153}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: -3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -781,6 +782,18 @@ MonoBehaviour:
   m_pointGain: 0.3
   m_starting_points: 0
   m_timer: 0
+--- !u!114 &-916253348002813779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6382372154232145153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f43bccadbd9ad7c47a45ffa0a5402b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6382372155176609414
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,11 +855,11 @@ PolygonCollider2D:
       - {x: -8.8590355, y: 7.7955456}
       - {x: -8.801076, y: -7.3047457}
       - {x: -7.905533, y: -7.301334}
-      - {x: -7.9092855, y: 7.853927}
-      - {x: 7.9788914, y: 7.8879075}
-      - {x: 8.05962, y: -6.6918235}
-      - {x: -7.8893595, y: -6.660975}
-      - {x: -7.8384533, y: -7.255791}
+      - {x: -7.731784, y: 7.7244873}
+      - {x: 7.7859197, y: 7.746342}
+      - {x: 7.870569, y: -6.555114}
+      - {x: -7.8660116, y: -6.5437193}
+      - {x: -7.876396, y: -7.274955}
       - {x: 8.055037, y: -7.508021}
       - {x: 8.7267885, y: -6.7080936}
       - {x: 8.589725, y: 8.429544}

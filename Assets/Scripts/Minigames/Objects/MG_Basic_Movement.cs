@@ -12,6 +12,7 @@ namespace GSP.Minigames
         public float m_moveSpeedX,m_moveSpeedY;
 
         float x, y;
+
         private void Start()
         {
             rb = GetComponent<Rigidbody2D>();

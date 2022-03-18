@@ -64,7 +64,7 @@ namespace GSP.Battle
                 }
             }
 
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
 
         private IEnumerator Turn()

@@ -240,6 +240,7 @@ GameObject:
   - component: {fileID: 8193641595226225128}
   - component: {fileID: 8193641595226225131}
   - component: {fileID: 8193641595226225126}
+  - component: {fileID: 2591108378481353058}
   m_Layer: 13
   m_Name: MG_Bullet_Hell
   m_TagString: Untagged
@@ -255,7 +256,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8193641595226225130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: -3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -345,6 +346,18 @@ MonoBehaviour:
   - {fileID: 8193641594583264929}
   m_aimedObject: 1
   m_attack_speed: 0.25
+--- !u!114 &2591108378481353058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8193641595226225130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f43bccadbd9ad7c47a45ffa0a5402b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1385923200813347089
 PrefabInstance:
   m_ObjectHideFlags: 0

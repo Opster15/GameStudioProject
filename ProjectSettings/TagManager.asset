@@ -8,6 +8,7 @@ TagManager:
   - Ball
   - MG_Border_Kill
   - MG_Border
+  - MG_Cam
   layers:
   - Default
   - TransparentFX

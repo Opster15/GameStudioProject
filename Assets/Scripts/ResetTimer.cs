@@ -8,11 +8,19 @@ namespace GSP
 
         private float m_timer;
 
+        private int m_random;
+
+        private void Start()
+        {
+            m_random = Random.Range(1, 6);
+        }
+
         void Update()
         {
             m_timer += Time.deltaTime;
             if(m_timer < m_length) { return; }
-            SceneManager.LoadScene(0);
+            Debug.Log(m_random);
+            SceneManager.LoadScene(m_random);
         }
     }
 }

@@ -573,7 +573,7 @@ GameObject:
   - component: {fileID: 2050717063162406814}
   m_Layer: 0
   m_Name: Minigame Camera
-  m_TagString: Untagged
+  m_TagString: MG_Cam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -619,8 +619,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 90
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 3.3
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2

@@ -81,6 +81,7 @@ GameObject:
   - component: {fileID: 2430710812244429771}
   - component: {fileID: 2430710812244429768}
   - component: {fileID: 5350107692546980544}
+  - component: {fileID: -4472288520396133360}
   m_Layer: 13
   m_Name: MG_Platformer
   m_TagString: Untagged
@@ -96,7 +97,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2430710812244429769}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: -3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -182,6 +183,18 @@ MonoBehaviour:
   - {fileID: 632169333337355532, guid: 0d9b280baf000b04f85a1f66588770b4, type: 3}
   - {fileID: 3381373235730049776, guid: bcee84d518542be47aeb76b5517ddc73, type: 3}
   - {fileID: 4436884785208416622, guid: b45c8eaf4e87c0f4c85a021fc5d18542, type: 3}
+--- !u!114 &-4472288520396133360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2430710812244429769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f43bccadbd9ad7c47a45ffa0a5402b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7767111122277687222
 GameObject:
   m_ObjectHideFlags: 0

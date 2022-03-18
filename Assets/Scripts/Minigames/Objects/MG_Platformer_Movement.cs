@@ -54,7 +54,6 @@ namespace GSP.Minigames
 
         private void Update()
         {
-
             if (jumpCounter > 0)
             {
                 jumpCounter -= Time.deltaTime;
@@ -143,6 +142,15 @@ namespace GSP.Minigames
         {
             Gizmos.color = Color.yellow;
             Gizmos.DrawSphere(GCPosition.position, GCRadius);
+        }
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.CompareTag("MG_Border_Kill"))
+            {
+                GetComponentInParent<Minigame>().m_timer = GetComponentInParent<Minigame>().Length;
+                Destroy(gameObject);
+            }
         }
     }
 }
