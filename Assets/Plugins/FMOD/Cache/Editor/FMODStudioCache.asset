@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7193095676543880632
+--- !u!114 &-7662028287236396835
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,18 +9,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Dialogue/sfx_dialogue0
   m_EditorClassIdentifier: 
-  Path: FMOD Studio/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637835551320384432
-  FileSizes:
-  - Name: Desktop
-    Value: 2231200
-  Exists: 1
---- !u!114 &-6657852396926096203
+  Path: event:/SFX/Dialogue/sfx_dialogue0
+  Guid:
+    Data1: -2080250096
+    Data2: 1265817710
+    Data3: 208055685
+    Data4: 1076767096
+  Banks:
+  - {fileID: -517029699667218047}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3032720621204158418
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,87 +47,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 922
   Exists: 1
---- !u!114 &-3183462989123530070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/Battle/Regular Battle
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/Battle/Regular Battle
-  Guid:
-    Data1: 849839879
-    Data2: 1118632103
-    Data3: -208350027
-    Data4: 632109050
-  Banks:
-  - {fileID: -7193095676543880632}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 53513
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -6657852396926096203}
-  - {fileID: -7193095676543880632}
-  EditorEvents:
-  - {fileID: -3183462989123530070}
-  - {fileID: 1877894341985814417}
-  - {fileID: 2666691019369101536}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -7193095676543880632}
-  StringsBanks:
-  - {fileID: -6657852396926096203}
-  cacheTime: 637835551320394403
-  cacheVersion: 10
---- !u!114 &1877894341985814417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Dialogue/sfx_dialogue0
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Dialogue/sfx_dialogue0
-  Guid:
-    Data1: -2080250096
-    Data2: 1265817710
-    Data3: 208055685
-    Data4: 1076767096
-  Banks:
-  - {fileID: -7193095676543880632}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &2666691019369101536
+--- !u!114 &-715816862439518965
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,7 +66,7 @@ MonoBehaviour:
     Data3: -311348321
     Data4: -1957897487
   Banks:
-  - {fileID: -7193095676543880632}
+  - {fileID: -517029699667218047}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -147,3 +74,76 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 85333
+--- !u!114 &-517029699667218047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD Studio/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637835551320384432
+  FileSizes:
+  - Name: Desktop
+    Value: 2231200
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -3032720621204158418}
+  - {fileID: -517029699667218047}
+  EditorEvents:
+  - {fileID: 9058333021476980135}
+  - {fileID: -7662028287236396835}
+  - {fileID: -715816862439518965}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -517029699667218047}
+  StringsBanks:
+  - {fileID: -3032720621204158418}
+  cacheTime: 637835551320394403
+  cacheVersion: 10
+--- !u!114 &9058333021476980135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/Battle/Regular Battle
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/Battle/Regular Battle
+  Guid:
+    Data1: 849839879
+    Data2: 1118632103
+    Data3: -208350027
+    Data4: 632109050
+  Banks:
+  - {fileID: -517029699667218047}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 53513
