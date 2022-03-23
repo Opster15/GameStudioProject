@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
+  m_Name: Ground Stomp
+  m_EditorClassIdentifier: 
+  m_name: Ground Stomp(AOE)
+  m_description: Deals medium damage to all enemies.
+  m_power: 35
+  m_speed: 12
+  m_targetingMethod:
+    m_target: 2
+    m_selectAll: 1
+    m_excludeSelf: 0
+  m_minigamePrefab: {fileID: 2430710812244429769, guid: 2aea0396e61c192428a8a8eafba40795,
+    type: 3}
+  m_scriptFile: {fileID: 2213920135882650261, guid: a1febff93eedb794ea63fbe6c4583f54,
+    type: 3}

@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
-  m_Name: Lightning Storm
+  m_Name: Rabid Bite
   m_EditorClassIdentifier: 
-  m_name: Lightning Storm(AOE)
-  m_description: Deals light damage to all enemies.
-  m_power: 20
-  m_speed: 8
+  m_name: Rabit Bite
+  m_description: Deals light damage to an enemy.
+  m_power: 25
+  m_speed: 10
   m_targetingMethod:
     m_target: 2
-    m_selectAll: 1
+    m_selectAll: 0
     m_excludeSelf: 0
-  m_minigamePrefab: {fileID: 2430710812244429769, guid: 2aea0396e61c192428a8a8eafba40795,
+  m_minigamePrefab: {fileID: 6382372154232145153, guid: 1b1c1819bb7d09c499536cf6c555e37d,
     type: 3}
   m_scriptFile: {fileID: 2213920135882650261, guid: a1febff93eedb794ea63fbe6c4583f54,
     type: 3}

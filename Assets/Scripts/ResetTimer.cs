@@ -19,7 +19,6 @@ namespace GSP
         {
             m_timer += Time.deltaTime;
             if(m_timer < m_length) { return; }
-            Debug.Log(m_random);
             SceneManager.LoadScene(m_random);
         }
     }

@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
-  m_Name: Shield Bash
+  m_Name: Explosive Resonance
   m_EditorClassIdentifier: 
-  m_name: Shield Bash
-  m_description: Deals medium damage to an enemy.
-  m_power: 55
-  m_speed: 8
+  m_name: Explosive Resonance(AOE)
+  m_description: Deals light damage to aall enemy
+  m_power: 20
+  m_speed: 12
   m_targetingMethod:
     m_target: 2
-    m_selectAll: 0
+    m_selectAll: 1
     m_excludeSelf: 0
-  m_minigamePrefab: {fileID: 3789740291013626266, guid: 437e8122a0641d74ea7dddf4fe9708d3,
+  m_minigamePrefab: {fileID: 8000579240565719698, guid: c8335b8d69e271e40b8df82de52a6390,
     type: 3}
   m_scriptFile: {fileID: 2213920135882650261, guid: a1febff93eedb794ea63fbe6c4583f54,
     type: 3}

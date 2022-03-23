@@ -6,21 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SomeoneDied.unity
-    guid: fc8f198ce488e9343b994c9bdd22b42d
+    path: Assets/Scenes/LoseScene.unity
+    guid: 263aec7cb3e3ea74fa3a47270bf24026
   - enabled: 1
-    path: Assets/Scenes/CameraTestScene.unity
+    path: Assets/Scenes/WinScene.unity
+    guid: d82edcc412423504bb0251b5254502ee
+  - enabled: 1
+    path: Assets/Scenes/OpeningMenuScene.unity
+    guid: 4adf6c99b44c44848a34021b91b064aa
+  - enabled: 1
+    path: Assets/Scenes/CombatScenes/CameraTestScene.unity
     guid: 63223cf6ea06b774fa3857688d245d9a
   - enabled: 1
-    path: Assets/Scenes/SewerScene.unity
+    path: Assets/Scenes/CombatScenes/SewerScene.unity
     guid: 02d61f7ce19cade4487f1c34f7321dbe
   - enabled: 1
-    path: Assets/Scenes/MineLevel.unity
+    path: Assets/Scenes/CombatScenes/MineLevel.unity
     guid: 4a8fb94fd7898024ab9bb1d729d34525
   - enabled: 1
-    path: Assets/Scenes/LabBlockout.unity
+    path: Assets/Scenes/CombatScenes/LabBlockout.unity
     guid: 3fef81e4ab9d97d4d874284c5bf95a6e
   - enabled: 1
-    path: Assets/Scenes/AlterLevel.unity
+    path: Assets/Scenes/CombatScenes/AlterLevel.unity
     guid: 3e6a6c5a17556e640bfa38892eb6b170
   m_configObjects: {}

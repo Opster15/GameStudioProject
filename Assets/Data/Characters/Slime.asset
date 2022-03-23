@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Slime
   m_statBlock:
-    m_HP: 50
+    m_HP: 70
     m_speed: 8
   m_skipsMinigames: 1
   m_moveset:
-  - {fileID: 11400000, guid: 84912d045a64c134fb37cbc5fa34a475, type: 2}
+  - {fileID: 11400000, guid: d513ead389a082b4e99058ca2cdf6137, type: 2}
   - {fileID: 11400000, guid: c29cdcfb1a97f424c9142f012a3dc8e7, type: 2}
   m_AI: {fileID: 11400000, guid: 0a3abbff9dee01543b009c3a54d8dcb5, type: 2}

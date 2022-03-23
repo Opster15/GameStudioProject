@@ -18,5 +18,5 @@ MonoBehaviour:
     m_speed: 5
   m_skipsMinigames: 1
   m_moveset:
-  - {fileID: 11400000, guid: 84912d045a64c134fb37cbc5fa34a475, type: 2}
+  - {fileID: 11400000, guid: b1736387d87b0324da3d220749d98065, type: 2}
   m_AI: {fileID: 11400000, guid: 0a3abbff9dee01543b009c3a54d8dcb5, type: 2}

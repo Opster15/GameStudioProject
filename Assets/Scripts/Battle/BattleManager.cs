@@ -54,7 +54,7 @@ namespace GSP.Battle
             StartTurn();
         }
 
-        private void EndBattle()
+        private void EndBattle(int partyDown)
         {
             foreach(var party in m_parties)
             {
@@ -64,7 +64,7 @@ namespace GSP.Battle
                 }
             }
 
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(partyDown);
         }
 
         private IEnumerator Turn()
@@ -106,7 +106,7 @@ namespace GSP.Battle
             }
 
             if(partyDown < 0) { StartTurn(); }
-            else { EndBattle(); }
+            else { EndBattle(partyDown); }
         }
 
         private IEnumerator ChooseMoves(GameParty _party, GameParty _opposingParty)
