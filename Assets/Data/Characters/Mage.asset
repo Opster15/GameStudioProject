@@ -22,4 +22,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 84912d045a64c134fb37cbc5fa34a475, type: 2}
   - {fileID: 11400000, guid: de6306c3468f73c4db38de0accb5e2ee, type: 2}
   - {fileID: 11400000, guid: 76a2171b37b8bf0418ce5c75db3fe9eb, type: 2}
+  m_modelPrefab: {fileID: 1109896575509637211, guid: 28b9bd42500718348953d3c16634ab5f,
+    type: 3}
   m_AI: {fileID: 11400000, guid: 0a3abbff9dee01543b009c3a54d8dcb5, type: 2}

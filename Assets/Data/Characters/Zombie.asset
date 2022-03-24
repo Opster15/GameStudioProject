@@ -19,4 +19,6 @@ MonoBehaviour:
   m_skipsMinigames: 1
   m_moveset:
   - {fileID: 11400000, guid: b1736387d87b0324da3d220749d98065, type: 2}
+  m_modelPrefab: {fileID: 5523626801983171201, guid: 0fc6779c1eeef7b48aeef2fe1d7b4e45,
+    type: 3}
   m_AI: {fileID: 11400000, guid: 0a3abbff9dee01543b009c3a54d8dcb5, type: 2}

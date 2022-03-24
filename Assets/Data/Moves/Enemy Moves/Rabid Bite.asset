@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
   m_Name: Rabid Bite
   m_EditorClassIdentifier: 
-  m_name: Rabit Bite
+  m_name: Rabid Bite
   m_description: Deals light damage to an enemy.
   m_power: 25
   m_speed: 10

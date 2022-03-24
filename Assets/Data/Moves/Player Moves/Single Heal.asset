@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
-  m_Name: Femer Strike
+  m_Name: Single Heal
   m_EditorClassIdentifier: 
-  m_name: Femer Strike
-  m_description: Deals light damage to an enemy.
-  m_power: 20
-  m_speed: 5
+  m_name: Single Heal
+  m_description: Heals a team member
+  m_power: 40
+  m_speed: 1
   m_targetingMethod:
-    m_target: 2
+    m_target: 1
     m_selectAll: 0
     m_excludeSelf: 0
-  m_minigamePrefab: {fileID: 6382372154232145153, guid: 1b1c1819bb7d09c499536cf6c555e37d,
+  m_minigamePrefab: {fileID: 8193641595226225130, guid: 7a11b9bd67d03664d86d1ff4161a08fe,
     type: 3}
-  m_scriptFile: {fileID: 2213920135882650261, guid: a1febff93eedb794ea63fbe6c4583f54,
+  m_scriptFile: {fileID: 2213920135882650261, guid: 3fe2a037ba00e094489c8249cfff3a2a,
     type: 3}

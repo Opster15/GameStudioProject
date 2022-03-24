@@ -28,6 +28,11 @@ namespace GSP.Battle
         /// All moves the character can select in the menu.
         /// </summary>
         [SerializeField] private List<Move> m_moveset;
+        
+        /// <summary>
+        /// The character's in-game model.
+        /// </summary>
+        [SerializeField] private GameObject m_modelPrefab;
 
         /// <summary>
         /// The character's AI, for selecting moves in battle.
@@ -53,6 +58,11 @@ namespace GSP.Battle
         /// All moves the character can select in the menu.
         /// </summary>
         public List<Move> Moveset => m_moveset;
+
+        /// <summary>
+        /// The character's in-game model.
+        /// </summary>
+        public GameObject ModelPrefab => m_modelPrefab;
 
         /// <summary>
         /// The character's AI, for selecting moves in battle.

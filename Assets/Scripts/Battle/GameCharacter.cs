@@ -27,6 +27,11 @@ namespace GSP.Battle
         private int m_currentHP;
 
         /// <summary>
+        /// The character's data.
+        /// </summary>
+        public Character BaseCharacter => m_baseCharacter;
+
+        /// <summary>
         /// The character's name.
         /// </summary>
         public string Name => m_baseCharacter.Name;

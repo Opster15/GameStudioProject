@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
-  m_Name: Single Heal
+  m_Name: Team Heal
   m_EditorClassIdentifier: 
-  m_name: Single Heal
-  m_description: Heals a team members
-  m_power: -40
+  m_name: Team Heal
+  m_description: Heals all team members
+  m_power: 15
   m_speed: 1
   m_targetingMethod:
     m_target: 1
-    m_selectAll: 0
+    m_selectAll: 1
     m_excludeSelf: 0
-  m_minigamePrefab: {fileID: 8193641595226225130, guid: 7a11b9bd67d03664d86d1ff4161a08fe,
+  m_minigamePrefab: {fileID: 1975306196392173225, guid: 9144835d8eedef741bcb61787517be65,
     type: 3}
-  m_scriptFile: {fileID: 2213920135882650261, guid: a1febff93eedb794ea63fbe6c4583f54,
+  m_scriptFile: {fileID: 2213920135882650261, guid: 3fe2a037ba00e094489c8249cfff3a2a,
     type: 3}
