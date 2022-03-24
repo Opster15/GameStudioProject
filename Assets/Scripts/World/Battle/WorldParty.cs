@@ -47,13 +47,17 @@ namespace GSP.World.Battle
 
             var partyAngle = m_partyAngleOffset * Mathf.Deg2Rad;
             var characterAngle = m_characterSpreadAngle / _party.PartyMembers.Count * Mathf.Deg2Rad;
+
+            var flip = partyOffset.x > 0 ? 1 : -1;
             
             for (var i = 0; i < _party.PartyMembers.Count; i++)
             {
                 var angleOffset = new Vector3(Mathf.Cos(partyAngle + characterAngle * i) * m_characterSpreadOffset.x, 0, Mathf.Sin(partyAngle + characterAngle * i) * m_characterSpreadOffset.y);
                 
                 var offset = partyOffset + angleOffset + m_characterOffset * i;
-                var partyMember = Instantiate(m_characterPrefab, offset, Quaternion.identity, transform).GetComponent<CharacterTarget>();
+                var rotation = new Vector3(0, 90 * flip, 0);
+                
+                var partyMember = Instantiate(m_characterPrefab, offset, Quaternion.Euler(rotation), transform).GetComponent<CharacterTarget>();
                 partyMember.SetTarget(_party.PartyMembers[i]);
                 m_partyMembers.Add(partyMember);
             }

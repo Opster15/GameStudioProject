@@ -14,7 +14,7 @@ namespace GSP.World.Battle
             var modelPrefab = _target.BaseCharacter.ModelPrefab;
             if (!modelPrefab) { return; }
 
-            m_model = Instantiate(modelPrefab, transform.position + modelPrefab.transform.position, Quaternion.identity, transform);
+            m_model = Instantiate(modelPrefab, transform.position + modelPrefab.transform.position, transform.rotation, transform);
         }
     }
 }
