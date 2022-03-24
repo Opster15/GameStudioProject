@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e68c9bdbdff45779c820a22871d461a, type: 3}
-  m_Name: Slime
+  m_Name: Goblin
   m_EditorClassIdentifier: 
-  m_name: Slime
+  m_name: Goblin
   m_statBlock:
     m_HP: 70
     m_speed: 8
@@ -20,6 +20,6 @@ MonoBehaviour:
   m_moveset:
   - {fileID: 11400000, guid: d513ead389a082b4e99058ca2cdf6137, type: 2}
   - {fileID: 11400000, guid: c29cdcfb1a97f424c9142f012a3dc8e7, type: 2}
-  m_modelPrefab: {fileID: 5523626801983171201, guid: 0fc6779c1eeef7b48aeef2fe1d7b4e45,
+  m_modelPrefab: {fileID: 3970300454384692513, guid: 87df058c5e216d84fbf37be25a1da025,
     type: 3}
   m_AI: {fileID: 11400000, guid: 0a3abbff9dee01543b009c3a54d8dcb5, type: 2}

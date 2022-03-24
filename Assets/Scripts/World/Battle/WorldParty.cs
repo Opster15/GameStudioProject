@@ -48,7 +48,7 @@ namespace GSP.World.Battle
             var partyAngle = m_partyAngleOffset * Mathf.Deg2Rad;
             var characterAngle = m_characterSpreadAngle / _party.PartyMembers.Count * Mathf.Deg2Rad;
 
-            var flip = partyOffset.x > 0 ? 1 : -1;
+            var flip = partyOffset.x > 0 ? -1 : 1;
             
             for (var i = 0; i < _party.PartyMembers.Count; i++)
             {

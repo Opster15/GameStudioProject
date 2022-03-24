@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
-  m_Name: Rabid Bite
+  m_Name: Bleeding Blow
   m_EditorClassIdentifier: 
-  m_name: Rabid Bite
+  m_name: Bleeding Blow
   m_description: Deals light damage to an enemy.
-  m_power: 25
-  m_speed: 10
+  m_power: 20
+  m_speed: 7
   m_targetingMethod:
     m_target: 2
     m_selectAll: 0
