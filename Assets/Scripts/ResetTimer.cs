@@ -12,7 +12,7 @@ namespace GSP
 
         private void Start()
         {
-            m_random = Random.Range(1, 6);
+            m_random = Random.Range(3, 7);
         }
 
         void Update()

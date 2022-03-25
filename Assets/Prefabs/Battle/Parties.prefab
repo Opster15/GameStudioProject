@@ -110,6 +110,11 @@ PrefabInstance:
       propertyPath: m_partyAngleOffset
       value: -40
       objectReference: {fileID: 0}
+    - target: {fileID: 6316839876686948839, guid: 353f3b0ffd8e13d4cbb97f91e09a2880,
+        type: 3}
+      propertyPath: m_characterSpreadOffset.x
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 353f3b0ffd8e13d4cbb97f91e09a2880, type: 3}
 --- !u!4 &8158687341861556135 stripped
