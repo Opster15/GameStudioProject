@@ -2272,6 +2272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5815721969968507808}
   - component: {fileID: 5815721969978207610}
+  - component: {fileID: 8463970636824624957}
   m_Layer: 0
   m_Name: Mage
   m_TagString: Untagged
@@ -2331,6 +2332,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8463970636824624957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5815721969968797898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.5176471, g: 0.8666667, b: 0.3137255, a: 0.3254902}
+  outlineWidth: 3
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &5815721969968798464
 GameObject:
   m_ObjectHideFlags: 0
