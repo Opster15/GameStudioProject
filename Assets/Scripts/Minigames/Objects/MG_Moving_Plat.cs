@@ -5,14 +5,14 @@ using UnityEngine;
 public class MG_Moving_Plat : MonoBehaviour
 {
     public Transform m_startPos, m_endPos, m_origParent;
-    public float m_speed, m_randomStart;
+    public float m_speed;
     Vector3 m_nextPos, v;
 
     private void Start()
     {
         m_nextPos = m_startPos.localPosition;
 
-        m_speed = Random.Range(5f, 8f);
+        m_speed = Random.Range(5f, 12f);
     }
 
     public void Update()

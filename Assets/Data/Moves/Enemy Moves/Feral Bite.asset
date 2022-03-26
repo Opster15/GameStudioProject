@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Feral Bite
   m_description: Deals light damage to an enemy.
-  m_power: 25
+  m_power: 15
   m_speed: 10
   m_targetingMethod:
     m_target: 2

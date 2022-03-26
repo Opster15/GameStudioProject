@@ -16,5 +16,15 @@ namespace GSP.World.Battle
 
             m_model = Instantiate(modelPrefab, transform.position + modelPrefab.transform.position, transform.rotation, transform);
         }
+
+        private void Update()
+        {
+            if (m_target == null) { return; }
+
+            if(m_target.CurrentHP <= 0)
+            {
+                Destroy(m_model);
+            }
+        }
     }
 }
