@@ -54,5 +54,14 @@ namespace GSP.LUA.Wrappers
         /// </summary>
         public void Kill()
             => m_baseObject.Kill();
+
+        public void AddStatModifier(Stats _stat, int _amount, int _duration)
+            => m_baseObject.StatModifiers.AddModifier(_stat, _amount, _duration);
+        
+        public void SetStatModifier(Stats _stat, int _amount, int _duration)
+            => m_baseObject.StatModifiers.SetModifier(_stat, _amount, _duration);
+
+        public void ResetStatModifier(Stats _stat)
+            => m_baseObject.StatModifiers.ResetModifier(_stat);
     }
 }

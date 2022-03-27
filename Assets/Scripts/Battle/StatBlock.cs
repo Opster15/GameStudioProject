@@ -14,6 +14,16 @@ namespace GSP.Battle
         [SerializeField] private int m_HP;
 
         /// <summary>
+        /// The character's offensive ability.
+        /// </summary>
+        [SerializeField] private int m_attack;
+
+        /// <summary>
+        /// The character's defensive ability.
+        /// </summary>
+        [SerializeField] private int m_defence;
+
+        /// <summary>
         /// The character's speed modifier.
         /// </summary>
         [SerializeField] private int m_speed;
@@ -22,6 +32,16 @@ namespace GSP.Battle
         /// The character's maximum health.
         /// </summary>
         public int HP => m_HP;
+
+        /// <summary>
+        /// The character's offensive ability.
+        /// </summary>
+        public int Attack => m_attack;
+
+        /// <summary>
+        /// The character's defensive ability.
+        /// </summary>
+        public int Defence => m_defence;
 
         /// <summary>
         /// The character's speed modifier.

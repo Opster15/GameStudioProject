@@ -27,6 +27,11 @@ namespace GSP.Battle
         private int m_currentHP;
 
         /// <summary>
+        /// Buffs / debuffs to the character's functional stats.
+        /// </summary>
+        private StatModifiers m_statModifiers = new StatModifiers();
+
+        /// <summary>
         /// The character's data.
         /// </summary>
         public Character BaseCharacter => m_baseCharacter;
@@ -45,6 +50,11 @@ namespace GSP.Battle
         /// The character's current health.
         /// </summary>
         public int CurrentHP => m_currentHP;
+
+        /// <summary>
+        /// Buffs / debuffs to the character's functional stats.
+        /// </summary>
+        public StatModifiers StatModifiers => m_statModifiers;
 
         /// <summary>
         /// The character's stat values.
@@ -121,8 +131,14 @@ namespace GSP.Battle
         /// Their health can not go below 0.
         /// </summary>
         /// <param name="_amount">The damage to deal.</param>
-        public void Damage(int _amount)
-            => SetHealth(m_currentHP - _amount);
+        public void Damage(int _amount, GameCharacter _source = null)
+        {
+            float attack = 1.0f;
+            float defence = 1.0f + m_statModifiers.GetModifierValue(Stats.Defence) / 3.0f;
+            if (_source != null) { attack += _source.StatModifiers.GetModifierValue(Stats.Attack) / 3.0f; }
+
+            SetHealth(m_currentHP - Mathf.Max((int)(_amount * attack / defence), 0));
+        }
 
         /// <summary>
         /// Heal the character by a certain amount.

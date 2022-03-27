@@ -103,6 +103,8 @@ namespace GSP.LUA
         public void AssignScriptGlobals(Script _script)
         {
             _script.Globals["Debug"] = (Action<string>) Debug.Log;
+
+            _script.Globals["Stats"] = UserData.CreateStatic<Stats>();
         }
 
         /// <summary>
@@ -111,6 +113,8 @@ namespace GSP.LUA
         private void RegisterTypes()
         {
             UserData.RegisterAssembly();
+
+            UserData.RegisterType<Stats>();
         }
     }
 }

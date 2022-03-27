@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Team Guard
   m_description: Guards from oncoming damage for 1 turn.
-  m_power: 0
+  m_power: 50
   m_speed: 1
   m_targetingMethod:
     m_target: 1
