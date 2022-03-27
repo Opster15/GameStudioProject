@@ -20,7 +20,7 @@ MonoBehaviour:
     m_target: 2
     m_selectAll: 0
     m_excludeSelf: 0
-  m_minigamePrefab: {fileID: 3724803476779097172, guid: f0d0b50252bb51e43a1f4c221ace0127,
+  m_minigamePrefab: {fileID: 8193641595226225130, guid: 7a11b9bd67d03664d86d1ff4161a08fe,
     type: 3}
   m_scriptFile: {fileID: 2213920135882650261, guid: a1febff93eedb794ea63fbe6c4583f54,
     type: 3}

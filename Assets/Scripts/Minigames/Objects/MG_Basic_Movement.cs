@@ -13,10 +13,11 @@ namespace GSP.Minigames
 
         float x, y;
 
-        private void Start()
+        private void Awake()
         {
-            rb = GetComponent<Rigidbody2D>();
             inputManager = GetComponent<InputManager>();
+            rb = GetComponent<Rigidbody2D>();
+
         }
 
         public void Update()
@@ -24,7 +25,7 @@ namespace GSP.Minigames
             DirectionInput();
         }
 
-        private void LateUpdate()
+        private void FixedUpdate()
         {
             Input();
         }

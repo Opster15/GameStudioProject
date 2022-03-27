@@ -451,11 +451,6 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6139879876625741641, guid: e626abfc272504245a0eddeffa5c05e9,
-        type: 3}
-      propertyPath: m_moveSpeedY
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e626abfc272504245a0eddeffa5c05e9, type: 3}
 --- !u!4 &1704453567027975271 stripped
