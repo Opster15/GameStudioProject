@@ -16,6 +16,8 @@ namespace GSP.Battle
 
         public Action<int, GameParty> OnEnableParty;
 
+        public System.Action OnTurnStart;
+        public System.Action OnTurnEnd;
         public Action<int, GameParty> OnPartyTurn;
 
         private void Awake()
@@ -48,6 +50,7 @@ namespace GSP.Battle
                 foreach (var character in party.PartyMembers)
                 {
                     character.EnableScripts(m_scriptManager);
+                    OnTurnStart += character.StartTurn;
                 }
             }
 
@@ -61,6 +64,7 @@ namespace GSP.Battle
                 foreach (var character in party.PartyMembers)
                 {
                     character.DisableScripts(m_scriptManager);
+                    OnTurnStart -= character.StartTurn;
                 }
             }
 
@@ -84,6 +88,7 @@ namespace GSP.Battle
 
         private void StartTurn()
         {
+            OnTurnStart?.Invoke();
             StartCoroutine(Turn());
         }
 

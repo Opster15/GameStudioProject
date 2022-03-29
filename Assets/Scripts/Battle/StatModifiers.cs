@@ -8,7 +8,7 @@ namespace GSP.Battle
     {
         private class Modifier
         {
-            private struct ModifierValue
+            private class ModifierValue
             {
                 private int m_value;
                 private int m_duration;
@@ -36,16 +36,10 @@ namespace GSP.Battle
             private List<ModifierValue> m_modifierValues = new List<ModifierValue>();
 
             private int m_summedValue;
-            private bool m_dirty;
 
-            public int Value
-            {
-                get
-                {
-                    if(m_dirty) { CalculateValue(); }
-                    return m_summedValue;
-                }
-            }
+            public Action<int> OnValueChanged;
+
+            public int Value => m_summedValue;
 
             public void Tick()
             {
@@ -54,12 +48,17 @@ namespace GSP.Battle
                     modifierValue.Tick();
                 }
                 m_modifierValues = m_modifierValues.Where(p => p.Value > 0).ToList();
+                CalculateValue();
+
+                OnValueChanged?.Invoke(Value);
             }
 
             public void AddModifier(int _modifier, int _duration)
             {
                 m_modifierValues.Add(new ModifierValue(_modifier, _duration));
-                m_dirty = true;
+                CalculateValue();
+
+                OnValueChanged?.Invoke(Value);
             }
 
             public void SetModifier(int _modifier, int _duration)
@@ -72,8 +71,8 @@ namespace GSP.Battle
             {
                 m_summedValue = 0;
                 m_modifierValues.Clear();
-                
-                m_dirty = false;
+
+                OnValueChanged?.Invoke(Value);
             }
 
             private void CalculateValue()
@@ -86,25 +85,37 @@ namespace GSP.Battle
                 m_summedValue = Mathf.Clamp(m_summedValue, -c_maxValue, c_maxValue);
 
                 if (m_summedValue == 0 && m_modifierValues.Count < 0) { ResetModifier(); }
-                m_dirty = false;
             }
         }
 
         private readonly Modifier[] m_modifiers = new Modifier[Enum.GetValues(typeof(Stats)).Length];
+
+        public Action<Stats, int> OnModifierChanged;
 
         public StatModifiers()
         {
             for (var i = 0; i < m_modifiers.Length; i++)
             {
                 m_modifiers[i] = new Modifier();
+
+                var stat = (Stats)i;
+                m_modifiers[i].OnValueChanged += (value) => OnModifierValueChanged(stat, value);
+            }
+        }
+
+        ~StatModifiers()
+        {
+            foreach (var statModifier in m_modifiers)
+            {
+                statModifier.OnValueChanged = null;
             }
         }
 
         public void Tick()
         {
-            foreach (var statBuff in m_modifiers)
+            foreach (var statModifier in m_modifiers)
             {
-                statBuff.Tick();
+                statModifier.Tick();
             }
         }
 
@@ -122,5 +133,8 @@ namespace GSP.Battle
 
         private Modifier GetModifier(Stats _stat)
             => m_modifiers[(int)_stat];
+
+        private void OnModifierValueChanged(Stats _stat, int _value)
+            => OnModifierChanged?.Invoke(_stat, _value);
     }
 }

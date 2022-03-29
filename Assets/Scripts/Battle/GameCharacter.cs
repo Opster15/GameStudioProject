@@ -157,6 +157,11 @@ namespace GSP.Battle
             SelectMove(null);
         }
 
+        public void StartTurn()
+        {
+            m_statModifiers.Tick();
+        }
+
         /// <summary>
         /// Select the character.
         /// </summary>
