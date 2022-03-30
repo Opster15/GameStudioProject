@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,8 +97,10 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 30b74f996050a5d4688257e4578df970,
+    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: e7f97685603e8c24e83cb09f1da18f51,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -133,6 +135,10 @@ PrefabInstance:
     - target: {fileID: 158038, guid: b9cff604e7a459c4581b58993fc28f1d, type: 3}
       propertyPath: m_Name
       value: SM_Env_Mushroom_Small_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 158038, guid: b9cff604e7a459c4581b58993fc28f1d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 444028, guid: b9cff604e7a459c4581b58993fc28f1d, type: 3}
       propertyPath: m_RootOrder
@@ -292,6 +298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_RockPile_Pillar_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 172962, guid: 2a755289263242443842c2951bc668ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 438152, guid: 2a755289263242443842c2951bc668ab, type: 3}
       propertyPath: m_RootOrder
       value: 91
@@ -371,6 +381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -437,6 +451,10 @@ PrefabInstance:
     - target: {fileID: 113888, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 113888, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 486262, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
       propertyPath: m_RootOrder
@@ -595,6 +613,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Gem_Spike_02
       objectReference: {fileID: 0}
+    - target: {fileID: 147340, guid: ff8e23c9e979e9d4b8760b6c3e81a87a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 430350, guid: ff8e23c9e979e9d4b8760b6c3e81a87a, type: 3}
       propertyPath: m_RootOrder
       value: 76
@@ -681,7 +703,7 @@ Transform:
   - {fileID: 1202357461}
   - {fileID: 40146660}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &55314151
 PrefabInstance:
@@ -693,6 +715,10 @@ PrefabInstance:
     - target: {fileID: 113888, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 113888, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 486262, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
       propertyPath: m_RootOrder
@@ -757,6 +783,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Barrel_Broken_02
       objectReference: {fileID: 0}
+    - target: {fileID: 175928, guid: 497b6e4d56b9a2d48ac2cd8de829fa88, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 452834, guid: 497b6e4d56b9a2d48ac2cd8de829fa88, type: 3}
       propertyPath: m_RootOrder
       value: 123
@@ -820,6 +850,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -882,6 +916,10 @@ PrefabInstance:
     - target: {fileID: 178744, guid: 7952f7e6ac9b93b4682e63e68d9a2f74, type: 3}
       propertyPath: m_Name
       value: SM_Env_CrackedRock_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 178744, guid: 7952f7e6ac9b93b4682e63e68d9a2f74, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 423422, guid: 7952f7e6ac9b93b4682e63e68d9a2f74, type: 3}
       propertyPath: m_RootOrder
@@ -949,6 +987,10 @@ PrefabInstance:
     - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tiles_010
+      objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
@@ -1085,7 +1127,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1106,6 +1148,10 @@ PrefabInstance:
     - target: {fileID: 164760, guid: 8ed44b12ca34ce34e9754ece5b325562, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tree_Twisted_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 164760, guid: 8ed44b12ca34ce34e9754ece5b325562, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 454868, guid: 8ed44b12ca34ce34e9754ece5b325562, type: 3}
       propertyPath: m_RootOrder
@@ -1183,6 +1229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1245,6 +1295,10 @@ PrefabInstance:
     - target: {fileID: 113888, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 113888, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 486262, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
       propertyPath: m_RootOrder
@@ -1310,6 +1364,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 106243640}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &117424173 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 495216, guid: 14a2a6aefc4a6e7469991cd18bc527d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1118593311}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &120135065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1320,6 +1380,10 @@ PrefabInstance:
     - target: {fileID: 156114, guid: 480822748dfc6ba478baf6bc23e905e2, type: 3}
       propertyPath: m_Name
       value: SM_Env_Wood_Platform_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 156114, guid: 480822748dfc6ba478baf6bc23e905e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 473050, guid: 480822748dfc6ba478baf6bc23e905e2, type: 3}
       propertyPath: m_RootOrder
@@ -1396,6 +1460,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Grass_01
       objectReference: {fileID: 0}
+    - target: {fileID: 145484, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 470398, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
       propertyPath: m_RootOrder
       value: 72
@@ -1470,6 +1538,10 @@ PrefabInstance:
     - target: {fileID: 156114, guid: 480822748dfc6ba478baf6bc23e905e2, type: 3}
       propertyPath: m_Name
       value: SM_Env_Wood_Platform_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 156114, guid: 480822748dfc6ba478baf6bc23e905e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 473050, guid: 480822748dfc6ba478baf6bc23e905e2, type: 3}
       propertyPath: m_RootOrder
@@ -1546,6 +1618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Bricks_04
       objectReference: {fileID: 0}
+    - target: {fileID: 144134, guid: 606dc5976508ea346a8b019a9f3be565, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 452692, guid: 606dc5976508ea346a8b019a9f3be565, type: 3}
       propertyPath: m_RootOrder
       value: 131
@@ -1608,6 +1684,10 @@ PrefabInstance:
     - target: {fileID: 168894, guid: 3b03db48e79bbb4458dc957b685dadcd, type: 3}
       propertyPath: m_Name
       value: SM_Env_Grass_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168894, guid: 3b03db48e79bbb4458dc957b685dadcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 455634, guid: 3b03db48e79bbb4458dc957b685dadcd, type: 3}
       propertyPath: m_RootOrder
@@ -1728,7 +1808,7 @@ PrefabInstance:
     - target: {fileID: 2778886512848198782, guid: e19130faf4bcaed47947f716c57931c5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2778886512848198782, guid: e19130faf4bcaed47947f716c57931c5,
         type: 3}
@@ -1838,6 +1918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Barrel_01
       objectReference: {fileID: 0}
+    - target: {fileID: 123292, guid: df22dae66d96c2944adb65e1661878de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 410682, guid: df22dae66d96c2944adb65e1661878de, type: 3}
       propertyPath: m_RootOrder
       value: 121
@@ -1904,6 +1988,10 @@ PrefabInstance:
     - target: {fileID: 196922, guid: 10149d8a7695a3e40963ad2e3b19a6c9, type: 3}
       propertyPath: m_Name
       value: SM_Env_Moss_Patch_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 196922, guid: 10149d8a7695a3e40963ad2e3b19a6c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 425666, guid: 10149d8a7695a3e40963ad2e3b19a6c9, type: 3}
       propertyPath: m_RootOrder
@@ -1980,6 +2068,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_01
       objectReference: {fileID: 0}
+    - target: {fileID: 159620, guid: 0ce8c4e13ce82544fbc1c305ac83b2af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 480294, guid: 0ce8c4e13ce82544fbc1c305ac83b2af, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -2045,6 +2137,10 @@ PrefabInstance:
     - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
@@ -2187,7 +2283,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &299550923
 PrefabInstance:
@@ -2199,6 +2295,10 @@ PrefabInstance:
     - target: {fileID: 168894, guid: 3b03db48e79bbb4458dc957b685dadcd, type: 3}
       propertyPath: m_Name
       value: SM_Env_Grass_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 168894, guid: 3b03db48e79bbb4458dc957b685dadcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 455634, guid: 3b03db48e79bbb4458dc957b685dadcd, type: 3}
       propertyPath: m_RootOrder
@@ -2262,6 +2362,10 @@ PrefabInstance:
     - target: {fileID: 172962, guid: 2a755289263242443842c2951bc668ab, type: 3}
       propertyPath: m_Name
       value: SM_Env_RockPile_Pillar_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 172962, guid: 2a755289263242443842c2951bc668ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 438152, guid: 2a755289263242443842c2951bc668ab, type: 3}
       propertyPath: m_RootOrder
@@ -2343,6 +2447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -2410,6 +2518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 452598, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2472,6 +2584,10 @@ PrefabInstance:
     - target: {fileID: 113888, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 113888, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 486262, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
       propertyPath: m_RootOrder
@@ -2608,7 +2724,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -2629,6 +2745,10 @@ PrefabInstance:
     - target: {fileID: 145484, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
       propertyPath: m_Name
       value: SM_Env_Grass_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 145484, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 470398, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
       propertyPath: m_RootOrder
@@ -2777,7 +2897,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -2798,6 +2918,10 @@ PrefabInstance:
     - target: {fileID: 164350, guid: f7dc92b7dff7d2c419e6070d90115e42, type: 3}
       propertyPath: m_Name
       value: SM_Env_Minetrack_Straight_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164350, guid: f7dc92b7dff7d2c419e6070d90115e42, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 421472, guid: f7dc92b7dff7d2c419e6070d90115e42, type: 3}
       propertyPath: m_RootOrder
@@ -2867,6 +2991,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 452598, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_RootOrder
       value: 103
@@ -2929,6 +3057,10 @@ PrefabInstance:
     - target: {fileID: 161970, guid: 9efa9d1e9921c3645a4952e67bca85ef, type: 3}
       propertyPath: m_Name
       value: SM_Env_Cave_Roof_01_DoubleSided
+      objectReference: {fileID: 0}
+    - target: {fileID: 161970, guid: 9efa9d1e9921c3645a4952e67bca85ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 436156, guid: 9efa9d1e9921c3645a4952e67bca85ef, type: 3}
       propertyPath: m_RootOrder
@@ -2997,6 +3129,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3060,6 +3196,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Crate_Rocks_01
       objectReference: {fileID: 0}
+    - target: {fileID: 124028, guid: 30d00bb7fb067de4c99cc3b87f401945, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 470652, guid: 30d00bb7fb067de4c99cc3b87f401945, type: 3}
       propertyPath: m_RootOrder
       value: 130
@@ -3122,6 +3262,10 @@ PrefabInstance:
     - target: {fileID: 194250, guid: 32b716c7c9302d84a83457c64600bc0a, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rubble_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 194250, guid: 32b716c7c9302d84a83457c64600bc0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 438406, guid: 32b716c7c9302d84a83457c64600bc0a, type: 3}
       propertyPath: m_RootOrder
@@ -3188,6 +3332,10 @@ PrefabInstance:
     - target: {fileID: 118688, guid: 34102c1416acc7c41afcd675890b6b1a, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Spike_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 118688, guid: 34102c1416acc7c41afcd675890b6b1a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 450096, guid: 34102c1416acc7c41afcd675890b6b1a, type: 3}
       propertyPath: m_RootOrder
@@ -3268,6 +3416,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Moss_Patch_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 196922, guid: 10149d8a7695a3e40963ad2e3b19a6c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 425666, guid: 10149d8a7695a3e40963ad2e3b19a6c9, type: 3}
       propertyPath: m_RootOrder
       value: 80
@@ -3343,6 +3495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -3406,6 +3562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 452598, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -3468,6 +3628,10 @@ PrefabInstance:
     - target: {fileID: 164350, guid: f7dc92b7dff7d2c419e6070d90115e42, type: 3}
       propertyPath: m_Name
       value: SM_Env_Minetrack_Straight_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 164350, guid: f7dc92b7dff7d2c419e6070d90115e42, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 421472, guid: f7dc92b7dff7d2c419e6070d90115e42, type: 3}
       propertyPath: m_RootOrder
@@ -3537,6 +3701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Bricks_02
       objectReference: {fileID: 0}
+    - target: {fileID: 162626, guid: c78cd7eb80565634c9127229d650a564, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 404526, guid: c78cd7eb80565634c9127229d650a564, type: 3}
       propertyPath: m_RootOrder
       value: 127
@@ -3605,6 +3773,10 @@ PrefabInstance:
     - target: {fileID: 145484, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
       propertyPath: m_Name
       value: SM_Env_Grass_01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 145484, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 470398, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
       propertyPath: m_RootOrder
@@ -3691,6 +3863,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Plank_02
       objectReference: {fileID: 0}
+    - target: {fileID: 162878, guid: b2f08fb2048c75245a7094d0147b4eca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 422724, guid: b2f08fb2048c75245a7094d0147b4eca, type: 3}
       propertyPath: m_RootOrder
       value: 126
@@ -3754,6 +3930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Wood_Railing_01
       objectReference: {fileID: 0}
+    - target: {fileID: 144368, guid: 3d9255a806ebe2045b23fb7077837544, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 457012, guid: 3d9255a806ebe2045b23fb7077837544, type: 3}
       propertyPath: m_RootOrder
       value: 138
@@ -3816,6 +3996,10 @@ PrefabInstance:
     - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
@@ -3883,6 +4067,10 @@ PrefabInstance:
     - target: {fileID: 152180, guid: d43c0ad073877d9438a0bd64827b026d, type: 3}
       propertyPath: m_Name
       value: SM_Env_Cave_Curved_Corner_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152180, guid: d43c0ad073877d9438a0bd64827b026d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 452856, guid: d43c0ad073877d9438a0bd64827b026d, type: 3}
       propertyPath: m_RootOrder
@@ -3963,6 +4151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Barrel_Broken_01
       objectReference: {fileID: 0}
+    - target: {fileID: 144150, guid: fb698eb68f15b3845baf425febbee697, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 438130, guid: fb698eb68f15b3845baf425febbee697, type: 3}
       propertyPath: m_RootOrder
       value: 122
@@ -4025,6 +4217,10 @@ PrefabInstance:
     - target: {fileID: 192026, guid: 16d7d3227049b944fb34c0d7bd878ee9, type: 3}
       propertyPath: m_Name
       value: SM_Env_Mushroom_Giant_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 192026, guid: 16d7d3227049b944fb34c0d7bd878ee9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 435992, guid: 16d7d3227049b944fb34c0d7bd878ee9, type: 3}
       propertyPath: m_RootOrder
@@ -4101,6 +4297,10 @@ PrefabInstance:
     - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
@@ -4194,7 +4394,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &657173331
 Transform:
@@ -4359,6 +4559,7 @@ Transform:
   - {fileID: 1169347130}
   - {fileID: 511586638}
   - {fileID: 1796804632}
+  - {fileID: 117424173}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4372,6 +4573,10 @@ PrefabInstance:
     - target: {fileID: 162878, guid: b2f08fb2048c75245a7094d0147b4eca, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rubble_Plank_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 162878, guid: b2f08fb2048c75245a7094d0147b4eca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 422724, guid: b2f08fb2048c75245a7094d0147b4eca, type: 3}
       propertyPath: m_RootOrder
@@ -4436,6 +4641,10 @@ PrefabInstance:
     - target: {fileID: 188028, guid: 42ab107e7e6626f4cbea7b3e557f8b12, type: 3}
       propertyPath: m_Name
       value: SM_Env_Wood_Construction_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 188028, guid: 42ab107e7e6626f4cbea7b3e557f8b12, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 472102, guid: 42ab107e7e6626f4cbea7b3e557f8b12, type: 3}
       propertyPath: m_RootOrder
@@ -4513,6 +4722,10 @@ PrefabInstance:
     - target: {fileID: 152180, guid: d43c0ad073877d9438a0bd64827b026d, type: 3}
       propertyPath: m_Name
       value: SM_Env_Cave_Curved_Corner_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152180, guid: d43c0ad073877d9438a0bd64827b026d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 452856, guid: d43c0ad073877d9438a0bd64827b026d, type: 3}
       propertyPath: m_RootOrder
@@ -4592,6 +4805,10 @@ PrefabInstance:
     - target: {fileID: 190188, guid: 87874848711c372419e6cf6ca05d9ea1, type: 3}
       propertyPath: m_Name
       value: SM_Env_Gem_Large_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 190188, guid: 87874848711c372419e6cf6ca05d9ea1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 481882, guid: 87874848711c372419e6cf6ca05d9ea1, type: 3}
       propertyPath: m_RootOrder
@@ -4673,6 +4890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Wood_Railing_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 125738, guid: 2bb05180d449f054db988e976c6dadae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 412882, guid: 2bb05180d449f054db988e976c6dadae, type: 3}
       propertyPath: m_RootOrder
       value: 113
@@ -4736,6 +4957,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 452598, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_RootOrder
       value: 110
@@ -4798,6 +5023,10 @@ PrefabInstance:
     - target: {fileID: 169216, guid: 9bda40f4cc3980c42830cb01d8347291, type: 3}
       propertyPath: m_Name
       value: SM_Env_Vine_Spikes_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 169216, guid: 9bda40f4cc3980c42830cb01d8347291, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 477796, guid: 9bda40f4cc3980c42830cb01d8347291, type: 3}
       propertyPath: m_RootOrder
@@ -4877,6 +5106,10 @@ PrefabInstance:
     - target: {fileID: 149278, guid: cfed6864439a806439810e6a55908101, type: 3}
       propertyPath: m_Name
       value: SM_Env_Gem_Large_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 149278, guid: cfed6864439a806439810e6a55908101, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 457688, guid: cfed6864439a806439810e6a55908101, type: 3}
       propertyPath: m_RootOrder
@@ -4961,7 +5194,7 @@ Transform:
   m_Children:
   - {fileID: 1346414360}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &738690128
 PrefabInstance:
@@ -4973,6 +5206,10 @@ PrefabInstance:
     - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 452598, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_RootOrder
@@ -5036,6 +5273,10 @@ PrefabInstance:
     - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
@@ -5104,6 +5345,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 452598, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_RootOrder
       value: 101
@@ -5166,6 +5411,10 @@ PrefabInstance:
     - target: {fileID: 140002, guid: 3bd3785667c2b874db60f9f3c8b89cac, type: 3}
       propertyPath: m_Name
       value: SM_Env_Wood_Bridge_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 140002, guid: 3bd3785667c2b874db60f9f3c8b89cac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 482042, guid: 3bd3785667c2b874db60f9f3c8b89cac, type: 3}
       propertyPath: m_RootOrder
@@ -5234,6 +5483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5296,6 +5549,10 @@ PrefabInstance:
     - target: {fileID: 146684, guid: 7c9ebadcd73cafa4980b3f63b3c75f1a, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rubble_Plank_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 146684, guid: 7c9ebadcd73cafa4980b3f63b3c75f1a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 439386, guid: 7c9ebadcd73cafa4980b3f63b3c75f1a, type: 3}
       propertyPath: m_RootOrder
@@ -5361,6 +5618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -5424,6 +5685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
       value: 100
@@ -5486,6 +5751,10 @@ PrefabInstance:
     - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 452598, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_RootOrder
@@ -5562,6 +5831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Brick_Rubble_03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 140670, guid: eca2f09fb1643284eb2b5c59aca0dc1f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 479578, guid: eca2f09fb1643284eb2b5c59aca0dc1f, type: 3}
       propertyPath: m_RootOrder
       value: 56
@@ -5626,6 +5899,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Flowers_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 102790, guid: 86a753c1fed37d54bbb4a774766985a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 446090, guid: 86a753c1fed37d54bbb4a774766985a5, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -5689,6 +5966,10 @@ PrefabInstance:
     - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
@@ -5765,6 +6046,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -5827,6 +6112,10 @@ PrefabInstance:
     - target: {fileID: 113888, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 113888, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 486262, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
       propertyPath: m_RootOrder
@@ -5903,6 +6192,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Plank_03
       objectReference: {fileID: 0}
+    - target: {fileID: 158264, guid: 99a526f2ec49c0c4a9b0d668b8456f52, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 442626, guid: 99a526f2ec49c0c4a9b0d668b8456f52, type: 3}
       propertyPath: m_RootOrder
       value: 134
@@ -5965,6 +6258,10 @@ PrefabInstance:
     - target: {fileID: 152180, guid: d43c0ad073877d9438a0bd64827b026d, type: 3}
       propertyPath: m_Name
       value: SM_Env_Cave_Curved_Corner_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 152180, guid: d43c0ad073877d9438a0bd64827b026d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 452856, guid: d43c0ad073877d9438a0bd64827b026d, type: 3}
       propertyPath: m_RootOrder
@@ -6045,6 +6342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
       value: 133
@@ -6120,6 +6421,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Wood_Railing_02
       objectReference: {fileID: 0}
+    - target: {fileID: 125738, guid: 2bb05180d449f054db988e976c6dadae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 412882, guid: 2bb05180d449f054db988e976c6dadae, type: 3}
       propertyPath: m_RootOrder
       value: 145
@@ -6183,6 +6488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Grass_03
       objectReference: {fileID: 0}
+    - target: {fileID: 198180, guid: 7f3d4ff296dccb147aeb894ae74fb062, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 494816, guid: 7f3d4ff296dccb147aeb894ae74fb062, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -6245,6 +6554,10 @@ PrefabInstance:
     - target: {fileID: 168894, guid: 3b03db48e79bbb4458dc957b685dadcd, type: 3}
       propertyPath: m_Name
       value: SM_Env_Grass_02 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168894, guid: 3b03db48e79bbb4458dc957b685dadcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 455634, guid: 3b03db48e79bbb4458dc957b685dadcd, type: 3}
       propertyPath: m_RootOrder
@@ -6312,6 +6625,10 @@ PrefabInstance:
     - target: {fileID: 152716, guid: 41ec293d7ae663c418439466f0d7c93e, type: 3}
       propertyPath: m_Name
       value: SM_Env_Railing_Broken_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 152716, guid: 41ec293d7ae663c418439466f0d7c93e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 402256, guid: 41ec293d7ae663c418439466f0d7c93e, type: 3}
       propertyPath: m_RootOrder
@@ -6417,6 +6734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Wood_Railing_02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 125738, guid: 2bb05180d449f054db988e976c6dadae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 412882, guid: 2bb05180d449f054db988e976c6dadae, type: 3}
       propertyPath: m_RootOrder
       value: 114
@@ -6479,6 +6800,10 @@ PrefabInstance:
     - target: {fileID: 151658, guid: 44bfbfc639652f74db2267a0356edea2, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Spike_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 151658, guid: 44bfbfc639652f74db2267a0356edea2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 424588, guid: 44bfbfc639652f74db2267a0356edea2, type: 3}
       propertyPath: m_RootOrder
@@ -6543,6 +6868,10 @@ PrefabInstance:
     - target: {fileID: 132666, guid: ba39ae34c46b0ac46a3e8c1de0fc4d49, type: 3}
       propertyPath: m_Name
       value: SM_Env_Mushroom_Giant_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 132666, guid: ba39ae34c46b0ac46a3e8c1de0fc4d49, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 469538, guid: ba39ae34c46b0ac46a3e8c1de0fc4d49, type: 3}
       propertyPath: m_RootOrder
@@ -6620,6 +6949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Barrel_02
       objectReference: {fileID: 0}
+    - target: {fileID: 100352, guid: eb2fd9123802bbb43bd44dd7dd3c8df4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 448420, guid: eb2fd9123802bbb43bd44dd7dd3c8df4, type: 3}
       propertyPath: m_RootOrder
       value: 124
@@ -6683,6 +7016,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20
       objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
       value: 142
@@ -6745,6 +7082,10 @@ PrefabInstance:
     - target: {fileID: 152180, guid: d43c0ad073877d9438a0bd64827b026d, type: 3}
       propertyPath: m_Name
       value: SM_Env_Cave_Curved_Corner_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 152180, guid: d43c0ad073877d9438a0bd64827b026d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 452856, guid: d43c0ad073877d9438a0bd64827b026d, type: 3}
       propertyPath: m_RootOrder
@@ -6821,6 +7162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 113888, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 486262, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
       propertyPath: m_RootOrder
       value: 88
@@ -6883,6 +7228,10 @@ PrefabInstance:
     - target: {fileID: 135214, guid: 0968261316a5c8546b8cdbc0c575c25c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Minetrack_Turn_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 135214, guid: 0968261316a5c8546b8cdbc0c575c25c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 411744, guid: 0968261316a5c8546b8cdbc0c575c25c, type: 3}
       propertyPath: m_RootOrder
@@ -6978,7 +7327,7 @@ Transform:
   - {fileID: 1663116050}
   - {fileID: 1109657300}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1038978846
 PrefabInstance:
@@ -6990,6 +7339,10 @@ PrefabInstance:
     - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
@@ -7126,7 +7479,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -7147,6 +7500,10 @@ PrefabInstance:
     - target: {fileID: 133876, guid: 617f333324332de47a8b5f07cc0870cc, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Barrel_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 133876, guid: 617f333324332de47a8b5f07cc0870cc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 471048, guid: 617f333324332de47a8b5f07cc0870cc, type: 3}
       propertyPath: m_RootOrder
@@ -7210,6 +7567,10 @@ PrefabInstance:
     - target: {fileID: 145852, guid: 4ddf6f65a614aa742b0f4f1012b3d339, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Barrel_Large_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 145852, guid: 4ddf6f65a614aa742b0f4f1012b3d339, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 483194, guid: 4ddf6f65a614aa742b0f4f1012b3d339, type: 3}
       propertyPath: m_RootOrder
@@ -7286,6 +7647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_02
       objectReference: {fileID: 0}
+    - target: {fileID: 113888, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 486262, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
       propertyPath: m_RootOrder
       value: 146
@@ -7348,6 +7713,10 @@ PrefabInstance:
     - target: {fileID: 134700, guid: e1dc418268f106b4cbdbf02598dfe386, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Lantern_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 134700, guid: e1dc418268f106b4cbdbf02598dfe386, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 443376, guid: e1dc418268f106b4cbdbf02598dfe386, type: 3}
       propertyPath: m_RootOrder
@@ -7417,6 +7786,10 @@ PrefabInstance:
     - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
@@ -7553,7 +7926,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -7569,15 +7942,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 657173331}
     m_Modifications:
     - target: {fileID: 142700, guid: 14a2a6aefc4a6e7469991cd18bc527d1, type: 3}
       propertyPath: m_Name
       value: SM_Env_Volcanic_01
       objectReference: {fileID: 0}
+    - target: {fileID: 142700, guid: 14a2a6aefc4a6e7469991cd18bc527d1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 495216, guid: 14a2a6aefc4a6e7469991cd18bc527d1, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 151
       objectReference: {fileID: 0}
     - target: {fileID: 495216, guid: 14a2a6aefc4a6e7469991cd18bc527d1, type: 3}
       propertyPath: m_LocalScale.x
@@ -7593,15 +7970,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495216, guid: 14a2a6aefc4a6e7469991cd18bc527d1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.27
+      value: 1.3793025
       objectReference: {fileID: 0}
     - target: {fileID: 495216, guid: 14a2a6aefc4a6e7469991cd18bc527d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.29
+      value: 12.278309
       objectReference: {fileID: 0}
     - target: {fileID: 495216, guid: 14a2a6aefc4a6e7469991cd18bc527d1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.12
+      value: 1.1154647
       objectReference: {fileID: 0}
     - target: {fileID: 495216, guid: 14a2a6aefc4a6e7469991cd18bc527d1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7613,7 +7990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495216, guid: 14a2a6aefc4a6e7469991cd18bc527d1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 495216, guid: 14a2a6aefc4a6e7469991cd18bc527d1, type: 3}
       propertyPath: m_LocalRotation.z
@@ -7643,6 +8020,10 @@ PrefabInstance:
     - target: {fileID: 198180, guid: 7f3d4ff296dccb147aeb894ae74fb062, type: 3}
       propertyPath: m_Name
       value: SM_Env_Grass_03 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 198180, guid: 7f3d4ff296dccb147aeb894ae74fb062, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 494816, guid: 7f3d4ff296dccb147aeb894ae74fb062, type: 3}
       propertyPath: m_RootOrder
@@ -7713,6 +8094,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
       value: 94
@@ -7776,6 +8161,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Grass_02 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 168894, guid: 3b03db48e79bbb4458dc957b685dadcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 455634, guid: 3b03db48e79bbb4458dc957b685dadcd, type: 3}
       propertyPath: m_RootOrder
       value: 105
@@ -7838,6 +8227,10 @@ PrefabInstance:
     - target: {fileID: 150720, guid: 07d8e21504c5ced46b0e0d81a1698023, type: 3}
       propertyPath: m_Name
       value: SM_Env_RockPile_Square_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 150720, guid: 07d8e21504c5ced46b0e0d81a1698023, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 411664, guid: 07d8e21504c5ced46b0e0d81a1698023, type: 3}
       propertyPath: m_RootOrder
@@ -7915,6 +8308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
       value: 92
@@ -7977,6 +8374,10 @@ PrefabInstance:
     - target: {fileID: 178744, guid: 7952f7e6ac9b93b4682e63e68d9a2f74, type: 3}
       propertyPath: m_Name
       value: SM_Env_CrackedRock_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 178744, guid: 7952f7e6ac9b93b4682e63e68d9a2f74, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 423422, guid: 7952f7e6ac9b93b4682e63e68d9a2f74, type: 3}
       propertyPath: m_RootOrder
@@ -8112,6 +8513,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 113888, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 486262, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
       propertyPath: m_RootOrder
       value: 104
@@ -8174,6 +8579,10 @@ PrefabInstance:
     - target: {fileID: 115584, guid: faa8739308e4c154f9332d2624b6e47c, type: 3}
       propertyPath: m_Name
       value: SM_Env_RockPile_Rounded_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 115584, guid: faa8739308e4c154f9332d2624b6e47c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 432056, guid: faa8739308e4c154f9332d2624b6e47c, type: 3}
       propertyPath: m_RootOrder
@@ -8242,6 +8651,10 @@ PrefabInstance:
     - target: {fileID: 134976, guid: 71b973d16356c61458cb853ecb1850ca, type: 3}
       propertyPath: m_Name
       value: SM_Env_Trap_Spikes_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 134976, guid: 71b973d16356c61458cb853ecb1850ca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 487932, guid: 71b973d16356c61458cb853ecb1850ca, type: 3}
       propertyPath: m_RootOrder
@@ -8323,6 +8736,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Flowers_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 102790, guid: 86a753c1fed37d54bbb4a774766985a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 446090, guid: 86a753c1fed37d54bbb4a774766985a5, type: 3}
       propertyPath: m_RootOrder
       value: 62
@@ -8386,6 +8803,10 @@ PrefabInstance:
     - target: {fileID: 169798, guid: 970513e78dc7f37459fb1c296855f4b2, type: 3}
       propertyPath: m_Name
       value: SM_Env_Minetrack_Broken_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 169798, guid: 970513e78dc7f37459fb1c296855f4b2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 473918, guid: 970513e78dc7f37459fb1c296855f4b2, type: 3}
       propertyPath: m_RootOrder
@@ -8455,6 +8876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
       value: 97
@@ -8517,6 +8942,10 @@ PrefabInstance:
     - target: {fileID: 120426, guid: dcf56c462b61a4c43b82009dc5a23df2, type: 3}
       propertyPath: m_Name
       value: SM_Env_Gem_Spike_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 120426, guid: dcf56c462b61a4c43b82009dc5a23df2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 439734, guid: dcf56c462b61a4c43b82009dc5a23df2, type: 3}
       propertyPath: m_RootOrder
@@ -8581,6 +9010,10 @@ PrefabInstance:
     - target: {fileID: 127580, guid: 131ea53cf3b9d0245b3e1a6840d4e4b4, type: 3}
       propertyPath: m_Name
       value: SM_Env_Cave_Curved_01_DoubleSided (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 127580, guid: 131ea53cf3b9d0245b3e1a6840d4e4b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 477482, guid: 131ea53cf3b9d0245b3e1a6840d4e4b4, type: 3}
       propertyPath: m_RootOrder
@@ -8656,6 +9089,10 @@ PrefabInstance:
     - target: {fileID: 147340, guid: ff8e23c9e979e9d4b8760b6c3e81a87a, type: 3}
       propertyPath: m_Name
       value: SM_Env_Gem_Spike_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 147340, guid: ff8e23c9e979e9d4b8760b6c3e81a87a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 430350, guid: ff8e23c9e979e9d4b8760b6c3e81a87a, type: 3}
       propertyPath: m_RootOrder
@@ -8737,6 +9174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -8803,6 +9244,10 @@ PrefabInstance:
     - target: {fileID: 120426, guid: dcf56c462b61a4c43b82009dc5a23df2, type: 3}
       propertyPath: m_Name
       value: SM_Env_Gem_Spike_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 120426, guid: dcf56c462b61a4c43b82009dc5a23df2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 439734, guid: dcf56c462b61a4c43b82009dc5a23df2, type: 3}
       propertyPath: m_RootOrder
@@ -8878,6 +9323,10 @@ PrefabInstance:
     - target: {fileID: 173080, guid: 59b190c6c758ce945a14d0b9d0092421, type: 3}
       propertyPath: m_Name
       value: SM_Env_Mushroom_Wall_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 173080, guid: 59b190c6c758ce945a14d0b9d0092421, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 423140, guid: 59b190c6c758ce945a14d0b9d0092421, type: 3}
       propertyPath: m_RootOrder
@@ -9052,6 +9501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Grass_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 168894, guid: 3b03db48e79bbb4458dc957b685dadcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 455634, guid: 3b03db48e79bbb4458dc957b685dadcd, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -9114,6 +9567,10 @@ PrefabInstance:
     - target: {fileID: 156300, guid: 04fb0adabe575c0429826d73f7db3c13, type: 3}
       propertyPath: m_Name
       value: SM_Env_Flowers_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 156300, guid: 04fb0adabe575c0429826d73f7db3c13, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 432936, guid: 04fb0adabe575c0429826d73f7db3c13, type: 3}
       propertyPath: m_RootOrder
@@ -9191,6 +9648,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_01
       objectReference: {fileID: 0}
+    - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 452598, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_RootOrder
       value: 147
@@ -9250,9 +9711,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 657173331}
     m_Modifications:
+    - target: {fileID: 132422, guid: 5c00c5f03c23f3b44af6d75077362432, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 137454, guid: 5c00c5f03c23f3b44af6d75077362432, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Minecart_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 137454, guid: 5c00c5f03c23f3b44af6d75077362432, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 137766, guid: 5c00c5f03c23f3b44af6d75077362432, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 498650, guid: 5c00c5f03c23f3b44af6d75077362432, type: 3}
       propertyPath: m_RootOrder
@@ -9316,6 +9789,10 @@ PrefabInstance:
     - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 452598, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_RootOrder
@@ -9392,6 +9869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Grass_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 145484, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 470398, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
       propertyPath: m_RootOrder
       value: 63
@@ -9454,6 +9935,10 @@ PrefabInstance:
     - target: {fileID: 151658, guid: 44bfbfc639652f74db2267a0356edea2, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Spike_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 151658, guid: 44bfbfc639652f74db2267a0356edea2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 424588, guid: 44bfbfc639652f74db2267a0356edea2, type: 3}
       propertyPath: m_RootOrder
@@ -9518,6 +10003,10 @@ PrefabInstance:
     - target: {fileID: 147436, guid: c7a5c2b51e6ab424fb46547daf81a610, type: 3}
       propertyPath: m_Name
       value: SM_Env_GlowingOrb_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 147436, guid: c7a5c2b51e6ab424fb46547daf81a610, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 411698, guid: c7a5c2b51e6ab424fb46547daf81a610, type: 3}
       propertyPath: m_RootOrder
@@ -9595,6 +10084,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -9658,6 +10151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 452598, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_RootOrder
       value: 96
@@ -9720,6 +10217,10 @@ PrefabInstance:
     - target: {fileID: 123292, guid: df22dae66d96c2944adb65e1661878de, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Barrel_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123292, guid: df22dae66d96c2944adb65e1661878de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 410682, guid: df22dae66d96c2944adb65e1661878de, type: 3}
       propertyPath: m_RootOrder
@@ -9788,6 +10289,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Grass_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 145484, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 470398, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -9850,6 +10355,10 @@ PrefabInstance:
     - target: {fileID: 145484, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
       propertyPath: m_Name
       value: SM_Env_Grass_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 145484, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 470398, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
       propertyPath: m_RootOrder
@@ -9926,6 +10435,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -9992,6 +10505,10 @@ PrefabInstance:
     - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
@@ -10060,6 +10577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Wood_Railing_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 125738, guid: 2bb05180d449f054db988e976c6dadae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 412882, guid: 2bb05180d449f054db988e976c6dadae, type: 3}
       propertyPath: m_RootOrder
       value: 112
@@ -10122,6 +10643,10 @@ PrefabInstance:
     - target: {fileID: 195212, guid: 4e5d9824dc45f724690777e573f84304, type: 3}
       propertyPath: m_Name
       value: SM_Env_Stalagmite_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 195212, guid: 4e5d9824dc45f724690777e573f84304, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400150, guid: 4e5d9824dc45f724690777e573f84304, type: 3}
       propertyPath: m_RootOrder
@@ -10203,6 +10728,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Grass_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 145484, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 470398, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
       propertyPath: m_RootOrder
       value: 99
@@ -10265,6 +10794,10 @@ PrefabInstance:
     - target: {fileID: 151658, guid: 44bfbfc639652f74db2267a0356edea2, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Spike_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 151658, guid: 44bfbfc639652f74db2267a0356edea2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 424588, guid: 44bfbfc639652f74db2267a0356edea2, type: 3}
       propertyPath: m_RootOrder
@@ -10333,6 +10866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -10396,6 +10933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
       value: 89
@@ -10458,6 +10999,10 @@ PrefabInstance:
     - target: {fileID: 198516, guid: a03e2dd3dba33b9418311d00a91cf378, type: 3}
       propertyPath: m_Name
       value: SM_Env_Roots_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 198516, guid: a03e2dd3dba33b9418311d00a91cf378, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 437952, guid: a03e2dd3dba33b9418311d00a91cf378, type: 3}
       propertyPath: m_RootOrder
@@ -10535,6 +11080,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 452598, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -10597,6 +11146,10 @@ PrefabInstance:
     - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
@@ -10665,6 +11218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -10732,6 +11289,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 452598, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -10794,6 +11355,10 @@ PrefabInstance:
     - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
@@ -10858,6 +11423,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20
       objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
       value: 53
@@ -10920,6 +11489,10 @@ PrefabInstance:
     - target: {fileID: 167560, guid: fe819f6613802b24cac5bd6f4a749f63, type: 3}
       propertyPath: m_Name
       value: SM_Env_RockPile_Rounded_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 167560, guid: fe819f6613802b24cac5bd6f4a749f63, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 440830, guid: fe819f6613802b24cac5bd6f4a749f63, type: 3}
       propertyPath: m_RootOrder
@@ -11061,7 +11634,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -11082,6 +11655,10 @@ PrefabInstance:
     - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
@@ -11149,6 +11726,10 @@ PrefabInstance:
     - target: {fileID: 198516, guid: a03e2dd3dba33b9418311d00a91cf378, type: 3}
       propertyPath: m_Name
       value: SM_Env_Roots_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 198516, guid: a03e2dd3dba33b9418311d00a91cf378, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 437952, guid: a03e2dd3dba33b9418311d00a91cf378, type: 3}
       propertyPath: m_RootOrder
@@ -11226,6 +11807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Wood_Bridge_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 140002, guid: 3bd3785667c2b874db60f9f3c8b89cac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 482042, guid: 3bd3785667c2b874db60f9f3c8b89cac, type: 3}
       propertyPath: m_RootOrder
       value: 85
@@ -11292,6 +11877,10 @@ PrefabInstance:
     - target: {fileID: 144134, guid: 606dc5976508ea346a8b019a9f3be565, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Bricks_04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 144134, guid: 606dc5976508ea346a8b019a9f3be565, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 452692, guid: 606dc5976508ea346a8b019a9f3be565, type: 3}
       propertyPath: m_RootOrder
@@ -11416,6 +12005,10 @@ PrefabInstance:
     - target: {fileID: 179662, guid: 08507db073ef8364d9175005ffef81f4, type: 3}
       propertyPath: m_Name
       value: SM_Env_Stalagmite_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 179662, guid: 08507db073ef8364d9175005ffef81f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 436642, guid: 08507db073ef8364d9175005ffef81f4, type: 3}
       propertyPath: m_RootOrder
@@ -11565,7 +12158,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -11586,6 +12179,10 @@ PrefabInstance:
     - target: {fileID: 113888, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 113888, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 486262, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
       propertyPath: m_RootOrder
@@ -11649,6 +12246,10 @@ PrefabInstance:
     - target: {fileID: 122446, guid: 685e675711b17224685ae3d7ed84139c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Wood_Bridge_Start_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 122446, guid: 685e675711b17224685ae3d7ed84139c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 476394, guid: 685e675711b17224685ae3d7ed84139c, type: 3}
       propertyPath: m_RootOrder
@@ -11725,6 +12326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Grass_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 145484, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 470398, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -11787,6 +12392,10 @@ PrefabInstance:
     - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
@@ -11854,6 +12463,10 @@ PrefabInstance:
     - target: {fileID: 107636, guid: 30febe85dec39834883b40180a2c4e99, type: 3}
       propertyPath: m_Name
       value: FX_CandleFlame
+      objectReference: {fileID: 0}
+    - target: {fileID: 107636, guid: 30febe85dec39834883b40180a2c4e99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 409448, guid: 30febe85dec39834883b40180a2c4e99, type: 3}
       propertyPath: m_RootOrder
@@ -11932,6 +12545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 452598, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_RootOrder
       value: 108
@@ -11994,6 +12611,10 @@ PrefabInstance:
     - target: {fileID: 133136, guid: 8a02ef52db4e0054ea6bd466ed184af1, type: 3}
       propertyPath: m_Name
       value: SM_Env_Railing_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 133136, guid: 8a02ef52db4e0054ea6bd466ed184af1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 492462, guid: 8a02ef52db4e0054ea6bd466ed184af1, type: 3}
       propertyPath: m_RootOrder
@@ -12063,6 +12684,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
       value: 109
@@ -12126,6 +12751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -12188,6 +12817,10 @@ PrefabInstance:
     - target: {fileID: 164350, guid: f7dc92b7dff7d2c419e6070d90115e42, type: 3}
       propertyPath: m_Name
       value: SM_Env_Minetrack_Straight_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164350, guid: f7dc92b7dff7d2c419e6070d90115e42, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 421472, guid: f7dc92b7dff7d2c419e6070d90115e42, type: 3}
       propertyPath: m_RootOrder
@@ -12256,6 +12889,10 @@ PrefabInstance:
     - target: {fileID: 134700, guid: e1dc418268f106b4cbdbf02598dfe386, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Lantern_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134700, guid: e1dc418268f106b4cbdbf02598dfe386, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 443376, guid: e1dc418268f106b4cbdbf02598dfe386, type: 3}
       propertyPath: m_RootOrder
@@ -12332,6 +12969,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
       value: 95
@@ -12394,6 +13035,10 @@ PrefabInstance:
     - target: {fileID: 140002, guid: 3bd3785667c2b874db60f9f3c8b89cac, type: 3}
       propertyPath: m_Name
       value: SM_Env_Wood_Bridge_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 140002, guid: 3bd3785667c2b874db60f9f3c8b89cac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 482042, guid: 3bd3785667c2b874db60f9f3c8b89cac, type: 3}
       propertyPath: m_RootOrder
@@ -12462,6 +13107,10 @@ PrefabInstance:
     - target: {fileID: 112134, guid: 1e7cc353830e2d6409a9b84abc744fd8, type: 3}
       propertyPath: m_Name
       value: SM_Env_Minetrack_Bridge_Broken_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 112134, guid: 1e7cc353830e2d6409a9b84abc744fd8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 424770, guid: 1e7cc353830e2d6409a9b84abc744fd8, type: 3}
       propertyPath: m_RootOrder
@@ -12539,6 +13188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_02
       objectReference: {fileID: 0}
+    - target: {fileID: 113888, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 486262, guid: 6b8ef567fab8aae4fb47c66e41111903, type: 3}
       propertyPath: m_RootOrder
       value: 52
@@ -12601,6 +13254,10 @@ PrefabInstance:
     - target: {fileID: 172962, guid: 2a755289263242443842c2951bc668ab, type: 3}
       propertyPath: m_Name
       value: SM_Env_RockPile_Pillar_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 172962, guid: 2a755289263242443842c2951bc668ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 438152, guid: 2a755289263242443842c2951bc668ab, type: 3}
       propertyPath: m_RootOrder
@@ -12669,7 +13326,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1848632134
 Transform:
@@ -12726,7 +13383,7 @@ Transform:
   - {fileID: 2087998095}
   - {fileID: 962250919}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1852550591
 PrefabInstance:
@@ -12738,6 +13395,10 @@ PrefabInstance:
     - target: {fileID: 145852, guid: 4ddf6f65a614aa742b0f4f1012b3d339, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Barrel_Large_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 145852, guid: 4ddf6f65a614aa742b0f4f1012b3d339, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 483194, guid: 4ddf6f65a614aa742b0f4f1012b3d339, type: 3}
       propertyPath: m_RootOrder
@@ -12813,6 +13474,10 @@ PrefabInstance:
     - target: {fileID: 178538, guid: d6267d2e6296e7946afb915ef648ed67, type: 3}
       propertyPath: m_Name
       value: SM_Env_Roots_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 178538, guid: d6267d2e6296e7946afb915ef648ed67, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 451930, guid: d6267d2e6296e7946afb915ef648ed67, type: 3}
       propertyPath: m_RootOrder
@@ -12890,6 +13555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -12956,6 +13625,10 @@ PrefabInstance:
     - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
@@ -14093,6 +14766,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
       value: 102
@@ -14155,6 +14832,10 @@ PrefabInstance:
     - target: {fileID: 135214, guid: 0968261316a5c8546b8cdbc0c575c25c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Minetrack_Turn_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 135214, guid: 0968261316a5c8546b8cdbc0c575c25c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 411744, guid: 0968261316a5c8546b8cdbc0c575c25c, type: 3}
       propertyPath: m_RootOrder
@@ -14224,6 +14905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -14290,6 +14975,10 @@ PrefabInstance:
     - target: {fileID: 110020, guid: a109fb5c9d5c1d14098439ed932dc771, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Flat_Platform_06
+      objectReference: {fileID: 0}
+    - target: {fileID: 110020, guid: a109fb5c9d5c1d14098439ed932dc771, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 474024, guid: a109fb5c9d5c1d14098439ed932dc771, type: 3}
       propertyPath: m_RootOrder
@@ -14367,6 +15056,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Mushroom_Giant_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 132666, guid: ba39ae34c46b0ac46a3e8c1de0fc4d49, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 469538, guid: ba39ae34c46b0ac46a3e8c1de0fc4d49, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -14443,6 +15136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Barrel_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 123292, guid: df22dae66d96c2944adb65e1661878de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 410682, guid: df22dae66d96c2944adb65e1661878de, type: 3}
       propertyPath: m_RootOrder
       value: 118
@@ -14510,6 +15207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_01
       objectReference: {fileID: 0}
+    - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 452598, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_RootOrder
       value: 54
@@ -14572,6 +15273,10 @@ PrefabInstance:
     - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
@@ -14708,7 +15413,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -14729,6 +15434,10 @@ PrefabInstance:
     - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
@@ -14797,6 +15506,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Grass_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 145484, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 470398, guid: a3a688bad45e60446bf326f3e998e1da, type: 3}
       propertyPath: m_RootOrder
       value: 68
@@ -14859,6 +15572,10 @@ PrefabInstance:
     - target: {fileID: 102790, guid: 86a753c1fed37d54bbb4a774766985a5, type: 3}
       propertyPath: m_Name
       value: SM_Env_Flowers_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 102790, guid: 86a753c1fed37d54bbb4a774766985a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 446090, guid: 86a753c1fed37d54bbb4a774766985a5, type: 3}
       propertyPath: m_RootOrder
@@ -14936,6 +15653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Brick_Rubble_03
       objectReference: {fileID: 0}
+    - target: {fileID: 140670, guid: eca2f09fb1643284eb2b5c59aca0dc1f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 479578, guid: eca2f09fb1643284eb2b5c59aca0dc1f, type: 3}
       propertyPath: m_RootOrder
       value: 57
@@ -14999,6 +15720,10 @@ PrefabInstance:
     - target: {fileID: 127580, guid: 131ea53cf3b9d0245b3e1a6840d4e4b4, type: 3}
       propertyPath: m_Name
       value: SM_Env_Cave_Curved_01_DoubleSided (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 127580, guid: 131ea53cf3b9d0245b3e1a6840d4e4b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 477482, guid: 131ea53cf3b9d0245b3e1a6840d4e4b4, type: 3}
       propertyPath: m_RootOrder
@@ -15075,6 +15800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -15138,6 +15867,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -15200,6 +15933,10 @@ PrefabInstance:
     - target: {fileID: 127580, guid: 131ea53cf3b9d0245b3e1a6840d4e4b4, type: 3}
       propertyPath: m_Name
       value: SM_Env_Cave_Curved_01_DoubleSided (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 127580, guid: 131ea53cf3b9d0245b3e1a6840d4e4b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 477482, guid: 131ea53cf3b9d0245b3e1a6840d4e4b4, type: 3}
       propertyPath: m_RootOrder
@@ -15276,6 +16013,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 452598, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_RootOrder
       value: 93
@@ -15338,6 +16079,10 @@ PrefabInstance:
     - target: {fileID: 156114, guid: 480822748dfc6ba478baf6bc23e905e2, type: 3}
       propertyPath: m_Name
       value: SM_Env_Wood_Platform_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 156114, guid: 480822748dfc6ba478baf6bc23e905e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 473050, guid: 480822748dfc6ba478baf6bc23e905e2, type: 3}
       propertyPath: m_RootOrder
@@ -15415,6 +16160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -15482,6 +16231,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 168602, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 452598, guid: 3e0f6b0ee51e6eb42a731a26210989b9, type: 3}
       propertyPath: m_RootOrder
       value: 90
@@ -15545,6 +16298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -15607,6 +16364,10 @@ PrefabInstance:
     - target: {fileID: 156114, guid: 480822748dfc6ba478baf6bc23e905e2, type: 3}
       propertyPath: m_Name
       value: SM_Env_Wood_Platform_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 156114, guid: 480822748dfc6ba478baf6bc23e905e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 473050, guid: 480822748dfc6ba478baf6bc23e905e2, type: 3}
       propertyPath: m_RootOrder
@@ -15683,6 +16444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_CrackedRock_01
       objectReference: {fileID: 0}
+    - target: {fileID: 178744, guid: 7952f7e6ac9b93b4682e63e68d9a2f74, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 423422, guid: 7952f7e6ac9b93b4682e63e68d9a2f74, type: 3}
       propertyPath: m_RootOrder
       value: 78
@@ -15749,6 +16514,10 @@ PrefabInstance:
     - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
@@ -15889,7 +16658,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -15910,6 +16679,10 @@ PrefabInstance:
     - target: {fileID: 161970, guid: 9efa9d1e9921c3645a4952e67bca85ef, type: 3}
       propertyPath: m_Name
       value: SM_Env_Cave_Roof_01_DoubleSided (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 161970, guid: 9efa9d1e9921c3645a4952e67bca85ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 436156, guid: 9efa9d1e9921c3645a4952e67bca85ef, type: 3}
       propertyPath: m_RootOrder
@@ -15978,6 +16751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Grass_02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 168894, guid: 3b03db48e79bbb4458dc957b685dadcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 455634, guid: 3b03db48e79bbb4458dc957b685dadcd, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -16040,6 +16817,10 @@ PrefabInstance:
     - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rubble_Pebbles_20 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 179920, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 462032, guid: 646901c7a83b3d74fa146a5470ddb0cb, type: 3}
       propertyPath: m_RootOrder
@@ -16113,22 +16894,22 @@ PrefabInstance:
     - target: {fileID: 2050717062107331103, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.070889026
+      value: 0.07088901
       objectReference: {fileID: 0}
     - target: {fileID: 2050717062107331103, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000016643243
+      value: 0.000000018227158
       objectReference: {fileID: 0}
     - target: {fileID: 2050717062107331103, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000001182799
+      value: -0.0000000012953639
       objectReference: {fileID: 0}
     - target: {fileID: 2050717062831243400, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2050717062831243400, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
@@ -16188,17 +16969,17 @@ PrefabInstance:
     - target: {fileID: 2050717063073306518, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.070889026
+      value: 0.07088901
       objectReference: {fileID: 0}
     - target: {fileID: 2050717063073306518, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000016643243
+      value: 0.000000018227158
       objectReference: {fileID: 0}
     - target: {fileID: 2050717063073306518, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000001182799
+      value: -0.0000000012953639
       objectReference: {fileID: 0}
     - target: {fileID: 2050717063073306523, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
@@ -16217,6 +16998,10 @@ PrefabInstance:
     - target: {fileID: 195216, guid: 9aebcee403d0c4745bea8c5fea3af6ef, type: 3}
       propertyPath: m_Name
       value: SM_Env_Vine_Spikes_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 195216, guid: 9aebcee403d0c4745bea8c5fea3af6ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 475672, guid: 9aebcee403d0c4745bea8c5fea3af6ef, type: 3}
       propertyPath: m_RootOrder
@@ -16284,6 +17069,10 @@ PrefabInstance:
     - target: {fileID: 127580, guid: 131ea53cf3b9d0245b3e1a6840d4e4b4, type: 3}
       propertyPath: m_Name
       value: SM_Env_Cave_Curved_01_DoubleSided
+      objectReference: {fileID: 0}
+    - target: {fileID: 127580, guid: 131ea53cf3b9d0245b3e1a6840d4e4b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 477482, guid: 131ea53cf3b9d0245b3e1a6840d4e4b4, type: 3}
       propertyPath: m_RootOrder
@@ -16359,6 +17148,10 @@ PrefabInstance:
     - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Tiles_010 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123934, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 408112, guid: c6cb56b5c70f4f14ebf96689fda29f2c, type: 3}
       propertyPath: m_RootOrder
