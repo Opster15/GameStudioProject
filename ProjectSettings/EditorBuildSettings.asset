@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/WinScene.unity
     guid: d82edcc412423504bb0251b5254502ee
   - enabled: 1
+    path: Assets/Scenes/CombatScenes/FleshDoorCave.unity
+    guid: 82017de1d0dbda04da19d66dd502887b
+  - enabled: 1
     path: Assets/Scenes/CombatScenes/CameraTestScene.unity
     guid: 63223cf6ea06b774fa3857688d245d9a
   - enabled: 1
