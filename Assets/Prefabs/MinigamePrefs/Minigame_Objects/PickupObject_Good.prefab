@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 462b66f502d523d47b5554e102d4c35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_scoreOnPlayerHit: 0
+  m_scoreOnPlayerHit: 1
   m_scoreOnBorderHit: 0
   m_scoreOnBulletHit: 0
   m_gameEndPickup: 0

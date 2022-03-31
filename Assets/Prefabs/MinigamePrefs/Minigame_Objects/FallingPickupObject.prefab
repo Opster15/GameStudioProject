@@ -76,7 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: b7789d3b6beaca3409d70f04c8477fed, type: 3}
+  m_Sprite: {fileID: -2413806693520163455, guid: 998643f330d2e2841b2dbaed1b58a87d,
+    type: 3}
   m_Color: {r: 0.18828177, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -137,7 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_scoreOnPlayerHit: 0
-  m_scoreOnBorderHit: 0
+  m_scoreOnBorderHit: 1
   m_scoreOnBulletHit: 0
   m_gameEndPickup: 0
   m_multipleChild: 0
