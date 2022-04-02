@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 4664771394867297920}
   - component: {fileID: 4664771394867297935}
   - component: {fileID: -478266161765465246}
+  - component: {fileID: -4227440366618288059}
   m_Layer: 13
   m_Name: MG_Catch
   m_TagString: MG_Border
@@ -359,6 +360,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f43bccadbd9ad7c47a45ffa0a5402b23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-4227440366618288059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4664771394867297923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31fb6d7b2655cfb40b01806e22117221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_inputActions: {fileID: -944628639613478452, guid: 3a440871e23d56748bffe33ce4fb0ca0,
+    type: 3}
+  m_movementActionName: Movement
+  m_spaceActionName: Space
+  m_movementInput: {x: 0, y: 0}
 --- !u!1 &4726711041793644830
 GameObject:
   m_ObjectHideFlags: 0

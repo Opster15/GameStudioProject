@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 1975306196392173227}
   - component: {fileID: 1975306196392173224}
   - component: {fileID: 14435900322464948}
-  - component: {fileID: 1975306196392173226}
-  - component: {fileID: 1975306196392173229}
   - component: {fileID: -7653980277960326091}
+  - component: {fileID: -2034026484416767780}
   m_Layer: 13
   m_Name: MG_Maze_Rotate
   m_TagString: Untagged
@@ -104,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06fdcf1c0d843894184e1c74b741cd05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_length: 6
+  m_length: 5
   m_timeOutScore: 0
   m_pointGain: 1
   m_starting_points: 0
@@ -115,7 +114,7 @@ MonoBehaviour:
   - {fileID: 9073863518206417031, guid: 02f8ced95eb32fc40bf25a34d24562da, type: 3}
   - {fileID: 7513181524713220371, guid: 6103b88ba65810e498046d1268205c32, type: 3}
   - {fileID: 982978494699278552, guid: 5de25d57e615c924482f78097dc1afc7, type: 3}
---- !u!114 &1975306196392173226
+--- !u!114 &-7653980277960326091
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,17 +123,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1975306196392173225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d927a223b51ab4499dd381703ec90b6, type: 3}
+  m_Script: {fileID: 11500000, guid: f43bccadbd9ad7c47a45ffa0a5402b23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_length: 5
-  m_timeOutScore: 0
-  m_pointGain: 0
-  m_starting_points: 0
-  m_timer: 0
-  m_objectHolder: {fileID: 5942321367027160929}
-  m_rotationSpeed: -1
---- !u!114 &1975306196392173229
+--- !u!114 &-2034026484416767780
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,18 +143,6 @@ MonoBehaviour:
   m_movementActionName: Movement
   m_spaceActionName: Space
   m_movementInput: {x: 0, y: 0}
---- !u!114 &-7653980277960326091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1975306196392173225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f43bccadbd9ad7c47a45ffa0a5402b23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1975306197060435246
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,6 +222,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5942321367027160928}
+  - component: {fileID: 4563822850025009639}
+  - component: {fileID: 469941245620486971}
   m_Layer: 13
   m_Name: MazeHolder
   m_TagString: Untagged
@@ -264,6 +246,42 @@ Transform:
   m_Father: {fileID: 1975306196392173227}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4563822850025009639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5942321367027160929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d927a223b51ab4499dd381703ec90b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_length: 5
+  m_timeOutScore: 0
+  m_pointGain: 0
+  m_starting_points: 0
+  m_timer: 0
+  m_objectHolder: {fileID: 5942321367027160929}
+  m_rotationSpeed: -1
+--- !u!114 &469941245620486971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5942321367027160929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31fb6d7b2655cfb40b01806e22117221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_inputActions: {fileID: -944628639613478452, guid: 3a440871e23d56748bffe33ce4fb0ca0,
+    type: 3}
+  m_movementActionName: Movement
+  m_spaceActionName: Space
+  m_movementInput: {x: 0, y: 0}
 --- !u!1001 &250910969990020945
 PrefabInstance:
   m_ObjectHideFlags: 0

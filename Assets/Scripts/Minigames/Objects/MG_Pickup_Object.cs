@@ -47,6 +47,11 @@ namespace GSP.Minigames
             {
                 GetComponentInParent<Minigame>().m_timer = GetComponentInParent<Minigame>().Length;
             }
+
+            if (collision.CompareTag("MG_Border_Kill"))
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

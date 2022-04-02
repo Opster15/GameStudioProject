@@ -241,6 +241,7 @@ GameObject:
   - component: {fileID: 8193641595226225131}
   - component: {fileID: 8193641595226225126}
   - component: {fileID: 2591108378481353058}
+  - component: {fileID: 1650705556927087077}
   m_Layer: 13
   m_Name: MG_Bullet_Hell
   m_TagString: Untagged
@@ -358,6 +359,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f43bccadbd9ad7c47a45ffa0a5402b23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1650705556927087077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8193641595226225130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31fb6d7b2655cfb40b01806e22117221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_inputActions: {fileID: -944628639613478452, guid: 3a440871e23d56748bffe33ce4fb0ca0,
+    type: 3}
+  m_movementActionName: Movement
+  m_spaceActionName: Space
+  m_movementInput: {x: 0, y: 0}
 --- !u!1001 &1385923200813347089
 PrefabInstance:
   m_ObjectHideFlags: 0

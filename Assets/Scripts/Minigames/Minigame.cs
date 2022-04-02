@@ -8,6 +8,10 @@ namespace GSP.Minigames
     /// </summary>
     public abstract class Minigame : MonoBehaviour
     {
+
+        private InputManager m_inputManager;
+
+
         /// <summary>
         /// Called once the minigame is finished, providing the player's score from 0.0 to 1.0.
         /// </summary>
@@ -72,17 +76,18 @@ namespace GSP.Minigames
 
         protected virtual void Awake()
         {
+            m_inputManager = GetComponent<InputManager>();
             m_timeOutScore = StartingPoints;
-            Invoke("TutorialWait", 2f);
-        }
-
-        void TutorialWait()
-        {
-            m_running = true;
+            m_running = false;
         }
 
         protected virtual void Update()
         {
+            if (m_inputManager.spacePress)
+            {
+                m_running = true;
+            }
+
             // If the minigame is no longer running, or if it has infinite time.
             if (!m_running || m_length < 0.0f) { return; }
         

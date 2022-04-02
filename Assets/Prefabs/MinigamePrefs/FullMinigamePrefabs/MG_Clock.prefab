@@ -81,9 +81,8 @@ GameObject:
   - component: {fileID: 551424794507780625}
   - component: {fileID: 551424794507780626}
   - component: {fileID: 551424794507780622}
-  - component: {fileID: 551424794507780624}
-  - component: {fileID: 551424794507780631}
   - component: {fileID: 651093495254857871}
+  - component: {fileID: 7135956956953551160}
   m_Layer: 13
   m_Name: MG_Clock
   m_TagString: Untagged
@@ -185,7 +184,7 @@ MonoBehaviour:
   - {fileID: 551424794507780625}
   m_aimedObject: 0
   m_attack_speed: 0.4
---- !u!114 &551424794507780624
+--- !u!114 &651093495254857871
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,12 +193,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 551424794507780627}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d927a223b51ab4499dd381703ec90b6, type: 3}
+  m_Script: {fileID: 11500000, guid: f43bccadbd9ad7c47a45ffa0a5402b23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_objectHolder: {fileID: 5672814401341746139}
-  m_rotationSpeed: -3
---- !u!114 &551424794507780631
+--- !u!114 &7135956956953551160
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -216,18 +213,6 @@ MonoBehaviour:
   m_movementActionName: Movement
   m_spaceActionName: Space
   m_movementInput: {x: 0, y: 0}
---- !u!114 &651093495254857871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551424794507780627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f43bccadbd9ad7c47a45ffa0a5402b23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2114106054767855436
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,6 +334,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5672814401341746138}
+  - component: {fileID: 6989643868642194175}
+  - component: {fileID: 2992161195373456032}
   m_Layer: 13
   m_Name: PlayerHolder
   m_TagString: Untagged
@@ -372,6 +359,42 @@ Transform:
   m_Father: {fileID: 551424794507780625}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6989643868642194175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5672814401341746139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d927a223b51ab4499dd381703ec90b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_length: 5
+  m_timeOutScore: 0
+  m_pointGain: 0
+  m_starting_points: 0
+  m_timer: 0
+  m_objectHolder: {fileID: 5672814401341746139}
+  m_rotationSpeed: -3
+--- !u!114 &2992161195373456032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5672814401341746139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31fb6d7b2655cfb40b01806e22117221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_inputActions: {fileID: -944628639613478452, guid: 3a440871e23d56748bffe33ce4fb0ca0,
+    type: 3}
+  m_movementActionName: Movement
+  m_spaceActionName: Space
+  m_movementInput: {x: 0, y: 0}
 --- !u!1001 &2284966970345325547
 PrefabInstance:
   m_ObjectHideFlags: 0
