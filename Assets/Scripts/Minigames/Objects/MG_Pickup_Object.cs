@@ -26,7 +26,7 @@ namespace GSP.Minigames
                 {
                     GetComponentInParent<Minigame>().ChangeScore();
                 }
-                Destroy(transform.parent.gameObject);
+                Destroy(gameObject);
             }
 
             if (collision.CompareTag("Bullet"))
@@ -35,12 +35,12 @@ namespace GSP.Minigames
                 {
                     GetComponentInParent<Minigame>().ChangeScore();
                 }
-                Destroy(gameObject);
-            }
 
-            if (m_multipleChild)
-            {
-                GetComponentInParent<MG_ChildCounter>().m_MaxChildren -= 1;
+                if (m_multipleChild)
+                {
+                    GetComponentInParent<MG_ChildCounter>().m_MaxChildren -= 1;
+                }
+                Destroy(gameObject);
             }
 
             if (m_gameEndPickup)

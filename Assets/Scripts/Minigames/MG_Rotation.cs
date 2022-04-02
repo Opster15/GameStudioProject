@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GSP.Minigames
 {
-    public class MG_Rotation : MonoBehaviour
+    public class MG_Rotation : Minigame
     {
         InputManager inputManager;
 
@@ -18,8 +18,11 @@ namespace GSP.Minigames
             inputManager = GetComponent<InputManager>();
         }
 
-        void FixedUpdate()
+        protected override void Update()
         {
+            base.Update();
+
+            if (!Running) { return; }
             Input();
             DirectionInput();
         }

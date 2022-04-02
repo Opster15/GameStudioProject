@@ -73,6 +73,11 @@ namespace GSP.Minigames
         protected virtual void Awake()
         {
             m_timeOutScore = StartingPoints;
+            Invoke("TutorialWait", 2f);
+        }
+
+        void TutorialWait()
+        {
             m_running = true;
         }
 
