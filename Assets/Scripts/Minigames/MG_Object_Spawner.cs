@@ -12,14 +12,9 @@ namespace GSP.Minigames
 
         public bool m_aimedObject;
 
-        bool m_canAttack;
+        bool m_canAttack = true;
 
         public float m_attack_speed;
-
-        public void Start()
-        {
-            Invoke("ResetAttack", 0.1f);
-        }
 
         protected override void Update()
         {
@@ -51,7 +46,7 @@ namespace GSP.Minigames
             }
             else
             {
-                GameObject bulletClone = Instantiate(m_objects[x], spawnPoints[y].transform.position, transform.rotation);
+                GameObject bulletClone = Instantiate(m_objects[x], spawnPoints[y].transform.position, spawnPoints[y].transform.rotation);
                 bulletClone.transform.parent = gameObject.transform;
             }
 

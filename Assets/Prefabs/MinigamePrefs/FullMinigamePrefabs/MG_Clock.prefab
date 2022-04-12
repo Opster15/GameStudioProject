@@ -177,11 +177,11 @@ MonoBehaviour:
   m_pointGain: 0.1
   m_starting_points: 0
   m_timer: 0
-  m_spawnedObject: {fileID: 2868081436648286653, guid: 1e96342232eb19341b0a69831685c7df,
-    type: 3}
   m_player: {fileID: 0}
   spawnPoints:
   - {fileID: 551424794507780625}
+  m_objects:
+  - {fileID: 2868081436648286653, guid: 1e96342232eb19341b0a69831685c7df, type: 3}
   m_aimedObject: 0
   m_attack_speed: 0.4
 --- !u!114 &651093495254857871

@@ -15,11 +15,13 @@ MonoBehaviour:
   m_name: Tank
   m_statBlock:
     m_HP: 300
+    m_attack: 0
+    m_defence: 0
     m_speed: 15
   m_skipsMinigames: 0
   m_moveset:
   - {fileID: 11400000, guid: c29cdcfb1a97f424c9142f012a3dc8e7, type: 2}
-  - {fileID: 11400000, guid: 84912d045a64c134fb37cbc5fa34a475, type: 2}
+  - {fileID: 11400000, guid: abeadb70475fd344486eb88eef90e4b4, type: 2}
   - {fileID: 11400000, guid: 953476783932fec4cabc83b4070471c2, type: 2}
   - {fileID: 11400000, guid: 7be380834699a5d4eb340d6c33cfe457, type: 2}
   m_modelPrefab: {fileID: 8546301605351082310, guid: f2b0358ab9d3a984b82c3d232d28d76a,

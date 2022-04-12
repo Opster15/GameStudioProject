@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
+  m_Name: Knife Toss
+  m_EditorClassIdentifier: 
+  m_name: Knife Toss
+  m_description: Deals light damage to an enemy.
+  m_power: 25
+  m_speed: 7
+  m_targetingMethod:
+    m_target: 2
+    m_selectAll: 0
+    m_excludeSelf: 0
+  m_minigamePrefab: {fileID: 1102548371931533494, guid: 946486747819b6545b80412f61d34e1f,
+    type: 3}
+  m_scriptFile: {fileID: 2213920135882650261, guid: a1febff93eedb794ea63fbe6c4583f54,
+    type: 3}
