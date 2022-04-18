@@ -6,7 +6,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RockGolemC
+  m_Name: RockGolem_C
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Blend
