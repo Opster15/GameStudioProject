@@ -9,6 +9,8 @@ namespace GSP
     {
         private int m_random;
 
+        public float m_delay;
+
         private void Start()
         {
             m_random = Random.Range(3, 8);
@@ -22,6 +24,11 @@ namespace GSP
         public void QuitGame()
         {
             Application.Quit();
+        }
+
+        public void DelayStart()
+        {
+            Invoke("PlayGame", m_delay);
         }
     }
 }

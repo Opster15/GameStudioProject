@@ -37,6 +37,14 @@ namespace GSP.Minigames
         /// Value Given to timeoutscore at start of minigame
         /// </summary>
         [SerializeField] protected float m_starting_points;
+        /// <summary>
+        /// Value taken from targets speed stat
+        /// </summary>
+        [SerializeField] protected float m_targetSpeed;
+        /// <summary>
+        /// Value taken from targets power stat
+        /// </summary>
+        [SerializeField] protected float m_targetPower;
 
         /// <summary>
         /// The current time spent in the minigame.
@@ -63,6 +71,14 @@ namespace GSP.Minigames
         /// The current time spent in the minigame, from 0.0 to 1.0.
         /// </summary>
         public float PointGain => m_pointGain;
+        /// <summary>
+        /// The targeted enemies speed stat
+        /// </summary>
+        public float TargetSpeed => m_targetSpeed;
+        /// <summary>
+        /// The targeted enemies power stat
+        /// </summary>
+        public float TargetPower => m_targetPower;
 
         /// <summary>
         /// Value Given to timeoutscore at start of minigame

@@ -9,6 +9,8 @@ namespace GSP.Battle
 {
     public class BattleManager : MonoBehaviour
     {
+        
+
         private ActionManager m_actionManager;
         private ScriptManager m_scriptManager;
     
