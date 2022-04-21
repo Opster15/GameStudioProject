@@ -11,6 +11,8 @@ namespace GSP.Minigames
 
         private InputManager m_inputManager;
 
+        public GameObject m_tutorialObject;
+
 
         /// <summary>
         /// Called once the minigame is finished, providing the player's score from 0.0 to 1.0.
@@ -101,6 +103,7 @@ namespace GSP.Minigames
         {
             if (m_inputManager.spacePress)
             {
+                Destroy(m_tutorialObject);
                 m_running = true;
             }
 
