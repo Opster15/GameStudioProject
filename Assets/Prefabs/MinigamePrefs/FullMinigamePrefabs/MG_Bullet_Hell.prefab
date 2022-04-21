@@ -88,16 +88,16 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -7.8624606, y: 8.53422}
+    - - {x: -7.840368, y: 8.5341835}
       - {x: -8.8590355, y: 7.7955456}
-      - {x: -8.801076, y: -7.3047457}
-      - {x: -7.905533, y: -7.301334}
-      - {x: -7.9092855, y: 7.853927}
-      - {x: 7.9788914, y: 7.8879075}
-      - {x: 8.05962, y: -6.6918235}
-      - {x: -7.8893595, y: -6.660975}
-      - {x: -7.8384533, y: -7.255791}
-      - {x: 8.055037, y: -7.508021}
+      - {x: -8.043835, y: -8.747446}
+      - {x: -7.705713, y: -7.6800303}
+      - {x: -7.7144794, y: 7.703357}
+      - {x: 7.69686, y: 7.7018495}
+      - {x: 7.728554, y: -7.7091303}
+      - {x: -7.7065473, y: -7.6868587}
+      - {x: -7.8740034, y: -8.268311}
+      - {x: 8.5313, y: -8.845616}
       - {x: 8.7267885, y: -6.7080936}
       - {x: 8.589725, y: 8.429544}
       - {x: 7.717996, y: 8.634465}
@@ -310,7 +310,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 490a86be43822544b8c57b043be68e2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 18683b9f4284e4747850f8483b19db28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -395,12 +395,12 @@ PrefabInstance:
     - target: {fileID: 332323764285613430, guid: e626abfc272504245a0eddeffa5c05e9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.36
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 332323764285613430, guid: e626abfc272504245a0eddeffa5c05e9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6663599
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 332323764285613430, guid: e626abfc272504245a0eddeffa5c05e9,
         type: 3}
