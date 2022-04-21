@@ -3010,6 +3010,12 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 34
       objectReference: {fileID: 0}
+    - target: {fileID: 6685430003809649283, guid: 947840bc67088e046807363a73e217aa,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d5b32dee0faba2343b70bd684887ded5,
+        type: 2}
     - target: {fileID: 6685430003935763762, guid: 947840bc67088e046807363a73e217aa,
         type: 3}
       propertyPath: m_AnchorMax.y

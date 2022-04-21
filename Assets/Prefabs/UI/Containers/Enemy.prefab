@@ -69,8 +69,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'P: 60'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d5b32dee0faba2343b70bd684887ded5, type: 2}
+  m_sharedMaterial: {fileID: -151886225940704315, guid: d5b32dee0faba2343b70bd684887ded5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -375,8 +376,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Party Member
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d5b32dee0faba2343b70bd684887ded5, type: 2}
+  m_sharedMaterial: {fileID: -151886225940704315, guid: d5b32dee0faba2343b70bd684887ded5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -400,7 +402,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.8
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -651,8 +653,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'S: 4'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d5b32dee0faba2343b70bd684887ded5, type: 2}
+  m_sharedMaterial: {fileID: -151886225940704315, guid: d5b32dee0faba2343b70bd684887ded5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -803,8 +806,9 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d5b32dee0faba2343b70bd684887ded5, type: 2}
+  m_sharedMaterial: {fileID: -151886225940704315, guid: d5b32dee0faba2343b70bd684887ded5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1006,6 +1010,12 @@ PrefabInstance:
       propertyPath: m_text
       value: 1000 / 1000 HP
       objectReference: {fileID: 0}
+    - target: {fileID: 5477397799011119610, guid: 4b969ac1feacd354392c38b56c878f6c,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -151886225940704315, guid: d5b32dee0faba2343b70bd684887ded5,
+        type: 2}
     - target: {fileID: 5477397799011119610, guid: 4b969ac1feacd354392c38b56c878f6c,
         type: 3}
       propertyPath: m_VerticalAlignment
