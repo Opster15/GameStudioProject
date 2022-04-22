@@ -313,7 +313,7 @@ MonoBehaviour:
   m_targetPower: 0
   m_timer: 0
   m_objectHolder: {fileID: 5672814401341746139}
-  m_rotationSpeed: -3
+  m_rotationSpeed: -2
 --- !u!114 &2992161195373456032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +492,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: MOVE THE CLOCK HAND
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453052335574188082, guid: 11ada9012280bac42bbe2199507722af,
+        type: 3}
+      propertyPath: m_text
+      value: 'INPUTS
+
+        A & D TO ROTATE'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11ada9012280bac42bbe2199507722af, type: 3}

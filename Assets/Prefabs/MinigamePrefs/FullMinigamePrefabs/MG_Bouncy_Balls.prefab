@@ -589,6 +589,13 @@ PrefabInstance:
       propertyPath: m_text
       value: KEEP THE APPLES OFF THE FLOOR
       objectReference: {fileID: 0}
+    - target: {fileID: 4453052335574188082, guid: 11ada9012280bac42bbe2199507722af,
+        type: 3}
+      propertyPath: m_text
+      value: 'INPUTS
+
+        A & D TO MOVE'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11ada9012280bac42bbe2199507722af, type: 3}
 --- !u!4 &5131864115377981223 stripped

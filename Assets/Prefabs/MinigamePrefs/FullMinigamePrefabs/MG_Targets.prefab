@@ -635,6 +635,15 @@ PrefabInstance:
       propertyPath: m_text
       value: SHOOT THE TARGETS
       objectReference: {fileID: 0}
+    - target: {fileID: 4453052335574188082, guid: 11ada9012280bac42bbe2199507722af,
+        type: 3}
+      propertyPath: m_text
+      value: 'INPUTS
+
+        A & D TO MOVE
+
+        SPACE TO SHOOT'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11ada9012280bac42bbe2199507722af, type: 3}
 --- !u!4 &3444922519195353550 stripped

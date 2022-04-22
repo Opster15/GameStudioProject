@@ -502,6 +502,13 @@ PrefabInstance:
       propertyPath: m_text
       value: DODGE THE FALLING WALLS
       objectReference: {fileID: 0}
+    - target: {fileID: 4453052335574188082, guid: 11ada9012280bac42bbe2199507722af,
+        type: 3}
+      propertyPath: m_text
+      value: 'INPUTS
+
+        A & D TO MOVE'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11ada9012280bac42bbe2199507722af, type: 3}
 --- !u!1 &400316217335155345 stripped

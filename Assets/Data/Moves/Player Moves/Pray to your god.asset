@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
-  m_Name: Explosive Resonance
+  m_Name: Pray to your god
   m_EditorClassIdentifier: 
-  m_name: Explosive Resonance
-  m_description: Deals light damage to all enemies
-  m_power: 20
+  m_name: Pray to your god
+  m_description: Deals hight damage to all enemies
+  m_power: 50
   m_speed: 12
   m_targetingMethod:
     m_target: 2
     m_selectAll: 1
     m_excludeSelf: 0
-  m_minigamePrefab: {fileID: 8000579240565719698, guid: c8335b8d69e271e40b8df82de52a6390,
+  m_minigamePrefab: {fileID: 4058732512656990128, guid: e1e3b85d13209cd4c84dd041801fb3f6,
     type: 3}
   m_scriptFile: {fileID: 2213920135882650261, guid: a1febff93eedb794ea63fbe6c4583f54,
     type: 3}
