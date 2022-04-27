@@ -30,7 +30,8 @@ namespace GSP.Minigames
                 if (m_scoreOnPlayerHit)
                 {
                     GetComponentInParent<Minigame>().ChangeScore();
-   
+                    GameObject particleClone = Instantiate(m_lossParticle, collision.transform.position, transform.rotation);
+                    Destroy(particleClone, 0.2f);
                 }
                 Destroy(gameObject);
             }

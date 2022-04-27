@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using GSP.Camera;
 
 namespace GSP.Minigames
 {
@@ -13,6 +14,7 @@ namespace GSP.Minigames
 
         public GameObject m_tutorialObject;
 
+        private CameraShake m_cameraShake;
 
         /// <summary>
         /// Called once the minigame is finished, providing the player's score from 0.0 to 1.0.
@@ -95,6 +97,7 @@ namespace GSP.Minigames
         protected virtual void Awake()
         {
             m_inputManager = GetComponent<InputManager>();
+            m_cameraShake = FindObjectOfType<CameraShake>();
             m_timeOutScore = StartingPoints;
             m_running = false;
         }
@@ -123,6 +126,12 @@ namespace GSP.Minigames
         {
             m_timeOutScore += m_pointGain;
             m_timeOutScore = Mathf.Round(m_timeOutScore * 100f) / 100;
+
+            if(m_pointGain < 0)
+            {
+                m_cameraShake.ShakeCam(1f, Mathf.Lerp(0.1f, 0.2f, 2));
+            }
+            
         }
 
         /// <summary>

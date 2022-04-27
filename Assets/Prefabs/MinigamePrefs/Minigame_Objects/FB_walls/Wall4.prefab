@@ -130,7 +130,9 @@ MonoBehaviour:
   m_scoreOnBulletHit: 0
   m_gameEndPickup: 0
   m_multipleChild: 0
-  m_particle: {fileID: 5194359188388809897, guid: 891dd02241bc53249b31b16f76c73afc,
+  m_gainParticle: {fileID: 5194359188388809897, guid: 83a765e71da92934c97c2c04c96812a5,
+    type: 3}
+  m_lossParticle: {fileID: 5194359188388809897, guid: 891dd02241bc53249b31b16f76c73afc,
     type: 3}
 --- !u!50 &3720618777028647466
 Rigidbody2D:
@@ -316,7 +318,9 @@ MonoBehaviour:
   m_scoreOnBulletHit: 0
   m_gameEndPickup: 0
   m_multipleChild: 0
-  m_particle: {fileID: 5194359188388809897, guid: 891dd02241bc53249b31b16f76c73afc,
+  m_gainParticle: {fileID: 5194359188388809897, guid: 83a765e71da92934c97c2c04c96812a5,
+    type: 3}
+  m_lossParticle: {fileID: 5194359188388809897, guid: 891dd02241bc53249b31b16f76c73afc,
     type: 3}
 --- !u!50 &3720618777850516693
 Rigidbody2D:

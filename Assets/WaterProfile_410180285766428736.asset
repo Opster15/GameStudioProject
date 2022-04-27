@@ -15,13 +15,13 @@ MonoBehaviour:
   lightingModel: 0
   useFlatLighting: 0
   renderQueueIndex: 0
-  color: {r: 0.14381194, g: 0.4811321, b: 0.10666607, a: 0.5}
-  specColor: {r: 0.4878178, g: 0.7169812, b: 0.3077608, a: 1}
+  color: {r: 0.064463414, g: 0.764151, b: 0, a: 0.5}
+  specColor: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
   smoothness: 1
   enableLightAbsorption: 0
   depthColor: {r: 0, g: 0.45, b: 0.65, a: 0.85}
   maxDepth: 5
-  enableFoam: 1
+  enableFoam: 0
   foamColor: {r: 1, g: 1, b: 1, a: 1}
   foamDistance: 0.03
   enableFoamHQ: 0
@@ -33,9 +33,9 @@ MonoBehaviour:
   slopeFoamStrength: 0.5
   slopeFoamFlowSpeed: 20
   slopeFoamDistance: 50
-  rippleHeight: 0.3
-  rippleSpeed: 5
-  rippleNoiseScale: 1
+  rippleHeight: 0.2
+  rippleSpeed: 2
+  rippleNoiseScale: 3
   enableWave: 0
   waveDirection: 252
   waveSpeed: 6.08
@@ -56,7 +56,7 @@ MonoBehaviour:
   reflectionDistortionStrength: 0
   enableRefraction: 1
   refractionDistortionStrength: 0
-  enableCaustic: 1
+  enableCaustic: 0
   causticTexture: {fileID: 2800000, guid: eeacbffe8eb46d343b0d7a9189130772, type: 3}
   causticSize: 10
   causticStrength: 1
