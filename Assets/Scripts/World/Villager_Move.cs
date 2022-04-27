@@ -8,11 +8,11 @@ namespace GSP
     {
         public Transform[] positions;
 
+
         public int counter;
         // Start is called before the first frame update
         void Start()
         {
-
             transform.position = positions[counter].position;
             counter = 1;
         }
