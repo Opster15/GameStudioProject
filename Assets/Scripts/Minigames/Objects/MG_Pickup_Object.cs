@@ -10,6 +10,8 @@ namespace GSP.Minigames
         public bool m_scoreOnPlayerHit,m_scoreOnBorderHit,m_scoreOnBulletHit,m_gameEndPickup,m_multipleChild;
 
         public GameObject m_gainParticle;
+
+        public GameObject m_lossParticle;
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.CompareTag("MG_Border"))
@@ -17,6 +19,8 @@ namespace GSP.Minigames
                 if (m_scoreOnBorderHit)
                 {
                     GetComponentInParent<Minigame>().ChangeScore();
+                    GameObject particleClone = Instantiate(m_lossParticle, transform.position, transform.rotation);
+                    Destroy(particleClone, 0.2f);
                 }
                 Destroy(gameObject);
             }
@@ -26,8 +30,7 @@ namespace GSP.Minigames
                 if (m_scoreOnPlayerHit)
                 {
                     GetComponentInParent<Minigame>().ChangeScore();
-                    GameObject particleClone = Instantiate(m_gainParticle, transform.position, transform.rotation);
-                    Destroy(particleClone, 0.2f);
+   
                 }
                 Destroy(gameObject);
             }
