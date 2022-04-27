@@ -10,6 +10,8 @@ namespace GSP.Minigames
 
         Rigidbody2D rb;
 
+        public GameObject m_particleParticle;
+
         public float m_bounceRange;
 
         float m_bounce;
@@ -29,6 +31,8 @@ namespace GSP.Minigames
                 if (collision.gameObject.CompareTag("MG_Border_Kill"))
                 {
                     GetComponentInParent<Minigame>().ChangeScore();
+                    GameObject particleClone = Instantiate(m_particleParticle, transform.position, transform.rotation);
+                    Destroy(particleClone, 0.2f);
                 }
             }
 
@@ -37,6 +41,8 @@ namespace GSP.Minigames
                 if (collision.gameObject.CompareTag("Player"))
                 {
                     GetComponentInParent<Minigame>().ChangeScore();
+                    GameObject particleClone = Instantiate(m_particleParticle, transform.position, transform.rotation);
+                    Destroy(particleClone, 0.2f);
                 }
             }
         }

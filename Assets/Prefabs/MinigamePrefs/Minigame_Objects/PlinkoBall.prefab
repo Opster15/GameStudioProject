@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3364327095296568145
+--- !u!1 &49470507163783489
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3364327095296568149}
-  - component: {fileID: 3364327095296568148}
-  - component: {fileID: 3364327095296568151}
-  - component: {fileID: 3364327095296568150}
-  - component: {fileID: 3699530810519360396}
+  - component: {fileID: 49470507163783493}
+  - component: {fileID: 49470507163783492}
+  - component: {fileID: 49470507163783495}
+  - component: {fileID: 49470507163783494}
+  - component: {fileID: 49470507163783491}
+  - component: {fileID: 8270088753712057340}
   m_Layer: 13
-  m_Name: MazeBall
+  m_Name: PlinkoBall
   m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3364327095296568149
+--- !u!4 &49470507163783493
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3364327095296568145}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.75, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_GameObject: {fileID: 49470507163783489}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.05, y: 6.8999996, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3364327095296568148
+--- !u!212 &49470507163783492
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3364327095296568145}
+  m_GameObject: {fileID: 49470507163783489}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -88,19 +89,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &3364327095296568151
+--- !u!50 &49470507163783495
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3364327095296568145}
+  m_GameObject: {fileID: 49470507163783489}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 3
@@ -109,33 +110,51 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!58 &3364327095296568150
+--- !u!58 &49470507163783494
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3364327095296568145}
+  m_GameObject: {fileID: 49470507163783489}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ff39e03ea104be644afe2efc86a40344, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.19999999
---- !u!114 &3699530810519360396
+  m_Radius: 0.2
+--- !u!114 &49470507163783491
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3364327095296568145}
+  m_GameObject: {fileID: 49470507163783489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b583c4fbfda64b141a433a204e0d21f0, type: 3}
+  m_Script: {fileID: 11500000, guid: c2b65dc40a9b0c34e8444d16a671f23b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_particle: {fileID: 5194359188388809897, guid: 83a765e71da92934c97c2c04c96812a5,
+  m_lossParticle: {fileID: 5194359188388809897, guid: 891dd02241bc53249b31b16f76c73afc,
     type: 3}
+  m_gainParticle: {fileID: 5194359188388809897, guid: 83a765e71da92934c97c2c04c96812a5,
+    type: 3}
+--- !u!114 &8270088753712057340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49470507163783489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd30f3377907fa54697f1e548581a2e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreOnPlayerHit: 0
+  scoreOnBorderHit: 0
+  m_particleParticle: {fileID: 0}
+  m_bounceRange: 1

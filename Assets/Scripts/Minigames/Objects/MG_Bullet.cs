@@ -8,6 +8,8 @@ namespace GSP.Minigames
     {
         Rigidbody2D rb;
 
+        public GameObject m_Particle;
+
         public bool m_destoryOnBorderHit;
 
         public float m_speed,m_maxLifetime;
@@ -32,6 +34,8 @@ namespace GSP.Minigames
             if (collision.gameObject.CompareTag("Player"))
             {
                 GetComponentInParent<Minigame>().ChangeScore();
+                GameObject particleClone = Instantiate(m_Particle, transform.position, transform.rotation);
+                Destroy(particleClone, 0.2f);
                 Destroy(gameObject);
             }
 

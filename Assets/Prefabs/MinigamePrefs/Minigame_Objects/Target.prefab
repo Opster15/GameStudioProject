@@ -173,3 +173,5 @@ MonoBehaviour:
   m_scoreOnBulletHit: 1
   m_gameEndPickup: 0
   m_multipleChild: 1
+  m_gainParticle: {fileID: 5194359188388809897, guid: 83a765e71da92934c97c2c04c96812a5,
+    type: 3}

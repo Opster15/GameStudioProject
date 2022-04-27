@@ -130,6 +130,8 @@ MonoBehaviour:
   m_scoreOnBulletHit: 0
   m_gameEndPickup: 0
   m_multipleChild: 0
+  m_particle: {fileID: 5194359188388809897, guid: 891dd02241bc53249b31b16f76c73afc,
+    type: 3}
 --- !u!50 &3197208821326241778
 Rigidbody2D:
   serializedVersion: 4
