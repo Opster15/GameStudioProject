@@ -15,7 +15,7 @@ namespace GSP.Battle.AI
         /// <param name="_party">The character's party.</param>
         /// <param name="_opposingParty">The opposing party.</param>
         /// <returns>The chosen move.</returns>
-        public abstract Move SelectMove(int _characterID, GameParty _party, GameParty _opposingParty);
+        public abstract GameMove SelectMove(int _characterID, GameParty _party, GameParty _opposingParty);
 
         /// <summary>
         /// Select a target, based on a list of valid options and the chosen move.

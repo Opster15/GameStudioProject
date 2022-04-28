@@ -35,7 +35,7 @@ namespace GSP.Battle.Controller
         /// Returns the currently selected move, if any.
         /// </summary>
         /// <returns>The currently selected move.</returns>
-        Move GetSelectedMove();
+        GameMove GetSelectedMove();
 
         /// <summary>
         /// Returns the currently selected target, if any.

@@ -29,6 +29,16 @@ namespace GSP.Battle
         [SerializeField] private int m_speed;
 
         /// <summary>
+        /// How many turns the move takes from the beginning of battle to be usable.
+        /// </summary>
+        [SerializeField] private int m_warmup;
+
+        /// <summary>
+        /// How many turns the move takes from being used to be usable again.
+        /// </summary>
+        [SerializeField] private int m_cooldown;
+
+        /// <summary>
         /// The move's targeting options.
         /// </summary>
         [SerializeField] private TargetingOptions m_targetingMethod;
@@ -73,6 +83,16 @@ namespace GSP.Battle
         /// The base speed of the move.
         /// </summary>
         public int Speed => m_speed;
+
+        /// <summary>
+        /// How many turns the move takes from the beginning of battle to be usable.
+        /// </summary>
+        public int Warmup => m_warmup;
+        
+        /// <summary>
+        /// How many turns the move takes from being used to be usable again.
+        /// </summary>
+        public int Cooldown => m_cooldown;
 
         /// <summary>
         /// The move's targeting options.

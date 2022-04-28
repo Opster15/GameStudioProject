@@ -32,6 +32,11 @@ namespace GSP.Battle
         private StatModifiers m_statModifiers = new StatModifiers();
 
         /// <summary>
+        /// All moves the character can select in the menu.
+        /// </summary>
+        private List<GameMove> m_moveset;
+
+        /// <summary>
         /// The character's data.
         /// </summary>
         public Character BaseCharacter => m_baseCharacter;
@@ -69,7 +74,7 @@ namespace GSP.Battle
         /// <summary>
         /// All moves the character can select in the menu.
         /// </summary>
-        public List<Move> Moveset => m_baseCharacter.Moveset;
+        public List<GameMove> Moveset => m_moveset;
 
         /// <summary>
         /// The character's AI, for selecting moves in battle.
@@ -94,7 +99,7 @@ namespace GSP.Battle
         /// <summary>
         /// Called upon the character locking in a move to use.
         /// </summary>
-        public Action<Move> OnMoveChosen;
+        public Action<GameMove> OnMoveChosen;
 
         /// <summary>
         /// Called upon the character being called to perform an action.
@@ -111,6 +116,12 @@ namespace GSP.Battle
             
             m_maxHP = _baseCharacter.StatBlock.HP;
             m_currentHP = m_maxHP;
+
+            m_moveset = new List<GameMove>();
+            foreach(var move in m_baseCharacter.Moveset)
+            {
+                m_moveset.Add(new GameMove(move, this));
+            }
         }
 
         /// <summary>
@@ -160,6 +171,10 @@ namespace GSP.Battle
         public void StartTurn()
         {
             m_statModifiers.Tick();
+            foreach (var move in m_moveset)
+            {
+                move.Tick();
+            }
         }
 
         /// <summary>
@@ -180,7 +195,7 @@ namespace GSP.Battle
         /// Lock in a move for this character.
         /// </summary>
         /// <param name="_move">The chosen move.</param>
-        public void SelectMove(Move _move)
+        public void SelectMove(GameMove _move)
             => OnMoveChosen?.Invoke(_move);
 
         /// <summary>

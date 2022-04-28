@@ -7,7 +7,7 @@ namespace GSP.UI.Battle
         /// <summary>
         /// The move to represent.
         /// </summary>
-        protected Move m_target;
+        protected GameMove m_target;
         
         /// <summary>
         /// The move's user.
@@ -19,7 +19,7 @@ namespace GSP.UI.Battle
         /// </summary>
         /// <param name="_target">The move to represent.</param>
         /// <param name="_user">The move's user.</param>
-        public virtual void SetTarget(Move _target, GameCharacter _user)
+        public virtual void SetTarget(GameMove _target, GameCharacter _user)
         {
             m_target = _target;
             m_user = _user;

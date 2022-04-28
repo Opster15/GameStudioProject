@@ -74,16 +74,6 @@ namespace GSP.Battle
 
             CalculateStats();
         }
-        
-        public Action(Move _move, GameCharacter _user, GameCharacter _target)
-        {
-            m_move = _move;
-            m_user = _user;
-
-            m_targets = new List<GameCharacter> { _target };
-
-            CalculateStats();
-        }
 
         /// <summary>
         /// Execute the action's script, based on all determined variables.

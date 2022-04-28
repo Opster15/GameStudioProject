@@ -21,7 +21,7 @@ namespace GSP.Battle.Controller
         private List<GameCharacter> m_targets;
 
         private int m_selectedPartyMember;
-        private Move m_selectedMove;
+        private GameMove m_selectedMove;
         private GameCharacter m_selectedTarget;
 
         private void Awake()
@@ -59,7 +59,10 @@ namespace GSP.Battle.Controller
         public void SelectMove(int _moveID)
         {
             if(m_selectedPartyMember < 0) { return; }
-            m_selectedMove = m_party.PartyMembers[m_selectedPartyMember].Moveset[_moveID];
+
+            var move = m_party.PartyMembers[m_selectedPartyMember].Moveset[_moveID];
+            if (!move.IsUsable) { return;}
+            m_selectedMove = move;
         }
 
         public void SelectTarget(int _targetID)
@@ -68,7 +71,7 @@ namespace GSP.Battle.Controller
             m_selectedTarget = m_targets[_targetID];
         }
 
-        public Move GetSelectedMove()
+        public GameMove GetSelectedMove()
             => m_selectedMove;
 
         public GameCharacter GetSelectedTarget()

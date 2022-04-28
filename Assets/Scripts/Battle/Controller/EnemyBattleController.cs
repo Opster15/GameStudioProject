@@ -20,7 +20,7 @@ namespace GSP.Battle.Controller
         private List<GameCharacter> m_targets;
 
         private int m_selectedPartyMember;
-        private Move m_selectedMove;
+        private GameMove m_selectedMove;
         private GameCharacter m_selectedTarget;
 
         private void Awake()
@@ -57,10 +57,10 @@ namespace GSP.Battle.Controller
             m_targets = _targets;
 
             var character = m_party.PartyMembers[m_selectedPartyMember];
-            m_selectedTarget = character.AI.SelectTarget(m_selectedMove, _targets);
+            m_selectedTarget = character.AI.SelectTarget(m_selectedMove.BaseMove, _targets);
         }
 
-        public Move GetSelectedMove()
+        public GameMove GetSelectedMove()
             => m_selectedMove;
 
         public GameCharacter GetSelectedTarget()

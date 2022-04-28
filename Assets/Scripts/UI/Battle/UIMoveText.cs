@@ -12,7 +12,9 @@ namespace GSP.UI.Battle
         {
             Name,
             Power,
-            Speed
+            Speed,
+            CurrentCooldown,
+            OnUseCooldown
         }
 
         private TMP_Text m_text;
@@ -26,16 +28,18 @@ namespace GSP.UI.Battle
             m_text = GetComponent<TMP_Text>();
         }
 
-        public override void SetTarget(Move _target, GameCharacter _user)
+        public override void SetTarget(GameMove _target, GameCharacter _user)
         {
             base.SetTarget(_target, _user);
             if (_target == null) { return; }
 
             var value = m_type switch
             {
-                Type.Name => _target.Name,
-                Type.Power => _target.CalculatePower(_user).ToString(),
-                Type.Speed => _target.CalculateSpeed(_user).ToString(),
+                Type.Name => _target.BaseMove.Name,
+                Type.Power => _target.BaseMove.CalculatePower(_user).ToString(),
+                Type.Speed => _target.BaseMove.CalculateSpeed(_user).ToString(),
+                Type.CurrentCooldown => _target.Cooldown.ToString(),
+                Type.OnUseCooldown => _target.BaseMove.Cooldown.ToString(),
                 _ => ""
             };
 

@@ -15,7 +15,7 @@ namespace GSP.UI.Battle
             if(m_targetedElements.Contains(this)) { m_targetedElements.Remove(this); }
         }
 
-        public override void SetTarget(Move _target, GameCharacter _user)
+        public override void SetTarget(GameMove _target, GameCharacter _user)
         {
             base.SetTarget(_target, _user);
 

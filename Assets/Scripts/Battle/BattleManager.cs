@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using GSP.Battle.Party;
 using GSP.LUA;
 using UnityEngine;
@@ -122,20 +123,31 @@ namespace GSP.Battle
             for (var i = 0; i < _party.PartyMembers.Count; i++)
             {
                 var character = _party.PartyMembers[i];
-                if (character.IsDead) { continue; }
+                if (character.IsDead || character.Moveset.Count(move => move.IsUsable) < 1) { continue; } // The character has no valid options.
                 
-                // Tell the battle controller which party member is active.
-                _party.BattleController.SetPartyMember(i);
                 character.SetSelected(true);
-
-                // Select the move to use, based on the current battle state.
-                yield return new WaitUntil(() => _party.BattleController.GetSelectedMove() != null);
-                var move = _party.BattleController.GetSelectedMove();
-
+               
+                // Ensure the move chosen is currently usable. (Max 20 attempts before breaking)
+                int attempts = 0;
+                GameMove move = null;
+                while (move is not { IsUsable: true } && attempts < 20)
+                {
+                    // Tell the battle controller which party member is active.
+                    _party.BattleController.SetPartyMember(i);
+                
+                    // Select the move to use, based on the current battle state.
+                    yield return new WaitUntil(() => _party.BattleController.GetSelectedMove() != null);
+                    
+                    move = _party.BattleController.GetSelectedMove();
+                    attempts++;
+                }
+                if (attempts >= 20)
+                { continue; } // No valid move could be found.
+                
                 // If the move is manually targeted, select the target. Otherwise, use all valid targets.
-                var targets = move.TargetingMethod.GetValidTargets(i, _party, _opposingParty);
+                var targets = move.BaseMove.TargetingMethod.GetValidTargets(i, _party, _opposingParty);
                 _party.BattleController.SetTargets(targets);
-                if(move.TargetingMethod.IsTargetingManual())
+                if(move.BaseMove.TargetingMethod.IsTargetingManual())
                 {
                     character.SetTargeting(targets);
                     
@@ -145,9 +157,9 @@ namespace GSP.Battle
                     character.SetTargeting(null);
                 }
 
-                character.SelectMove(move);
-                m_actionManager.QueueAction(new Action(move, _party.PartyMembers[i], targets));
-                
+                // Lock in the move.
+                move.Use(m_actionManager, targets);
+
                 character.SetSelected(false);
             }
         }

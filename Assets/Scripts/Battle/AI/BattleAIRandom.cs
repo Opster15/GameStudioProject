@@ -1,6 +1,7 @@
 ﻿using GSP.Battle.Party;
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 namespace GSP.Battle.AI
 {
     /// <summary>
@@ -9,10 +10,12 @@ namespace GSP.Battle.AI
     [CreateAssetMenu(fileName = "Random", menuName = "GSP/AI/Battle AI Random")]
     public class BattleAIRandom : BattleAIBase
     {
-        public override Move SelectMove(int _characterID, GameParty _party, GameParty _opposingParty)
+        public override GameMove SelectMove(int _characterID, GameParty _party, GameParty _opposingParty)
         {
             var character = _party.PartyMembers[_characterID];
-            return character.Moveset[Random.Range(0, character.Moveset.Count)];
+            var usableMoves = character.Moveset.Where(move => move.IsUsable).ToArray();
+            
+            return usableMoves[Random.Range(0, character.Moveset.Count)];
         }
 
         public override GameCharacter SelectTarget(Move _move, List<GameCharacter> _targets)

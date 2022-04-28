@@ -50,7 +50,6 @@ namespace GSP.UI.Battle
 
         private void OnStatModifierChanged(Stats _stat, int _value)
         {
-            Debug.Log(_stat);
             string keyPrefix = "StatModifier_" + Enum.GetName(typeof(Stats), _stat);
 
             if (_value <= 0) { RemoveKey(keyPrefix + "_Up"); }
@@ -62,7 +61,6 @@ namespace GSP.UI.Battle
 
         private void AddKey(string _key)
         {
-            Debug.Log(_key);
             if (m_activeIcons.TryGetValue(_key, out _) || !m_buffIconSprites.TryGetValue(_key, out var buffIconSprite)) { return; }
 
             var buffIcon = GetBuffIcon();

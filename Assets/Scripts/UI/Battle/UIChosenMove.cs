@@ -21,7 +21,7 @@ namespace GSP.UI.Battle
             if (_target != null) { _target.OnMoveChosen += OnMoveChosen; }
         }
 
-        private void OnMoveChosen(Move _move)
+        private void OnMoveChosen(GameMove _move)
         {
             m_move.SetTarget(_move, m_target);
             SetScale(_move != null);
