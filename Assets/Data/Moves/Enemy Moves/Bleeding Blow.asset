@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Bleeding Blow
   m_description: Deals light damage to an enemy.
-  m_power: 10
+  m_power: 25
   m_speed: 7
+  m_warmup: 0
+  m_cooldown: 0
   m_targetingMethod:
     m_target: 2
     m_selectAll: 0

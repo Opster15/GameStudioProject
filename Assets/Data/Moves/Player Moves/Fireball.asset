@@ -15,7 +15,9 @@ MonoBehaviour:
   m_name: Fireball
   m_description: Deals medium damage to an enemy
   m_power: 45
-  m_speed: 8
+  m_speed: 16
+  m_warmup: 0
+  m_cooldown: 1
   m_targetingMethod:
     m_target: 2
     m_selectAll: 0

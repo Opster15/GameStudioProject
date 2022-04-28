@@ -16,6 +16,8 @@ MonoBehaviour:
   m_description: Deals light damage to all Enemies
   m_power: 12
   m_speed: 3
+  m_warmup: 0
+  m_cooldown: 0
   m_targetingMethod:
     m_target: 2
     m_selectAll: 1

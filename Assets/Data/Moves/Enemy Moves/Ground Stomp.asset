@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Ground Stomp(AOE)
   m_description: Deals medium damage to all enemies.
-  m_power: 25
+  m_power: 35
   m_speed: 12
+  m_warmup: 0
+  m_cooldown: 0
   m_targetingMethod:
     m_target: 2
     m_selectAll: 1

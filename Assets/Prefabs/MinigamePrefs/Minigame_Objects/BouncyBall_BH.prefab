@@ -172,4 +172,4 @@ MonoBehaviour:
   scoreOnBorderHit: 1
   m_particleParticle: {fileID: 5194359188388809897, guid: 891dd02241bc53249b31b16f76c73afc,
     type: 3}
-  m_bounceRange: 7
+  m_bounceRange: 6

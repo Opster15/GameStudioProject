@@ -15,12 +15,14 @@ MonoBehaviour:
   m_name: Chronoblast
   m_description: Deals light damage to an enemy.
   m_power: 25
-  m_speed: 7
+  m_speed: 1
+  m_warmup: 0
+  m_cooldown: 0
   m_targetingMethod:
     m_target: 2
     m_selectAll: 0
     m_excludeSelf: 0
-  m_minigamePrefab: {fileID: 8000579240565719698, guid: c8335b8d69e271e40b8df82de52a6390,
+  m_minigamePrefab: {fileID: 551424794507780627, guid: c628cb2c25d8a7145bfa07cd67818980,
     type: 3}
   m_scriptFile: {fileID: 2213920135882650261, guid: a1febff93eedb794ea63fbe6c4583f54,
     type: 3}

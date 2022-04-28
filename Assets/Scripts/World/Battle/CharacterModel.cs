@@ -6,7 +6,14 @@ namespace GSP.World.Battle
     public class CharacterModel : CharacterTargetedElement
     {
         private GameObject m_model;
-        
+
+        private Animator m_anim;
+
+        private void Start()
+        {
+            m_anim = GetComponentInChildren<Animator>();
+        }
+
         public override void SetTarget(GameCharacter _target)
         {
             base.SetTarget(_target);
@@ -23,7 +30,7 @@ namespace GSP.World.Battle
 
             if(m_target.CurrentHP <= 0)
             {
-                Destroy(m_model);
+                m_anim.SetTrigger("isDead");
             }
         }
     }

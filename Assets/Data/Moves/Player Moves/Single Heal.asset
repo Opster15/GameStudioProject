@@ -16,6 +16,8 @@ MonoBehaviour:
   m_description: Heals a team member
   m_power: 40
   m_speed: 1
+  m_warmup: 2
+  m_cooldown: 3
   m_targetingMethod:
     m_target: 1
     m_selectAll: 0

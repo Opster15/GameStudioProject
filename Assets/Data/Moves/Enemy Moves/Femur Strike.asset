@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Femur Strike
   m_description: Deals light damage to an enemy.
-  m_power: 20
+  m_power: 40
   m_speed: 5
+  m_warmup: 0
+  m_cooldown: 0
   m_targetingMethod:
     m_target: 2
     m_selectAll: 0
