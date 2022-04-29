@@ -15,6 +15,11 @@ namespace GSP.Battle
         [SerializeField] private string m_name;
 
         /// <summary>
+        /// The character's icon
+        /// </summary>
+        [SerializeField] private Sprite m_icon;
+
+        /// <summary>
         /// The character's stat values.
         /// </summary>
         [SerializeField] private StatBlock m_statBlock;
@@ -43,6 +48,12 @@ namespace GSP.Battle
         /// The character's name.
         /// </summary>
         public string Name => m_name;
+
+
+        /// <summary>
+        /// The character's icon.
+        /// </summary>
+        public Sprite Icon => m_icon;
 
         /// <summary>
         /// The character's stat values.
