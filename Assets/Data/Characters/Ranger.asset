@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: Ranger
   m_EditorClassIdentifier: 
   m_name: Ranger
+  m_icon: {fileID: 21300000, guid: 64cb710d9b8f5b04faa08c744e5b1209, type: 3}
   m_statBlock:
     m_HP: 200
+    m_attack: 0
+    m_defence: 0
     m_speed: 3
   m_skipsMinigames: 0
   m_moveset:
