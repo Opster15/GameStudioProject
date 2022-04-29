@@ -172,4 +172,4 @@ MonoBehaviour:
     type: 3}
   m_destoryOnBorderHit: 0
   m_speed: 3
-  m_maxLifetime: 5
+  m_maxLifetime: 1.25

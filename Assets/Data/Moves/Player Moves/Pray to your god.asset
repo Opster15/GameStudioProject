@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
   m_Name: Pray to your god
   m_EditorClassIdentifier: 
-  m_name: Pray to your god
+  m_name: Pray to your god(AOE)
   m_description: Deals hight damage to all enemies
   m_power: 70
   m_speed: 12

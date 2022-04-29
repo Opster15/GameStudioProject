@@ -158,7 +158,7 @@ MonoBehaviour:
   m_objects:
   - {fileID: 3998164130285785523, guid: f18dc5d3f0d70d341b22afa502bf9322, type: 3}
   m_aimedObject: 0
-  m_attack_speed: 0.6
+  m_attack_speed: 0.5
 --- !u!114 &8316987713884381493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -885,7 +885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_moveSpeedX: 0
-  m_moveSpeedY: 3
+  m_moveSpeedY: 4
 --- !u!114 &2487670904246152725
 MonoBehaviour:
   m_ObjectHideFlags: 0

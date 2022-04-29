@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Precision Shot
   m_description: Deals High damage to an enemy
-  m_power: 50
+  m_power: 60
   m_speed: 10
+  m_warmup: 0
+  m_cooldown: 0
   m_targetingMethod:
     m_target: 2
     m_selectAll: 0

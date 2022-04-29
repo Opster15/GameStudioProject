@@ -38,7 +38,7 @@ namespace GSP.Minigames
 
         public void Input()
         {
-            rb.velocity = new Vector2(m_moveSpeedX * x, m_moveSpeedY * y);
+            rb.velocity = new Vector2(m_moveSpeedX * x , m_moveSpeedY * y );
         }
     }
 }

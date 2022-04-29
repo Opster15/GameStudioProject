@@ -313,7 +313,7 @@ MonoBehaviour:
   m_targetPower: 0
   m_timer: 0
   m_objectHolder: {fileID: 5672814401341746139}
-  m_rotationSpeed: -1
+  m_rotationSpeed: -1.5
 --- !u!114 &2992161195373456032
 MonoBehaviour:
   m_ObjectHideFlags: 0

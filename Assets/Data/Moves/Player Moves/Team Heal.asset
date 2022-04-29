@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Team Heal
   m_description: Heals all team members
-  m_power: 15
+  m_power: 40
   m_speed: 1
-  m_warmup: 2
-  m_cooldown: 3
+  m_warmup: 1
+  m_cooldown: 2
   m_targetingMethod:
     m_target: 1
     m_selectAll: 1

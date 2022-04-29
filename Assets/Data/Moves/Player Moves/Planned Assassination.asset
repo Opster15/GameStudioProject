@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Planned Assassination
   m_description: Deals Very High damage to an enemy
-  m_power: 60
+  m_power: 65
   m_speed: 20
   m_warmup: 0
   m_cooldown: 2

@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
   m_Name: Chronoblast
   m_EditorClassIdentifier: 
-  m_name: Chronoblast
+  m_name: Chronoblast(AOE)
   m_description: Deals light damage to an enemy.
-  m_power: 25
+  m_power: 20
   m_speed: 1
   m_warmup: 0
-  m_cooldown: 0
+  m_cooldown: 1
   m_targetingMethod:
     m_target: 2
-    m_selectAll: 0
+    m_selectAll: 1
     m_excludeSelf: 0
   m_minigamePrefab: {fileID: 551424794507780627, guid: c628cb2c25d8a7145bfa07cd67818980,
     type: 3}
