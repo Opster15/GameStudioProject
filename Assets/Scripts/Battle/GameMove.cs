@@ -56,7 +56,8 @@ namespace GSP.Battle
             m_user.SelectMove(this);
             _actionManager.QueueAction(new Action(m_baseMove, m_user, _targets));
             
-            m_cooldown = m_baseMove.Cooldown;
+            // +1 as the cooldown is ticked at the end of every turn, including the turn the move is used.
+            m_cooldown = m_baseMove.Cooldown + 1;
         }
 
         public void Tick()

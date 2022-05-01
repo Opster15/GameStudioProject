@@ -181,10 +181,16 @@ namespace GSP.Battle
         public void StartTurn()
         {
             m_statModifiers.Tick();
+            
             foreach (var move in m_moveset)
             {
                 move.Tick();
             }
+        }
+
+        public void EndTurn()
+        {
+            
         }
 
         /// <summary>

@@ -54,6 +54,7 @@ namespace GSP.Battle
                 {
                     character.EnableScripts(m_scriptManager);
                     OnTurnStart += character.StartTurn;
+                    OnTurnEnd += character.EndTurn;
                 }
             }
 
@@ -68,6 +69,7 @@ namespace GSP.Battle
                 {
                     character.DisableScripts(m_scriptManager);
                     OnTurnStart -= character.StartTurn;
+                    OnTurnEnd -= character.EndTurn;
                 }
             }
 
@@ -112,6 +114,8 @@ namespace GSP.Battle
                     break;
                 }
             }
+            
+            OnTurnEnd?.Invoke();
 
             if(partyDown < 0) { StartTurn(); }
             else { EndBattle(partyDown); }
