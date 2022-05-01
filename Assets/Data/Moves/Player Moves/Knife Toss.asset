@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
   m_Name: Knife Toss
   m_EditorClassIdentifier: 
-  m_name: Knife Toss
+  m_name: Knife Toss(AOE)
   m_description: Deals light damage to an enemy.
-  m_power: 35
+  m_power: 20
   m_speed: 7
   m_warmup: 0
-  m_cooldown: 0
+  m_cooldown: 2
   m_targetingMethod:
     m_target: 2
-    m_selectAll: 0
+    m_selectAll: 1
     m_excludeSelf: 0
   m_minigamePrefab: {fileID: 1102548371931533494, guid: 946486747819b6545b80412f61d34e1f,
     type: 3}
