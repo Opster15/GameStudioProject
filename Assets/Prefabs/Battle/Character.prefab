@@ -121,6 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db57a412185c4b2aaffaf92f55354eae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_selectedPosition: {x: 0, y: 0, z: 1.5}
+  m_moveTime: 1
 --- !u!1001 &1121809064422361151
 PrefabInstance:
   m_ObjectHideFlags: 0

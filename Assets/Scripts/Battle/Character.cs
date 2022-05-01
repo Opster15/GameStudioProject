@@ -40,6 +40,16 @@ namespace GSP.Battle
         [SerializeField] private GameObject m_modelPrefab;
 
         /// <summary>
+        /// Whether the character walks up when selected for a move.
+        /// </summary>
+        [SerializeField] private bool m_walkOnSelected;
+
+        /// <summary>
+        /// How long the character's attack windup takes.
+        /// </summary>
+        [SerializeField] private float m_attackWindupTime;
+
+        /// <summary>
         /// The character's AI, for selecting moves in battle.
         /// </summary>
         [SerializeField] private BattleAIBase m_AI;
@@ -48,8 +58,7 @@ namespace GSP.Battle
         /// The character's name.
         /// </summary>
         public string Name => m_name;
-
-
+        
         /// <summary>
         /// The character's icon.
         /// </summary>
@@ -74,6 +83,16 @@ namespace GSP.Battle
         /// The character's in-game model.
         /// </summary>
         public GameObject ModelPrefab => m_modelPrefab;
+
+        /// <summary>
+        /// Whether the character walks up when selected for a move.
+        /// </summary>
+        public bool WalkOnSelected => m_walkOnSelected;
+
+        /// <summary>
+        /// How long the character's attack windup takes.
+        /// </summary>
+        public float AttackWindupTime => m_attackWindupTime;
 
         /// <summary>
         /// The character's AI, for selecting moves in battle.

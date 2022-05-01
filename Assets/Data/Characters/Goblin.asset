@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: Goblin
   m_EditorClassIdentifier: 
   m_name: Goblin
+  m_icon: {fileID: 0}
   m_statBlock:
     m_HP: 70
+    m_attack: 0
+    m_defence: 0
     m_speed: 8
   m_skipsMinigames: 1
   m_moveset:
@@ -22,4 +25,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c29cdcfb1a97f424c9142f012a3dc8e7, type: 2}
   m_modelPrefab: {fileID: 3970300454384692513, guid: 87df058c5e216d84fbf37be25a1da025,
     type: 3}
+  m_walkOnSelected: 0
+  m_attackWindupTime: 0.55
   m_AI: {fileID: 11400000, guid: 0a3abbff9dee01543b009c3a54d8dcb5, type: 2}

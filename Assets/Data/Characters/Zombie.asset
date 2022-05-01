@@ -13,12 +13,17 @@ MonoBehaviour:
   m_Name: Zombie
   m_EditorClassIdentifier: 
   m_name: Zombie
+  m_icon: {fileID: 0}
   m_statBlock:
     m_HP: 130
+    m_attack: 0
+    m_defence: 0
     m_speed: 5
   m_skipsMinigames: 1
   m_moveset:
   - {fileID: 11400000, guid: b1736387d87b0324da3d220749d98065, type: 2}
   m_modelPrefab: {fileID: 5273719643390303098, guid: 920031cebf3da1247b0c1ce64350b75e,
     type: 3}
+  m_walkOnSelected: 0
+  m_attackWindupTime: 0.5
   m_AI: {fileID: 11400000, guid: 0a3abbff9dee01543b009c3a54d8dcb5, type: 2}

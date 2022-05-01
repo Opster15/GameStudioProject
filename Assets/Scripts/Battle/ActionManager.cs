@@ -23,6 +23,11 @@ namespace GSP.Battle
         /// </summary>
         private bool m_isCurrentMinigameFinished;
 
+        /// <summary>
+        /// How long to wait after damage is dealt.
+        /// </summary>
+        [SerializeField] private float m_damageWaitTime;
+
         private void Awake()
         {
             m_actions = new List<Action>();
@@ -76,7 +81,13 @@ namespace GSP.Battle
                 }
             }
 
+            _action.User.SetUsingMove();
+            yield return new WaitForSeconds(_action.User.BaseCharacter.AttackWindupTime);
+
             _action.Execute(m_currentMinigameScore);
+
+            yield return new WaitForSeconds(m_damageWaitTime);
+            
             _action.User.SetActing(false);
         }
 

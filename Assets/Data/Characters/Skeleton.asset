@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: Skeleton
   m_EditorClassIdentifier: 
   m_name: Skeleton
+  m_icon: {fileID: 0}
   m_statBlock:
     m_HP: 90
+    m_attack: 0
+    m_defence: 0
     m_speed: 3
   m_skipsMinigames: 1
   m_moveset:
@@ -22,4 +25,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c29cdcfb1a97f424c9142f012a3dc8e7, type: 2}
   m_modelPrefab: {fileID: 4157595789528206872, guid: 88e16244a609c67489760e718cb9cc51,
     type: 3}
+  m_walkOnSelected: 0
+  m_attackWindupTime: 0.6
   m_AI: {fileID: 11400000, guid: 0a3abbff9dee01543b009c3a54d8dcb5, type: 2}

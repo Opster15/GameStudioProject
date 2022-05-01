@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: Player Character
   m_EditorClassIdentifier: 
   m_name: Player Character
+  m_icon: {fileID: 0}
   m_statBlock:
     m_HP: 250
+    m_attack: 0
+    m_defence: 0
     m_speed: 5
   m_skipsMinigames: 0
   m_moveset:
@@ -24,4 +27,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e5dda7a236ef5b04b801b580ea8440be, type: 2}
   m_modelPrefab: {fileID: 1109896575509637211, guid: 28b9bd42500718348953d3c16634ab5f,
     type: 3}
+  m_walkOnSelected: 1
+  m_attackWindupTime: 0.5
   m_AI: {fileID: 11400000, guid: 0a3abbff9dee01543b009c3a54d8dcb5, type: 2}

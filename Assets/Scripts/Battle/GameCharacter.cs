@@ -107,6 +107,13 @@ namespace GSP.Battle
         public Action<bool> OnActing;
 
         /// <summary>
+        /// Called upon the character being called to actually use their move.
+        /// </summary>
+        public System.Action OnUsingMove;
+
+        public Action<int> OnDamaged;
+
+        /// <summary>
         /// The in-game "live" instance of a character.
         /// </summary>
         /// <param name="_baseCharacter">The data for the character.</param>
@@ -148,7 +155,10 @@ namespace GSP.Battle
             float defence = 1.0f + m_statModifiers.GetModifierValue(Stats.Defence) / 3.0f;
             if (_source != null) { attack += _source.StatModifiers.GetModifierValue(Stats.Attack) / 3.0f; }
 
-            SetHealth(m_currentHP - Mathf.Max((int)(_amount * attack / defence), 0));
+            int modifiedAmount = Mathf.Max((int)(_amount * attack / defence), 0);
+            
+            SetHealth(m_currentHP - modifiedAmount);
+            OnDamaged?.Invoke(modifiedAmount);
         }
 
         /// <summary>
@@ -204,6 +214,9 @@ namespace GSP.Battle
         /// <param name="_acting">Whether the character is performing an action.</param>
         public void SetActing(bool _acting)
             => OnActing?.Invoke(_acting);
+
+        public void SetUsingMove()
+            => OnUsingMove?.Invoke();
 
         /// <summary>
         /// Arm the character's move's scripts for use during battle.
