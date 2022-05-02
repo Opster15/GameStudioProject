@@ -46,6 +46,10 @@ namespace GSP.Battle
         public IEnumerator ExecuteActions()
         {
             SortQueue();
+            foreach(var action in m_actions)
+            {
+                Debug.Log(action.User.Name.ToString());
+            }
             foreach (var action in m_actions)
             {
                 yield return ExecuteAction(action);

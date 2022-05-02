@@ -30,7 +30,7 @@ namespace GSP.Minigames
             }
         }
 
-        void Shoot()
+        public void Shoot()
         {
             m_canAttack = false;
             GameObject bulletClone = Instantiate(bullet, shootPoint.position, transform.rotation);

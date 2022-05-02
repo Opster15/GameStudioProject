@@ -11,7 +11,7 @@ namespace GSP.Minigames
 
         public float m_moveSpeedX,m_moveSpeedY;
 
-        float x, y;
+        public float x, y;
 
         private void Awake()
         {

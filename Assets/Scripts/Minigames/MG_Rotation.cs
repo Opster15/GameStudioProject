@@ -12,7 +12,7 @@ namespace GSP.Minigames
 
         public float m_rotationSpeed;
 
-        float x;
+        public float x;
         void Start()
         {
             inputManager = GetComponent<InputManager>();
