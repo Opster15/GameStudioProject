@@ -30,12 +30,16 @@ namespace GSP.Battle
         }
 
         //TODO: Create battle
-        [SerializeField] private PartyObject m_A;
-        [SerializeField] private PartyObject m_B;
+        [SerializeField] private PartyObject m_defaultPlayerParty;
+        [SerializeField] private PartyObject m_enemyParty;
         
         private void Start()
         {
-            StartBattle(m_A.GetParty(), m_B.GetParty());
+            // If no player party holder exists, resort to a pre-set default.
+            var playerPartyHolder = FindObjectOfType<PlayerPartyHolder>();
+            var playerParty = playerPartyHolder == null ? m_defaultPlayerParty.GetParty() : playerPartyHolder.GetParty();
+
+            StartBattle(playerParty, m_enemyParty.GetParty());
         }
 
         public void StartBattle(GameParty _a, GameParty _b)

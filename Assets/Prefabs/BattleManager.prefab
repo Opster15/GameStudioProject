@@ -150,8 +150,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e11197e8888b841b60de528a3767a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_A: {fileID: 11400000, guid: 0150e88b94141df4391f082f5a6a48a5, type: 2}
-  m_B: {fileID: 11400000, guid: 18324d099346a6e4eb795f62b462f760, type: 2}
+  m_defaultPlayerParty: {fileID: 11400000, guid: 0150e88b94141df4391f082f5a6a48a5,
+    type: 2}
+  m_enemyParty: {fileID: 11400000, guid: 18324d099346a6e4eb795f62b462f760, type: 2}
 --- !u!114 &7533150953850363221
 MonoBehaviour:
   m_ObjectHideFlags: 0
