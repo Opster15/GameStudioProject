@@ -152,7 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_defaultPlayerParty: {fileID: 11400000, guid: 0150e88b94141df4391f082f5a6a48a5,
     type: 2}
-  m_enemyParty: {fileID: 11400000, guid: 18324d099346a6e4eb795f62b462f760, type: 2}
+  m_enemyParty: {fileID: 11400000, guid: 64179ff727873924389f4e7c98a777eb, type: 2}
 --- !u!114 &7533150953850363221
 MonoBehaviour:
   m_ObjectHideFlags: 0

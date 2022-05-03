@@ -10,16 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5b2d39b5d3127d47a54eca8af42cb08, type: 3}
-  m_Name: Test Party
+  m_Name: Test Random Party
   m_EditorClassIdentifier: 
   m_spawnWeights:
   - m_value: {fileID: 11400000, guid: 9daab979bfad95c48aa8c767d4d78315, type: 2}
-    m_weight: 20
+    m_weight: 400
   - m_value: {fileID: 11400000, guid: 280e4da649795aa42b6e2f481645b585, type: 2}
-    m_weight: 10
+    m_weight: 200
   - m_value: {fileID: 11400000, guid: 83fe0e92b43a2554288ff90254c1b73d, type: 2}
-    m_weight: 5
+    m_weight: 100
   - m_value: {fileID: 11400000, guid: eb5347f2faca3bf4789f6e592cd77f9c, type: 2}
+    m_weight: 20
+  - m_value: {fileID: 11400000, guid: 944c660835887c245aba258844eb4162, type: 2}
     m_weight: 1
   m_spawnSizes:
   - m_value: 1
@@ -29,4 +31,6 @@ MonoBehaviour:
   - m_value: 3
     m_weight: 30
   - m_value: 4
-    m_weight: 1
+    m_weight: 10
+  - m_value: 5
+    m_weight: 5
