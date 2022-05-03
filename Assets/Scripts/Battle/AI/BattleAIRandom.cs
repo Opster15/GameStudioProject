@@ -15,7 +15,7 @@ namespace GSP.Battle.AI
             var character = _party.PartyMembers[_characterID];
             var usableMoves = character.Moveset.Where(move => move.IsUsable).ToArray();
             
-            return usableMoves[Random.Range(0, character.Moveset.Count)];
+            return usableMoves[Random.Range(0, usableMoves.Length)];
         }
 
         public override GameCharacter SelectTarget(Move _move, List<GameCharacter> _targets)
