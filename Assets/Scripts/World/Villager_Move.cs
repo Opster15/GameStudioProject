@@ -30,7 +30,7 @@ namespace GSP
             }
 
             transform.LookAt(positions[counter].position);
-            transform.position = Vector3.MoveTowards(transform.position, positions[counter].position, 0.002f);
+            transform.position = Vector3.MoveTowards(transform.position, positions[counter].position, 1 * Time.deltaTime);
         }
     }
 }
