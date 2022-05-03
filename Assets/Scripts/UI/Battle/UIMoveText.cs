@@ -23,9 +23,22 @@ namespace GSP.UI.Battle
         
         [SerializeField] private string m_textFormat = "{0}";
 
+        private int m_lastValue;
+
         private void Awake()
         {
             m_text = GetComponent<TMP_Text>();
+        }
+
+        private void Update()
+        {
+            if (m_target == null) { return; }
+
+            if (m_type == Type.CurrentCooldown && m_lastValue != m_target.Cooldown)
+            {
+                m_text.text = string.Format(m_textFormat, m_target.Cooldown);
+                m_lastValue = m_target.Cooldown;
+            }
         }
 
         public override void SetTarget(GameMove _target, GameCharacter _user)
