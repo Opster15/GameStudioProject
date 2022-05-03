@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e68c9bdbdff45779c820a22871d461a, type: 3}
+  m_Name: Imp
+  m_EditorClassIdentifier: 
+  m_name: Zombie
+  m_icon: {fileID: 0}
+  m_statBlock:
+    m_HP: 130
+    m_attack: 0
+    m_defence: 0
+    m_speed: 5
+  m_skipsMinigames: 1
+  m_moveset:
+  - {fileID: 11400000, guid: b1736387d87b0324da3d220749d98065, type: 2}
+  m_modelPrefab: {fileID: 8351596024835209380, guid: 939200b93e76c3b4ead5f2ffcf7541fc,
+    type: 3}
+  m_walkOnSelected: 0
+  m_attackWindupTime: 0.7
+  m_AI: {fileID: 11400000, guid: 0a3abbff9dee01543b009c3a54d8dcb5, type: 2}
