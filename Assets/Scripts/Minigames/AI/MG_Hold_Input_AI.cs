@@ -8,7 +8,7 @@ namespace GSP.Minigames
     {
         private MG_Rotation m_rotate;
 
-        public bool m_xInput, m_spaceInput;
+        public bool m_xInput;
 
         public float m_inputvalue;
 
