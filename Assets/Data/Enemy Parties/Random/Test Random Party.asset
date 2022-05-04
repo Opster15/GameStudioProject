@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b2d39b5d3127d47a54eca8af42cb08, type: 3}
   m_Name: Test Random Party
   m_EditorClassIdentifier: 
+  m_musicPath:
+    Guid:
+      Data1: 849839879
+      Data2: 1118632103
+      Data3: -208350027
+      Data4: 632109050
+    Path: event:/BGM/Battle/Regular Battle
   m_spawnWeights:
   - m_value: {fileID: 11400000, guid: 9daab979bfad95c48aa8c767d4d78315, type: 2}
     m_weight: 400

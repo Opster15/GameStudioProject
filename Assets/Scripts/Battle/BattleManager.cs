@@ -6,6 +6,7 @@ using GSP.Battle.Party;
 using GSP.LUA;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMOD.Studio;
 namespace GSP.Battle
 {
     public class BattleManager : MonoBehaviour
@@ -14,6 +15,12 @@ namespace GSP.Battle
         private ScriptManager m_scriptManager;
     
         private GameParty[] m_parties;
+
+        //TODO: Create battle
+        [SerializeField] private PartyObject m_defaultPlayerParty;
+        [SerializeField] private PartyObject m_enemyParty;
+
+        private EventInstance m_musicEvent;
 
         public Action<int, GameParty> OnEnableParty;
 
@@ -28,16 +35,15 @@ namespace GSP.Battle
             
             m_parties = new GameParty[2];
         }
-
-        //TODO: Create battle
-        [SerializeField] private PartyObject m_defaultPlayerParty;
-        [SerializeField] private PartyObject m_enemyParty;
         
         private void Start()
         {
             // If no player party holder exists, resort to a pre-set default.
             var playerPartyHolder = FindObjectOfType<PlayerPartyHolder>();
             var playerParty = playerPartyHolder == null ? m_defaultPlayerParty.GetParty() : playerPartyHolder.GetParty();
+
+            m_musicEvent = FMODUnity.RuntimeManager.CreateInstance(m_enemyParty.MusicPath);
+            m_musicEvent.start();
 
             StartBattle(playerParty, m_enemyParty.GetParty());
         }
@@ -74,6 +80,9 @@ namespace GSP.Battle
                     OnTurnEnd -= character.EndTurn;
                 }
             }
+
+            m_musicEvent.stop(STOP_MODE.ALLOWFADEOUT);
+            m_musicEvent.release();
 
             SceneManager.LoadScene(partyDown + 1);
         }

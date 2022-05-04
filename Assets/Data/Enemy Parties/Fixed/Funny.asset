@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6268fa047cc08714abd0fc78c9915324, type: 3}
-  m_Name: Test Fixed Party
+  m_Name: Funny
   m_EditorClassIdentifier: 
   m_musicPath:
     Guid:
@@ -20,8 +20,6 @@ MonoBehaviour:
       Data4: -1957897487
     Path: event:/BGM/Battle/Boss
   m_partyMembers:
-  - {fileID: 11400000, guid: 9daab979bfad95c48aa8c767d4d78315, type: 2}
-  - {fileID: 11400000, guid: 83fe0e92b43a2554288ff90254c1b73d, type: 2}
-  - {fileID: 11400000, guid: eb5347f2faca3bf4789f6e592cd77f9c, type: 2}
   - {fileID: 11400000, guid: 280e4da649795aa42b6e2f481645b585, type: 2}
-  - {fileID: 11400000, guid: 9daab979bfad95c48aa8c767d4d78315, type: 2}
+  - {fileID: 11400000, guid: 944c660835887c245aba258844eb4162, type: 2}
+  - {fileID: 11400000, guid: 280e4da649795aa42b6e2f481645b585, type: 2}

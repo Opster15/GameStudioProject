@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2050717062107331103}
   - component: {fileID: 2050717062107331104}
-  - component: {fileID: 2050717062107331105}
   - component: {fileID: 2050717062107331102}
   - component: {fileID: 2050717062107331107}
+  - component: {fileID: 6086759506305897395}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050717062107331100}
-  m_LocalRotation: {x: 0.07088901, y: 0.000000018227157, z: -0.0000000012953638, w: 0.9974842}
+  m_LocalRotation: {x: 0.070889026, y: -0.000000016643243, z: 0.000000001182799, w: 0.9974842}
   m_LocalPosition: {x: 0, y: 4, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -79,14 +79,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &2050717062107331105
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2050717062107331100}
-  m_Enabled: 1
 --- !u!114 &2050717062107331102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +177,20 @@ MonoBehaviour:
   - assemblyQualifiedName: Pinwheel.Poseidon.FX.PostProcessing.PWetLens, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   m_AfterStackBundles: []
+--- !u!114 &6086759506305897395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050717062107331100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!1 &2050717062341343663
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,7 +492,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050717063073306519}
-  m_LocalRotation: {x: 0.07088901, y: 0.000000018227157, z: -0.0000000012953638, w: 0.9974842}
+  m_LocalRotation: {x: 0.070889026, y: -0.000000016643241, z: 0.0000000011827989,
+    w: 0.9974842}
   m_LocalPosition: {x: -0, y: 4, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
