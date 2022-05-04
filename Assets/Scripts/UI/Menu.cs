@@ -30,5 +30,10 @@ namespace GSP
         {
             Invoke("PlayGame", m_delay);
         }
+
+        public void ReturnToMenu()
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }

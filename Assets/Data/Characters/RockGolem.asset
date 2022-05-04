@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e68c9bdbdff45779c820a22871d461a, type: 3}
+  m_Name: RockGolem
+  m_EditorClassIdentifier: 
+  m_name: Rock Golem
+  m_icon: {fileID: 0}
+  m_statBlock:
+    m_HP: 200
+    m_attack: 0
+    m_defence: 0
+    m_speed: 15
+  m_skipsMinigames: 1
+  m_moveset:
+  - {fileID: 11400000, guid: 7291152f16372c64abec5e5b900ef734, type: 2}
+  - {fileID: 11400000, guid: 785bb6edfbb244f46a26c7f69a928886, type: 2}
+  m_modelPrefab: {fileID: 8150028104720137819, guid: 8ad1bc0569f27f148b07f8cfc79eac81,
+    type: 3}
+  m_walkOnSelected: 0
+  m_attackWindupTime: 1.3
+  m_AI: {fileID: 11400000, guid: 0a3abbff9dee01543b009c3a54d8dcb5, type: 2}

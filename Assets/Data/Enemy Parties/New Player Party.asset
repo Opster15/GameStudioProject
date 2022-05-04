@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 999687300b64a6e44bd46714f9f2bcff, type: 3}
   m_Name: New Player Party
   m_EditorClassIdentifier: 
+  m_musicPath:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   m_partyMembers:
   - {fileID: 11400000, guid: 46cccf3d2b8079a4d9ed9a0b3bfc2a15, type: 2}
-  - {fileID: 11400000, guid: 5f3398ddf1a75e649bf48a14c03f0f45, type: 2}
-  - {fileID: 11400000, guid: ca2885129fc308b43a0d39ef239f2f31, type: 2}
-  - {fileID: 11400000, guid: dace397324eb16e42840d74ae92250c0, type: 2}
-  - {fileID: 11400000, guid: 2a3b912f0526af446b70267a99db9fc8, type: 2}

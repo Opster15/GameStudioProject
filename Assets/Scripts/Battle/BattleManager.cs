@@ -13,6 +13,8 @@ namespace GSP.Battle
     {
         private ActionManager m_actionManager;
         private ScriptManager m_scriptManager;
+
+        private Animator m_anim;
     
         private GameParty[] m_parties;
 
@@ -32,6 +34,8 @@ namespace GSP.Battle
         {
             m_actionManager = FindObjectOfType<ActionManager>();
             m_scriptManager = FindObjectOfType<ScriptManager>();
+
+            m_anim = GetComponent<Animator>();
             
             m_parties = new GameParty[2];
         }
@@ -84,7 +88,14 @@ namespace GSP.Battle
             m_musicEvent.stop(STOP_MODE.ALLOWFADEOUT);
             m_musicEvent.release();
 
-            SceneManager.LoadScene(partyDown + 1);
+            if(partyDown == 0)
+            {
+                m_anim.SetTrigger("OnLose");
+            }
+            else if (partyDown == 1)
+            {
+                m_anim.SetTrigger("OnWin");
+            }
         }
 
         private IEnumerator Turn()
