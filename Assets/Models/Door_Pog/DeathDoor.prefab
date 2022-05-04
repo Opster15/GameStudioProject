@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1772585544650152011}
+  - component: {fileID: 2228753463931795761}
   m_Layer: 0
   m_Name: DeathDoor
   m_TagString: Untagged
@@ -33,6 +34,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2228753463931795761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783912002411708361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 160986161f5025e4ca236de38fc5c590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_eyes:
+  - {fileID: 3739281859271368340}
+  - {fileID: 2026509152133451780}
+  m_lookTimeDelay: {x: 0.2, y: 3}
+  m_lookTimeRange: {x: 0.1, y: 0.2}
+  m_lookTimeVariance: {x: 0.85, y: 1.15}
+  m_minTarget: {x: -6, y: -6, z: 1}
+  m_maxTarget: {x: 6, y: 2, z: 6}
 --- !u!1001 &1269666825377578342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -113,6 +134,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1269666825377578342}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &3739281859271368340 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2484397419217085426, guid: 806c25201781c094eaabd3b29054fd6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1269666825377578342}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4496212131010245622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -187,6 +214,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 806c25201781c094eaabd3b29054fd6f, type: 3}
+--- !u!4 &2026509152133451780 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2484397419217085426, guid: 806c25201781c094eaabd3b29054fd6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4496212131010245622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2370150886526534058 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2198238960178115164, guid: 806c25201781c094eaabd3b29054fd6f,
