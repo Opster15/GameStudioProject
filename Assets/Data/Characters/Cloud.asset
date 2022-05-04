@@ -16,14 +16,14 @@ MonoBehaviour:
   m_icon: {fileID: 0}
   m_statBlock:
     m_HP: 300
-    m_attack: 5
-    m_defence: 5
+    m_attack: 3
+    m_defence: 1
     m_speed: 2
   m_skipsMinigames: 1
   m_moveset:
   - {fileID: 11400000, guid: 960daf0450bf0b44fa0e6cd89819b9de, type: 2}
   - {fileID: 11400000, guid: a5428ad6f2fe3754398fc3b6274f53ed, type: 2}
-  - {fileID: 11400000, guid: 7291152f16372c64abec5e5b900ef734, type: 2}
+  - {fileID: 11400000, guid: e980924b5ab9a324694736a8bcf5458b, type: 2}
   m_modelPrefab: {fileID: 8999431880300432118, guid: f371109c9fe390f46a602d27237ad433,
     type: 3}
   m_walkOnSelected: 0

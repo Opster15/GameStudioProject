@@ -16,7 +16,7 @@ MonoBehaviour:
   m_description: Guards from oncoming damage for 1 turn.
   m_power: 20
   m_speed: 1
-  m_warmup: 2
+  m_warmup: 0
   m_cooldown: 3
   m_targetingMethod:
     m_target: 1

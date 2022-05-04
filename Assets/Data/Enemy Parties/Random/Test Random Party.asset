@@ -30,6 +30,8 @@ MonoBehaviour:
     m_weight: 20
   - m_value: {fileID: 11400000, guid: 944c660835887c245aba258844eb4162, type: 2}
     m_weight: 1
+  - m_value: {fileID: 11400000, guid: 5100986b77aa5a345ab3d1314347e6b3, type: 2}
+    m_weight: 50
   m_spawnSizes:
   - m_value: 1
     m_weight: 20

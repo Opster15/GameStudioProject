@@ -20,6 +20,7 @@ MonoBehaviour:
       Data4: -1957897487
     Path: event:/BGM/Battle/Boss
   m_partyMembers:
+  - {fileID: 11400000, guid: 5100986b77aa5a345ab3d1314347e6b3, type: 2}
   - {fileID: 11400000, guid: 280e4da649795aa42b6e2f481645b585, type: 2}
   - {fileID: 11400000, guid: 944c660835887c245aba258844eb4162, type: 2}
-  - {fileID: 11400000, guid: 280e4da649795aa42b6e2f481645b585, type: 2}
+  - {fileID: 11400000, guid: 5100986b77aa5a345ab3d1314347e6b3, type: 2}
