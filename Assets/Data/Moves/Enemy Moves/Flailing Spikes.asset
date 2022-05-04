@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc5306fc4ad48f3a4c5d7c514a212cb, type: 3}
   m_Name: Flailing Spikes
   m_EditorClassIdentifier: 
-  m_name: Ground Stomp(AOE)
+  m_name: Flailing Spikes(AOE)
   m_description: Deals medium damage to all enemies.
   m_power: 35
-  m_speed: 12
+  m_speed: 6
   m_warmup: 0
   m_cooldown: 0
   m_targetingMethod:

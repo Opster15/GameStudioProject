@@ -15,14 +15,14 @@ MonoBehaviour:
   m_name: The Thorned
   m_icon: {fileID: 0}
   m_statBlock:
-    m_HP: 200
+    m_HP: 250
     m_attack: 0
     m_defence: 0
-    m_speed: 15
+    m_speed: 12
   m_skipsMinigames: 1
   m_moveset:
-  - {fileID: 11400000, guid: 7291152f16372c64abec5e5b900ef734, type: 2}
-  - {fileID: 11400000, guid: 785bb6edfbb244f46a26c7f69a928886, type: 2}
+  - {fileID: 11400000, guid: 5eda1f92bfc04d54eb815310b8b04ac6, type: 2}
+  - {fileID: 11400000, guid: e937e6d8a10aaed4db26d506cc389c33, type: 2}
   m_modelPrefab: {fileID: 8150572459821248268, guid: 751dd6e14a0cc9947a9555b2d135750c,
     type: 3}
   m_walkOnSelected: 0

@@ -18,7 +18,7 @@ namespace GSP
 
         public void PlayGame()
         {
-            SceneManager.LoadScene(m_random);
+            SceneManager.LoadScene(1);
         }
 
         public void QuitGame()

@@ -15,13 +15,14 @@ MonoBehaviour:
   m_name: Kamimpkaze
   m_icon: {fileID: 0}
   m_statBlock:
-    m_HP: 20
+    m_HP: 40
     m_attack: 0
     m_defence: 0
     m_speed: 2
   m_skipsMinigames: 1
   m_moveset:
   - {fileID: 11400000, guid: 2c3c00ae228929c428d5412af92fe824, type: 2}
+  - {fileID: 11400000, guid: b1736387d87b0324da3d220749d98065, type: 2}
   m_modelPrefab: {fileID: 8351596024835209380, guid: 3a8858f3cd6d4574a9fb28561d32c8b3,
     type: 3}
   m_walkOnSelected: 0
