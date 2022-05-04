@@ -24,7 +24,7 @@ namespace GSP.UI.Battle
 
         protected void SetScale(bool _open)
         {
-            if (_open == m_isOpen) { return; }
+            if (_open == m_isOpen || m_rectTransform == null) { return; }
             m_isOpen = _open;
             
             if (m_resizeSequence is { active: true })

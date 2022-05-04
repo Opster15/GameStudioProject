@@ -43,6 +43,7 @@ namespace GSP.UI.Battle
 
         public override void SetTarget(GameCharacter _target)
         {
+            if(m_target != null) { m_target.StatModifiers.OnModifierChanged -= OnStatModifierChanged; }
             base.SetTarget(_target);
             if (m_target == null) { return; }
             m_target.StatModifiers.OnModifierChanged += OnStatModifierChanged;

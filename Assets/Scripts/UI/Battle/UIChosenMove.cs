@@ -14,6 +14,11 @@ namespace GSP.UI.Battle
             m_move = GetComponentInChildren<UIMove>();
         }
 
+        private void OnDisable()
+        {
+            if (m_target != null) { m_target.OnMoveChosen -= OnMoveChosen; }
+        }
+
         public override void SetTarget(GameCharacter _target)
         {
             if (m_target != null) { m_target.OnMoveChosen -= OnMoveChosen; }

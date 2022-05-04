@@ -25,6 +25,16 @@ namespace GSP.World.Battle
             m_anim = GetComponentInChildren<Animator>();
         }
 
+        private void OnDisable()
+        {
+            if (m_target != null)
+            {
+                m_target.OnSelected -= OnSelected;
+                m_target.OnDamaged -= OnDamaged;
+                m_target.OnUsingMove -= OnUsingMove;
+            }
+        }
+
         public override void SetTarget(GameCharacter _target)
         {
             if (m_target != null)

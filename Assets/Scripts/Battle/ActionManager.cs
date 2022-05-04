@@ -46,10 +46,6 @@ namespace GSP.Battle
         public IEnumerator ExecuteActions()
         {
             SortQueue();
-            foreach(var action in m_actions)
-            {
-                Debug.Log(action.User.Name.ToString());
-            }
             foreach (var action in m_actions)
             {
                 yield return ExecuteAction(action);
@@ -63,7 +59,9 @@ namespace GSP.Battle
         /// <param name="_action">The action to execute.</param>
         private IEnumerator ExecuteAction(Action _action)
         {
-            if (_action.User.IsDead) { yield break; }
+            // Skip the action if either the user or all targets are dead
+            if (_action.User.IsDead || _action.Targets.Where(target => !target.IsDead).ToArray().Length < 1) { yield break; }
+
             m_currentMinigameScore = 1.0f;
             
             _action.User.SelectMove(null);

@@ -12,7 +12,7 @@ namespace GSP.Battle.Party
 
         private void Awake()
         {
-           if(m_instance != null) { m_instance = this; }
+           if(m_instance == null) { m_instance = this; }
            else { Destroy(gameObject); }
 
             DontDestroyOnLoad(gameObject);
