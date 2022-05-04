@@ -16,6 +16,10 @@ namespace GSP
 
         private void Start()
         {
+            foreach (var eye in m_eyes)
+            {
+                eye.LookAt(new Vector3(Random.Range(m_minTarget.x, m_maxTarget.x), Random.Range(m_minTarget.y, m_maxTarget.y), Random.Range(m_minTarget.z, m_maxTarget.z)));
+            }
             StartCoroutine(LookCycle());
         }
 
