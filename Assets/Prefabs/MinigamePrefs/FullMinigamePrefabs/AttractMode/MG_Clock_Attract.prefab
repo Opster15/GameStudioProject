@@ -315,7 +315,7 @@ MonoBehaviour:
   m_timer: 0
   m_attract: 1
   m_objectHolder: {fileID: 5672814401341746139}
-  m_rotationSpeed: -1.5
+  m_rotationSpeed: -100
   x: 0
 --- !u!114 &2992161195373456032
 MonoBehaviour:
