@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e68c9bdbdff45779c820a22871d461a, type: 3}
+  m_Name: Rogue_Attract
+  m_EditorClassIdentifier: 
+  m_name: Rogue
+  m_icon: {fileID: 21300000, guid: e61399da4101972418554a378ba745c4, type: 3}
+  m_statBlock:
+    m_HP: 180
+    m_attack: 0
+    m_defence: 0
+    m_speed: 2
+  m_skipsMinigames: 0
+  m_moveset:
+  - {fileID: 11400000, guid: 485fa3239c455f6409a6f4c4f7f2605c, type: 2}
+  - {fileID: 11400000, guid: 50809faa31235c84992237fc3660a256, type: 2}
+  - {fileID: 11400000, guid: 1df2700657106714dbbb21fd230729d3, type: 2}
+  - {fileID: 11400000, guid: 1537b2e93ed47f94ba5def4ac949cb70, type: 2}
+  m_modelPrefab: {fileID: 8060441589015296107, guid: df6ceeb029b95e64684d87f7636e7c67,
+    type: 3}
+  m_walkOnSelected: 1
+  m_attackWindupTime: 1.75
+  m_AI: {fileID: 11400000, guid: 0a3abbff9dee01543b009c3a54d8dcb5, type: 2}

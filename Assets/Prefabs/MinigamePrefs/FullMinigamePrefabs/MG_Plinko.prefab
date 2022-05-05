@@ -306,6 +306,7 @@ MonoBehaviour:
   m_targetSpeed: 0
   m_targetPower: 0
   m_timer: 0
+  m_attract: 0
 --- !u!114 &3962508304814343468
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -61,6 +61,11 @@ namespace GSP.Minigames
         private bool m_running;
 
         /// <summary>
+        /// Whether the minigame is still running.
+        /// </summary>
+        public bool m_attract;
+
+        /// <summary>
         /// The length of the minigame in seconds.
         /// A negative value gives infinite time.
         /// </summary>
@@ -100,6 +105,11 @@ namespace GSP.Minigames
             m_cameraShake = FindObjectOfType<CameraShake>();
             m_timeOutScore = StartingPoints;
             m_running = false;
+
+            if (m_attract)
+            {
+                m_running = true;
+            }
         }
 
         protected virtual void Update()

@@ -280,6 +280,7 @@ MonoBehaviour:
   m_targetSpeed: 0
   m_targetPower: 0
   m_timer: 0
+  m_attract: 0
   m_player: {fileID: 7110323032267948633}
   spawnPoints:
   - {fileID: 4608708595859101217}
@@ -552,6 +553,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeedX: 3
   m_moveSpeedY: 0
+  x: 0
+  y: 0
 --- !u!114 &1314380844399737026
 MonoBehaviour:
   m_ObjectHideFlags: 0
