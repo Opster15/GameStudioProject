@@ -17,13 +17,9 @@ namespace GSP.Minigames
             m_rotate = GetComponent<MG_Rotation>();
         }
 
-        private void Update()
+        private void LateUpdate()
         {
             if (m_xInput)
-            {
-                m_rotate.x = m_inputvalue;
-            }
-            else if (!m_xInput)
             {
                 m_rotate.x = m_inputvalue;
             }

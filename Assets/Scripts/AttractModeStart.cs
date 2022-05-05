@@ -8,7 +8,7 @@ namespace UnityEngine
     {
         public float m_timer, m_maxTime;
 
-        public Animator m_cam_anim,m_canvas_anim;
+        public Animator m_cam_anim, m_canvas_anim, m_manager_anim;
         // Start is called before the first frame update
         void Start()
         {
@@ -29,12 +29,14 @@ namespace UnityEngine
             {
                 m_cam_anim.SetBool("isAttract", true);
                 m_canvas_anim.SetBool("isAttract", true);
+                m_manager_anim.SetBool("isAttract", true);
             }
             else if(m_timer <= m_maxTime)
             {   
                 m_timer += Time.deltaTime;
                 m_cam_anim.SetBool("isAttract", false);
                 m_canvas_anim.SetBool("isAttract", false);
+                m_manager_anim.SetBool("isAttract", false);
             }
         }
     }

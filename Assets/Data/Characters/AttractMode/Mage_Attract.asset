@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e68c9bdbdff45779c820a22871d461a, type: 3}
+  m_Name: Mage_Attract
+  m_EditorClassIdentifier: 
+  m_name: Mage
+  m_icon: {fileID: 21300000, guid: 0b5cbac667a1de94a9480d18e6fe2afe, type: 3}
+  m_statBlock:
+    m_HP: 160
+    m_attack: 0
+    m_defence: 0
+    m_speed: 5
+  m_skipsMinigames: 0
+  m_moveset:
+  - {fileID: 11400000, guid: 485fa3239c455f6409a6f4c4f7f2605c, type: 2}
+  - {fileID: 11400000, guid: 632478582613e794a9652a92580becd7, type: 2}
+  - {fileID: 11400000, guid: b77c4123980cc5c478d034578a19c563, type: 2}
+  - {fileID: 11400000, guid: d6af8ef3247650d4986330182c2f7f9e, type: 2}
+  m_modelPrefab: {fileID: 1534062612285797597, guid: 3d6c02d5c5fdb8f44a7bd2350e0fef97,
+    type: 3}
+  m_walkOnSelected: 1
+  m_attackWindupTime: 1.5
+  m_AI: {fileID: 11400000, guid: 0a3abbff9dee01543b009c3a54d8dcb5, type: 2}

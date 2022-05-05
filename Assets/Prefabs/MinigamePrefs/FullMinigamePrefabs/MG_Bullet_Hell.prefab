@@ -341,6 +341,7 @@ MonoBehaviour:
   m_targetSpeed: 0
   m_targetPower: 0
   m_timer: 0
+  m_attract: 0
   m_player: {fileID: 3237020173492321746}
   spawnPoints:
   - {fileID: 8193641595190176170}

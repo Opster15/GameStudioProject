@@ -112,6 +112,7 @@ MonoBehaviour:
   m_targetSpeed: 0
   m_targetPower: 0
   m_timer: 0
+  m_attract: 0
   m_objectHolder: {fileID: 5942321367027160929}
   m_spawnedObject: {fileID: 0}
   m_objects:
@@ -270,8 +271,10 @@ MonoBehaviour:
   m_targetSpeed: 0
   m_targetPower: 0
   m_timer: 0
+  m_attract: 0
   m_objectHolder: {fileID: 5942321367027160929}
   m_rotationSpeed: -1
+  x: 0
 --- !u!114 &469941245620486971
 MonoBehaviour:
   m_ObjectHideFlags: 0
