@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: cd71f95b4745a49409fc05b778082a77,
+  m_LightingDataAsset: {fileID: 112000000, guid: 7ea7799d1f9c758499289434eca2bcf2,
     type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
@@ -6418,17 +6418,17 @@ PrefabInstance:
     - target: {fileID: 2050717062107331103, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.070889026
+      value: 0.07088901
       objectReference: {fileID: 0}
     - target: {fileID: 2050717062107331103, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000016643241
+      value: 0.000000018227157
       objectReference: {fileID: 0}
     - target: {fileID: 2050717062107331103, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000011827989
+      value: -0.0000000012953638
       objectReference: {fileID: 0}
     - target: {fileID: 2050717062831243400, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
@@ -6493,17 +6493,17 @@ PrefabInstance:
     - target: {fileID: 2050717063073306518, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.070889026
+      value: 0.07088901
       objectReference: {fileID: 0}
     - target: {fileID: 2050717063073306518, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000016643241
+      value: 0.000000018227157
       objectReference: {fileID: 0}
     - target: {fileID: 2050717063073306518, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000011827989
+      value: -0.0000000012953638
       objectReference: {fileID: 0}
     - target: {fileID: 2050717063073306523, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
@@ -11533,6 +11533,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: BattleManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7533150953850363218, guid: d0c29cc8dd9719f48865e144638d983c,
+        type: 3}
+      propertyPath: m_enemyParty
+      value: 
+      objectReference: {fileID: 11400000, guid: 64179ff727873924389f4e7c98a777eb,
+        type: 2}
     - target: {fileID: 7533150953850363219, guid: d0c29cc8dd9719f48865e144638d983c,
         type: 3}
       propertyPath: m_RootOrder

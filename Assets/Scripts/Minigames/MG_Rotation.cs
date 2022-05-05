@@ -31,7 +31,7 @@ namespace GSP.Minigames
         public void Input()
         {
             //rotates spawned object from x input
-            m_objectHolder.transform.Rotate(0, 0, m_rotationSpeed * -x);
+            m_objectHolder.transform.Rotate(0, 0, m_rotationSpeed * -x * Time.deltaTime);
         }
 
         public void DirectionInput()

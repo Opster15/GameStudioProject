@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 2324296a0d857fb41a488f4c3521ac07,
+  m_LightingDataAsset: {fileID: 112000000, guid: 1ccd326cd1dc90b4781062a4bdb78ac7,
     type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
@@ -3703,7 +3703,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_enemyParty
       value: 
-      objectReference: {fileID: 11400000, guid: 18324d099346a6e4eb795f62b462f760,
+      objectReference: {fileID: 11400000, guid: 64179ff727873924389f4e7c98a777eb,
         type: 2}
     - target: {fileID: 7533150953850363219, guid: d0c29cc8dd9719f48865e144638d983c,
         type: 3}
@@ -9771,12 +9771,12 @@ PrefabInstance:
     - target: {fileID: 2050717062107331103, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000016643241
+      value: 0.000000016643243
       objectReference: {fileID: 0}
     - target: {fileID: 2050717062107331103, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000011827989
+      value: -0.000000001182799
       objectReference: {fileID: 0}
     - target: {fileID: 2050717062831243400, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
@@ -9851,12 +9851,12 @@ PrefabInstance:
     - target: {fileID: 2050717063073306518, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000016643241
+      value: 0.000000016643243
       objectReference: {fileID: 0}
     - target: {fileID: 2050717063073306518, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000011827989
+      value: -0.000000001182799
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1de86ff38df74a4b936f17104fb8bbb, type: 3}

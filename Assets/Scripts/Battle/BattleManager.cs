@@ -25,6 +25,7 @@ namespace GSP.Battle
         private EventInstance m_musicEvent;
 
         public Action<int, GameParty> OnEnableParty;
+        public System.Action OnBattleEnd;
 
         public System.Action OnTurnStart;
         public System.Action OnTurnEnd;
@@ -83,6 +84,7 @@ namespace GSP.Battle
                     OnTurnStart -= character.StartTurn;
                     OnTurnEnd -= character.EndTurn;
                 }
+                OnBattleEnd?.Invoke();
             }
 
             m_musicEvent.stop(STOP_MODE.ALLOWFADEOUT);
