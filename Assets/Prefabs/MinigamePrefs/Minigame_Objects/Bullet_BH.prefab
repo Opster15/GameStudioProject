@@ -88,7 +88,7 @@ MonoBehaviour:
     type: 3}
   m_destoryOnBorderHit: 0
   m_speed: 3
-  m_maxLifetime: 2
+  m_maxLifetime: 1.5
 --- !u!1 &7014612655125297949
 GameObject:
   m_ObjectHideFlags: 0
