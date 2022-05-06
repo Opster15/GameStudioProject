@@ -47,10 +47,22 @@ namespace GSP.Battle
             var playerPartyHolder = FindObjectOfType<PlayerPartyHolder>();
             var playerParty = playerPartyHolder == null ? m_defaultPlayerParty.GetParty() : playerPartyHolder.GetParty();
 
+            if (m_musicEvent.isValid())
+            {
+                m_musicEvent.stop(STOP_MODE.ALLOWFADEOUT);
+                m_musicEvent.release();
+            }
             m_musicEvent = FMODUnity.RuntimeManager.CreateInstance(m_enemyParty.MusicPath);
             m_musicEvent.start();
 
             StartBattle(playerParty, m_enemyParty.GetParty());
+        }
+
+        private void OnDisable()
+        {
+            if (!m_musicEvent.isValid()) { return; }
+            m_musicEvent.stop(STOP_MODE.ALLOWFADEOUT);
+            m_musicEvent.release();
         }
 
         public void StartBattle(GameParty _a, GameParty _b)
