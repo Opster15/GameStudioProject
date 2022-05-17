@@ -22,6 +22,8 @@ namespace GSP.Battle
         [SerializeField] private PartyObject m_defaultPlayerParty;
         [SerializeField] private PartyObject m_enemyParty;
 
+        [SerializeField] private bool m_useSharedParty = true;
+
         private EventInstance m_musicEvent;
 
         public Action<int, GameParty> OnEnableParty;
@@ -45,7 +47,7 @@ namespace GSP.Battle
         {
             // If no player party holder exists, resort to a pre-set default.
             var playerPartyHolder = FindObjectOfType<PlayerPartyHolder>();
-            var playerParty = playerPartyHolder == null ? m_defaultPlayerParty.GetParty() : playerPartyHolder.GetParty();
+            var playerParty = m_useSharedParty && playerPartyHolder == null ? m_defaultPlayerParty.GetParty() : playerPartyHolder.GetParty();
 
             if (m_musicEvent.isValid())
             {

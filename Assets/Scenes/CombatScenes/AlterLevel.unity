@@ -16317,10 +16317,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7533150953850363218, guid: d0c29cc8dd9719f48865e144638d983c,
         type: 3}
-      propertyPath: m_enemyParty
+      propertyPath: m_defaultPlayerParty
       value: 
-      objectReference: {fileID: 11400000, guid: 64179ff727873924389f4e7c98a777eb,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 7533150953850363219, guid: d0c29cc8dd9719f48865e144638d983c,
         type: 3}
       propertyPath: m_RootOrder
@@ -24951,17 +24950,17 @@ PrefabInstance:
     - target: {fileID: 2050717062107331103, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.07088901
+      value: 0.070889026
       objectReference: {fileID: 0}
     - target: {fileID: 2050717062107331103, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000018227158
+      value: -0.000000016643243
       objectReference: {fileID: 0}
     - target: {fileID: 2050717062107331103, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000012953639
+      value: 0.000000001182799
       objectReference: {fileID: 0}
     - target: {fileID: 2050717062831243400, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
@@ -25026,17 +25025,17 @@ PrefabInstance:
     - target: {fileID: 2050717063073306518, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.07088901
+      value: 0.070889026
       objectReference: {fileID: 0}
     - target: {fileID: 2050717063073306518, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000018227158
+      value: -0.000000016643243
       objectReference: {fileID: 0}
     - target: {fileID: 2050717063073306518, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000012953639
+      value: 0.000000001182799
       objectReference: {fileID: 0}
     - target: {fileID: 2050717063073306523, guid: d1de86ff38df74a4b936f17104fb8bbb,
         type: 3}

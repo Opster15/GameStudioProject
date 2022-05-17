@@ -11,7 +11,7 @@ namespace GSP
 
         private void Start()
         {
-            m_random = Random.Range(3, 8);
+            m_random = Random.Range(4, 9);
             Invoke("PlayGame", 2f);
         }
 

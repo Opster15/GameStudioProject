@@ -618,7 +618,7 @@ PrefabInstance:
     - target: {fileID: 2979366801504259249, guid: 11ada9012280bac42bbe2199507722af,
         type: 3}
       propertyPath: m_text
-      value: DODGE THE BULLETS
+      value: DODGE THE ARROWS
       objectReference: {fileID: 0}
     - target: {fileID: 4453052335574188082, guid: 11ada9012280bac42bbe2199507722af,
         type: 3}

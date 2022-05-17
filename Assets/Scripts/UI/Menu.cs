@@ -13,12 +13,12 @@ namespace GSP
 
         private void Start()
         {
-            m_random = Random.Range(3, 8);
+            m_random = Random.Range(4, 9);
         }
 
         public void PlayGame()
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
 
         public void QuitGame()
@@ -33,7 +33,7 @@ namespace GSP
 
         public void ReturnToMenu()
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 }

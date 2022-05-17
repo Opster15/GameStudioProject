@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7407485184015479424}
   - component: {fileID: 7407485184015479426}
   - component: {fileID: 7407485184015479427}
-  - component: {fileID: 7541338525244845353}
   m_Layer: 5
   m_Name: Portrait
   m_TagString: Untagged
@@ -78,19 +77,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7541338525244845353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7407485184015479425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2927f1efabc6fd0418bbec5bb12f8fb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_icon: {fileID: 0}
 --- !u!1 &7407485184776117798
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,7 +147,8 @@ MonoBehaviour:
   m_text: Party Member
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d5b32dee0faba2343b70bd684887ded5, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -151886225940704315, guid: d5b32dee0faba2343b70bd684887ded5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -185,7 +172,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -583,6 +570,12 @@ PrefabInstance:
       propertyPath: m_text
       value: 1000 / 1000 HP
       objectReference: {fileID: 0}
+    - target: {fileID: 5477397799011119610, guid: 4b969ac1feacd354392c38b56c878f6c,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -151886225940704315, guid: d5b32dee0faba2343b70bd684887ded5,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b969ac1feacd354392c38b56c878f6c, type: 3}
 --- !u!224 &2995635479815955127 stripped
